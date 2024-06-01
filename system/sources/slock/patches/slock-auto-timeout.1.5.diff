@@ -1,0 +1,92 @@
+From 4abaf79e90a54c645fbd1a8439a976ee2ba5dde7 Mon Sep 17 00:00:00 2001
+From: Karsaell <pieds.nus@zaclys.net>
+Date: Wed, 5 Oct 2022 14:25:12 +0200
+Subject: [PATCH] [patch][auto-timeout] updated patch autotimeout
+
+Previous patch had an infinite loop without sleep()
+causing slock to run at 100% CPU
+(Noticed it because my laptop's fan started a few seconds after slock)
+
+Now the timeout and its command are run in a separate thread
+This adds a dependency to pthread at compile time
+  (not sure if this can be an issue ?)
+---
+ config.def.h |  8 ++++++++
+ config.mk    |  2 +-
+ slock.c      | 20 ++++++++++++++++++++
+ 3 files changed, 29 insertions(+), 1 deletion(-)
+
+diff --git a/config.def.h b/config.def.h
+index 9855e21..a1179a8 100644
+--- a/config.def.h
++++ b/config.def.h
+@@ -10,3 +10,11 @@ static const char *colorname[NUMCOLS] = {
+ 
+ /* treat a cleared input like a wrong password (color) */
+ static const int failonclear = 1;
++
++/* Patch: auto-timeout */
++/* should [command] be run only once? */
++static const int runonce = 0;
++/* length of time (seconds) until [command] is executed */
++static const int timeoffset = 30;
++/* command to be run after [timeoffset] seconds has passed */
++static const char *command = "/usr/bin/xset dpms force off";
+diff --git a/config.mk b/config.mk
+index 1e1ca45..8955075 100644
+--- a/config.mk
++++ b/config.mk
+@@ -29,4 +29,4 @@ COMPATSRC = explicit_bzero.c
+ #COMPATSRC =
+ 
+ # compiler and linker
+-CC = cc
++CC = cc -pthread
+diff --git a/slock.c b/slock.c
+index 5ae738c..c56c944 100644
+--- a/slock.c
++++ b/slock.c
+@@ -19,6 +19,10 @@
+ #include <X11/Xlib.h>
+ #include <X11/Xutil.h>
+ 
++/*POSIX threading for auto-timeout*/
++#include <pthread.h>
++#include <time.h>
++
+ #include "arg.h"
+ #include "util.h"
+ 
+@@ -219,6 +223,18 @@ readpw(Display *dpy, struct xrandr *rr, struct lock **locks, int nscreens,
+ 	}
+ }
+ 
++void *timeoutCommand(void *args)
++{
++	int runflag=0;
++	while (!runonce || !runflag)
++	{
++		sleep(timeoffset);
++		runflag = 1;
++		system(command);
++	}
++	return args;
++}
++
+ static struct lock *
+ lockscreen(Display *dpy, struct xrandr *rr, int screen)
+ {
+@@ -388,6 +404,10 @@ main(int argc, char **argv) {
+ 		}
+ 	}
+ 
++	/*Start the auto-timeout command in its own thread*/
++	pthread_t thread_id;
++	pthread_create(&thread_id, NULL, timeoutCommand, NULL);
++
+ 	/* everything is now blank. Wait for the correct password */
+ 	readpw(dpy, &rr, locks, nscreens, hash);
+ 
+-- 
+2.30.2
+
