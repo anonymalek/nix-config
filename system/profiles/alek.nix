@@ -20,13 +20,10 @@
                 
                 ./steam.nix
             ];
-
-			home-modules = [ ./../../user/alek/home.nix ];
 	    }
     );
     
     environment.systemPackages = with pkgs; [
-        github-desktop
         brave
     ];
 }

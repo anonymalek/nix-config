@@ -1,19 +1,20 @@
+{ config, pkgs, ... }:
 {
-	users.users.${username} = {
+	users.users.niki = {
 		isNormalUser = true;
-		description = realname;
+		description = "Niki";
 		extraGroups = [ "wheel" "networkmanager" "audio" "libvirtd" ];
 		packages = with pkgs; [];
 	};
 
-	home-manager.users.${username} = import ./../../user/user.nix {
-		username = username;
-		realname = realname;
+	home-manager.users.niki = import ./../../user/user.nix {
+		username = "niki";
+		realname = "Niki";
 	};
 
 	home-manager.users.root = import ../../user/user.nix {
 		username = "root";
-		realname = realname;
+		realname = "Niki";
 	};
 
 	environment.systemPackages = with pkgs; [
@@ -22,15 +23,15 @@
 	];
 	
 	services.xserver = {
-		xkb.layout = "br";
-	#	xkb.options = "grp:alt_caps_toggle";
+		xkb.layout = "us,ru,br";
+		xkb.options = "grp:alt_caps_toggle";
 	};
 
 	services.syncthing = {
 		enable = true;
-		user = username;
-		dataDir = "/home/${username}/playground/sync";
-		configDir = "/home/${username}/playground/sync/syncthing";
+		user = "niki";
+		dataDir = "/home/niki/playground/sync";
+		configDir = "/home/niki/playground/sync/syncthing";
 	};
 
 	# Syncthing ports: 8384 for remote access to GUI
@@ -40,5 +41,15 @@
 	networking.firewall.allowedTCPPorts = [ 22000 ];
 	networking.firewall.allowedUDPPorts = [ 22000 21027 ];
 
-	imports = modules;
+	imports = [
+		./global.nix
+		./desktop.nix
+		./desktop-tools.nix
+		./code.nix
+		./comms.nix
+		./ctf.nix
+		./game.nix
+		./anonymous.nix
+		./virtualization.nix
+	];
 }

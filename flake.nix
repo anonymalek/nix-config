@@ -25,11 +25,9 @@
 		in {
 		nixosConfigurations = {
 			pandora = nixosCustomSystem {
-				modules = [ ./system/pandora.nix ./system/profiles/niki.nix ];
 			};
 
 			neopax = nixosCustomSystem {
-				modules = [ ./system/neopax.nix ./system/profiles/niki.nix ];
 			};
 
 			termina = nixosCustomSystem {
