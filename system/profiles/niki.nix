@@ -2,26 +2,23 @@
 {
 	inherit (
 	    import ./base_profile.nix { 
-            username = "alek";
-            realname = "Artificio";
+            username = "niki";
+            realname = "Niki";
             modules = [
-                ./virtualization.nix
-                ./anonymous.nix
                 ./global.nix
+                ./anonymous.nix
                 
                 ./desktop.nix
                 ./desktop-tools.nix
                 
-                ./rider.nix
                 ./code.nix
                 
                 ./zerotier.nix
-                ./nordvpn.nix
                 
                 ./steam.nix
             ];
 
-			home-modules = [ ./../../user/alek/home.nix ];
+			home-modules = [ ./../../user/niki/home.nix ];
 	    }
     );
     

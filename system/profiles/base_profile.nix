@@ -1,4 +1,4 @@
-{ username ? "user", realname ? "User", modules ? [ "./global.nix" ], config, pkgs, ... }:
+{ username ? "user", realname ? "User", modules ? [ "./global.nix" ], home-modules ? [], config, pkgs, ... }:
 {
 	users.users.${username} = {
 		isNormalUser = true;
@@ -10,11 +10,13 @@
 	home-manager.users.${username} = import ./../../user/user.nix {
 		username = username;
 		realname = realname;
+		inherit home-modules;
 	};
 
 	home-manager.users.root = import ../../user/user.nix {
 		username = "root";
 		realname = realname;
+		inherit home-modules;
 	};
 
 	environment.systemPackages = with pkgs; [

@@ -1,6 +1,6 @@
-{ username, realname, email ? "<>", ... }:
+{ username, realname, home-modules ? [], email ? "<>", ... }:
 {
-	imports = [ ./home.nix ];
+	imports = home-modules;
 
 	home.username = username;
 
