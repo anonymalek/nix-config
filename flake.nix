@@ -20,7 +20,7 @@
 					};
 				};
 
-				inherit modules;
+				modules = modules ++ [ ./system/global.nix ];
 			};
 		in {
 		nixosConfigurations = {
