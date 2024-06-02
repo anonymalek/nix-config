@@ -1,18 +1,6 @@
 { config, pkgs, ... }:
 {
-	environment.systemPackages = with pkgs; [
-		element-desktop
-		gomuks
-
-		weechat
-		irssi
-
-		profanity
-
-		mumble
-	];
-
-	programs.firejail = {
+    programs.firejail = {
 		wrappedBinaries = {
 			vesktop = {
 				executable = "${pkgs.vesktop}/bin/vesktop";

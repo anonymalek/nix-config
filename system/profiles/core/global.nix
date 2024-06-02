@@ -129,7 +129,7 @@ with pkgs.lib;
 			xorg.libxshmfence
 			godot_4
 			gle glew glfw
-			dotnet-sdk_6
+			dotnet-sdk_8
 		];
 
 		system.stateVersion = "23.11";

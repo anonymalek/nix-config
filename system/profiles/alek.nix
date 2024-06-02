@@ -1,29 +1,31 @@
 { config, pkgs, ... }:
 {
 	inherit (
-	    import ./base_profile.nix { 
+	    import ./_profile.nix { 
             username = "alek";
             realname = "Artificio";
             modules = [
-                ./virtualization.nix
-                ./anonymous.nix
-                ./global.nix
+                ./core/virtualization.nix
+                ./core/desktop-tools.nix
+                ./core/desktop.nix
+                ./core/global.nix
                 
-                ./desktop.nix
-                ./desktop-tools.nix
+                ./coding/rider.nix
+                ./coding/basic.nix
                 
-                ./rider.nix
-                ./code.nix
+                ./network/anonymous.nix
+                ./network/zerotier.nix
+                ./network/nordvpn.nix
                 
-                ./zerotier.nix
-                ./nordvpn.nix
-                
-                ./steam.nix
+                ./games/steam.nix
             ];
 	    }
     );
     
     environment.systemPackages = with pkgs; [
+        github-desktop
+        discord
         brave
+        fish
     ];
 }
