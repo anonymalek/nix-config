@@ -45,11 +45,48 @@
         "type": "indirect"
       }
     },
+    "nur": {
+      "locked": {
+        "lastModified": 1717443933,
+        "narHash": "sha256-hKPYAOnbqvy/eZMsp85KRHn5+K3QkGeU8cyLiXtxT48=",
+        "owner": "nix-community",
+        "repo": "NUR",
+        "rev": "0122b0f415811dd2a367f362a595070b6451ff9a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-community",
+        "repo": "NUR",
+        "type": "github"
+      }
+    },
+    "nypkgs": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1715697730,
+        "narHash": "sha256-8/bqSGNgT1jgF5Z5QZ77HNpAPRBHrkfGVmbxmaLDmBs=",
+        "owner": "yunfachi",
+        "repo": "nypkgs",
+        "rev": "45fb532e8911d64fb92a38e66d9643975d7187c6",
+        "type": "github"
+      },
+      "original": {
+        "owner": "yunfachi",
+        "repo": "nypkgs",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "nixpkgs": "nixpkgs",
         "nixpkgs-stable": "nixpkgs-stable",
-        "nixpkgs-unstable": "nixpkgs-unstable"
+        "nixpkgs-unstable": "nixpkgs-unstable",
+        "nur": "nur",
+        "nypkgs": "nypkgs"
       }
     }
   },

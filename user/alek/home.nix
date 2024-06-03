@@ -1,11 +1,10 @@
 { pkgs, ... }:
-
 let
-	terminal = "kitty --directory ~/";
+	terminal = "kitty";
 	browser = "brave";
 in
 {
-	imports = [ ./../shared/all.nix ];
+	imports = [ ./../shared/shared.nix ];
 
 	home.stateVersion = "23.11";
 
@@ -19,7 +18,9 @@ in
 	};
 
 	home.sessionVariables = {
+		TERMINAL = "kitty";
 		BROWSER = "brave";
+		VISUAL = "rider";
 		EDITOR = "nvim";
 	};
 
@@ -33,8 +34,6 @@ in
 			rofi-calc
 		];
 	};
-
-	xsession.enable = true;
 
 	services.unclutter = {
 		enable = true;
@@ -53,17 +52,16 @@ in
 			"p" = "cd ~/playground";
 			"c" = "cd ~/playground/law/nix-config && ls -l";
 		};
-
-		historyFileSize = 420;
 	};
 
 	services.sxhkd = {
 		enable = true;
-
+		
 		keybindings = {
-			"super + q" = "${browser}";
-			"super + a" = terminal + " pulsemixer";
-
+			"super + m + p" = terminal + " pulsemixer";
+			"super + Return" = terminal;
+			"super + q" = browser;
+			
 			"super + shift + s" = "flameshot gui";
 		};
 	};
