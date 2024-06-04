@@ -42,6 +42,4 @@ in
 			EndSection
 		'';
 	};
-
-	hardware.pulseaudio.enable = true;
 }

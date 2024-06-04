@@ -48,6 +48,11 @@ in
 			".." = "cd ..";
 
 			"nxs" = "nix search nixpkgs";
+			
+			"nv" = "nordvpn";
+			"nvc" = "nv c";
+			"nvct" = "nv s obfuscate true; nvc";
+			"nvcf" = "nv s obfuscate false; nvc";
 
 			"p" = "cd ~/playground";
 			"c" = "cd ~/playground/law/nix-config && ls -l";

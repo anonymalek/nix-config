@@ -13,6 +13,8 @@
 		
 		./../../system/profiles/core/desktop-tools.nix
 		./../../system/profiles/core/desktop.nix
+		./../../system/profiles/core/pipewire.nix
+		
 		./../../system/profiles/chat/discord.nix
 		./../../system/profiles/chat/vesktop.nix
 	];
@@ -27,21 +29,14 @@
 	
 	home-manager.users.alek = import ./home.nix;
 	
-	nixpkgs.config.packageOverrides = pkgs: {
-		nordvpn = config.nur.repos.LuisChDev.nordvpn;
-	};
-
-	services.nordvpn.enable = true;
-	
 	environment.systemPackages = with pkgs; [
+		oh-my-fish
+		obs-studio
+
 		qt6Packages.qtstyleplugin-kvantum
+		bottles
 		brave
 	];
 	
-	services.xserver = {
-		enable = true;
-	};
 	
-	services.desktopManager.plasma6.enable = true;
-	services.displayManager.sddm.enable = true;
 }
