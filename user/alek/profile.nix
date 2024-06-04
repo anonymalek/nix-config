@@ -17,6 +17,8 @@
 		
 		./../../system/profiles/chat/discord.nix
 		./../../system/profiles/chat/vesktop.nix
+		
+		./desktop/plasma/plasma.nix
 	];
 	
 	users.users.alek = {
