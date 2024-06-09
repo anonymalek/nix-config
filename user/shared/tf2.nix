@@ -1,7 +1,7 @@
 { ... }:
 {
 	home.file = let
-		tf2Root = ".firejail_steam/.local/share/Steam/steamapps/common/Team Fortress 2/tf/cfg";
+		tf2Root = ".firejail/steam/.local/share/Steam/steamapps/common/Team Fortress 2/tf/cfg";
 	in {
 		"${tf2Root}/autoexec.cfg".source = ./sources/tf2/autoexec.cfg;
 		"${tf2Root}/binds.cfg".source = ./sources/tf2/binds.cfg;
