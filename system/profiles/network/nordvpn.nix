@@ -1,5 +1,9 @@
-{ config, lib, pkgs, ... }:
+{ config, nur-modules, ... }:
 {
+	imports = [
+		nur-modules.repos.LuisChDev.modules.nordvpn
+	];
+
 	nixpkgs.config.packageOverrides = pkgs: {
 		nordvpn = config.nur.repos.LuisChDev.nordvpn;
 	};
