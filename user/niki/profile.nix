@@ -25,6 +25,9 @@
 	services.xserver = {
 		xkb.layout = "us,br";
 		xkb.options = "grp:alt_caps_toggle";
+
+		displayManager.sddm.enable = true;
+		windowManager.awesome.enable = true;
 	};
 
 	services.syncthing = {
