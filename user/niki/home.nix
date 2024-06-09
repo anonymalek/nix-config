@@ -38,6 +38,7 @@
 		lfs.enable = true;
 		userName = "Niki";
 		userEmail = "<>";
+		extraConfig.credential.helper = "store";
 	};
 
 	programs.bash = {
