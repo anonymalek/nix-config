@@ -13,6 +13,8 @@
 
 	home.packages = with pkgs; [
 		kitty
+		pass
+		gnupg
 	];
 
 	home.file = {
