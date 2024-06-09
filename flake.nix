@@ -45,11 +45,11 @@
 		in {
 		nixosConfigurations = {
 			pandora = nixosCustomSystem {
-				modules = [ ./system/pandora.nix ./system/profiles/niki.nix ];
+				modules = [ ./user/niki/hardware/pandora.nix ./user/niki/profile.nix ];
 			};
 
 			neopax = nixosCustomSystem {
-				modules = [ ./system/neopax.nix ./system/profiles/niki.nix ];
+				modules = [ ./user/niki/hardware/neopax.nix ./user/niki/profile.nix ];
 			};
 
 			termina = nixosCustomSystem {

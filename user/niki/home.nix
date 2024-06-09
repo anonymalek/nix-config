@@ -32,40 +32,11 @@ let
 		replaytty = (pkgs.writeShellScriptBin "replaytty" ''
 			scriptreplay -t "$1.timing" "$1.log"
 		'');
-
-		gitsshswap = (pkgs.writeShellScriptBin "gitsshswap" ''
-			sed -i "s/git@.*:/git@$1:/g" .git/config
-		'');
-
-		edhost = (pkgs.writeShellScriptBin "edhost" ''
-			if [ $(id -u) -ne 0 ]; then
-				echo "You must be root."
-				exit 2
-			fi
-
-			# un-symlink
-			rm /etc/hosts && cp /etc/static/hosts /etc/hosts
-
-			for name in ''${@:2}; do
-				echo hostess add $name $1
-				${pkgs.hostess}/bin/hostess add $name $1
-			done
-		'');
-
-		edhl = (pkgs.writeShellScriptBin "edhl" ''
-			sudo ${edhost}/bin/edhost 192.168.0.$1 ''${@:2}
-		'');
-
-		setm = (pkgs.writeShellScriptBin "setm" ''
-			sudo ${edhost}/bin/edhost $1 master ''${@:2}
-		'');
-
-		setml = (pkgs.writeShellScriptBin "setml" ''
-			sudo ${setm}/bin/setm 192.168.0.$1 $2
-		'');
 	};
 in
 {
+	imports = [ ./../shared/shared.nix ];
+
 	home.stateVersion = "23.11";
 
 	home.packages = with pkgs; [
@@ -74,35 +45,18 @@ in
 		shbinpkgs.recordtty
 		shbinpkgs.replaytty
 
-		shbinpkgs.gitsshswap
-
-		shbinpkgs.edhost
-		shbinpkgs.edhl
-		shbinpkgs.setm
-		shbinpkgs.setml
-
 		neovim
 		mpc-cli
 	];
 
-	home.file = let
-		tf2Root = ".firejail_steam/.local/share/Steam/steamapps/common/Team Fortress 2/tf/cfg";
-	in {
+	home.file = {
 		".config/awesome/".source = ./sources/awesome;
 		".vimrc".source = ./sources/vim/vimrc;
 		".config/nvim".source = ./sources/vim;
 		".config/kitty".source = ./sources/kitty;
 		".local/share/fonts".source = ./sources/fonts;
 		".config/libvirt".source = ./sources/libvirt;
-		".firejail_qutebrowser/.config/qutebrowser/config.py".source = ./sources/qutebrowser/config.py;
-
-		"${tf2Root}/autoexec.cfg".source = ./sources/tf2/autoexec.cfg;
-		"${tf2Root}/binds.cfg".source = ./sources/tf2/binds.cfg;
-		"${tf2Root}/defaultbinds.cfg".source = ./sources/tf2/defaultbinds.cfg;
-		"${tf2Root}/engineer.cfg".source = ./sources/tf2/engineer.cfg;
-		"${tf2Root}/gfx.cfg".source = ./sources/tf2/gfx.cfg;
-		"${tf2Root}/network.cfg".source = ./sources/tf2/network.cfg;
-		"${tf2Root}/settings.cfg".source = ./sources/tf2/settings.cfg;
+		".firejail/qutebrowser/.config/qutebrowser/config.py".source = ./sources/qutebrowser/config.py;
 	};
 
 	home.sessionVariables = {
@@ -111,7 +65,7 @@ in
 	};
 
 	programs.tmux = {
-		# enable = true;
+		enable = true;
 		clock24 = true;
 		
 		keyMode = "vi";
@@ -167,7 +121,16 @@ in
 		};
 	};
 
-	xsession.enable = true;
+	programs.git = {
+		lfs.enable = true;
+		userName = "Niki";
+		userEmail = "<>";
+	};
+
+	xsession = {
+		enable = true;
+		windowManager.awesome.enable = true;
+	};
 
 	services.unclutter = {
 		enable = true;
@@ -186,23 +149,6 @@ in
 
 	programs.bash = {
 		enable = true;
-		shellAliases = {
-			"ll" = "ls -l";
-			"la" = "ls -la";
-			".." = "cd ..";
-
-			"nxs" = "nix search nixpkgs";
-
-			"poweroff" = "systemctl poweroff -i";
-			"shutdown" = "systemctl poweroff -i";
-			"reboot" = "systemctl reboot -i";
-
-			"proxychains" = "proxychains4";
-
-			"p" = "cd ~/playground";
-			"c" = "cd ~/playground/configuration && ls -l";
-		};
-
 		historyFileSize = 0;
 	};
 
