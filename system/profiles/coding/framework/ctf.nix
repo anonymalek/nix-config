@@ -82,5 +82,6 @@
 		radare2
 		wireshark
 		aircrack-ng
+		android-tools
 	];
 }
