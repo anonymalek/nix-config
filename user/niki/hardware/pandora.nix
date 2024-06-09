@@ -9,7 +9,7 @@
 	boot.loader.systemd-boot.enable = true;
 	boot.loader.efi.canTouchEfiVariables = true;
 
-	# home-manager.sharedModules = [ ./pandora-home.nix ];
+	home-manager.sharedModules = [ ./pandora-home.nix ];
 
 	environment.systemPackages = with pkgs; [
 		ryzenadj
