@@ -13,18 +13,22 @@
 		
 		./../../system/profiles/core/desktop-tools.nix
 		./../../system/profiles/core/desktop.nix
-		./../../system/profiles/core/pipewire.nix
+		
+		./../../system/profiles/audio/jack-pipewire.nix
 		
 		./../../system/profiles/chat/discord.nix
 		./../../system/profiles/chat/vesktop.nix
 		
+		./desktop/hyprland/hyprland.nix
 		./desktop/plasma/plasma.nix
 	];
+	
+	time.timeZone = "America/Recife";
 	
 	users.users.alek = {
 		description = "Artificio";
 		
-		extraGroups = [ "networkmanager" "wheel" "libvirtd" "nordvpn" ];
+		extraGroups = [ "networkmanager" "wheel" "libvirtd" "nordvpn" "jackaudio" ];
 		shell = "${pkgs.fish}/bin/fish";
 		isNormalUser = true;
 	};
@@ -34,11 +38,11 @@
 	environment.systemPackages = with pkgs; [
 		oh-my-fish
 		obs-studio
-
-		qt6Packages.qtstyleplugin-kvantum
 		bottles
+		zoxide
 		brave
+		
+		jack2
+		a2jmidid
 	];
-	
-	
 }

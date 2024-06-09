@@ -9,10 +9,12 @@
             inputs.nixpkgs.follows = "nixpkgs";
         };
         
+        musnix  = { url = "github:musnix/musnix"; };
+        
 		nur.url = "github:nix-community/NUR";
 	};
 
-	outputs = inputs@{ nixpkgs, nur, nixpkgs-stable, nixpkgs-unstable, nypkgs, ... }:
+	outputs = inputs@{ nixpkgs, nur, nixpkgs-stable, nixpkgs-unstable, nypkgs, musnix, ... }:
 		let
 			system = "x86_64-linux";
 
@@ -23,13 +25,14 @@
 					inherit nixpkgs-unstable;
 					inherit system;
 					inherit nypkgs;
+					inherit musnix;
 					
 					master = { ssh = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIODtyJdBnjtc6yXraTaj2Y8PZtx2EuU/gXdUsG2cd4Ng niki@pandora"; };
 				};
 
 				
 
-				modules = modules ++ [ ./system/global.nix ]	
+				modules = modules ++ [ ./system/global.nix ] ++ [ inputs.musnix.nixosModules.musnix ]
 				++ (let nur-modules = import nur rec {
 					nurpkgs = nixpkgs.legacyPackages.x86_64-linux;
 					pkgs = nixpkgs.legacyPackages.x86_64-linux;

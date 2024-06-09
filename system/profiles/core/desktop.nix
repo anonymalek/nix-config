@@ -35,11 +35,11 @@ in
 	services.xserver =
 	{
 		enable = true;
-		extraConfig = ''
-			Section "ServerFlags"
-				Option "DontVTSwitch" "True"
-				Option "DontZap"      "True"
-			EndSection
-		'';
+#		extraConfig = ''
+#			Section "ServerFlags"
+#				Option "DontVTSwitch" "True"
+#				Option "DontZap"      "True"
+#			EndSection
+#		'';
 	};
 }

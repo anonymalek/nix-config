@@ -48,13 +48,6 @@
 				profile = "${pkgs.firejail}/etc/firejail/steam.profile";
 				extraArgs = steamExtraArgs;
 			};
-
-			steam-run = {
-				executable = "${pkgs.steam}/bin/steam-run";
-				profile = "${pkgs.firejail}/etc/firejail/steam.profile";
-				extraArgs = steamExtraArgs;
-			};
-
 			steamcmd = {
 				executable = "${pkgs.steamcmd}/bin/steamcmd";
 				profile = "${pkgs.firejail}/etc/firejail/steam.profile";

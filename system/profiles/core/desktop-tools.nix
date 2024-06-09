@@ -4,6 +4,7 @@
 		libreoffice
 		surf
 		gimp
+		krita
 		audacity
 		sxiv
 		zathura

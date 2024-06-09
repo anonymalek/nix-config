@@ -11,7 +11,7 @@
 	programs.firejail.wrappedBinaries.tor-browser = {
 		executable = "${pkgs.tor-browser}/bin/tor-browser";
 		profile = "${pkgs.firejail}/etc/firejail/tor-browser.profile";
-		extraArgs = [ "--novideo" "--mkdir=~/.firejail_tor-browser" "--private=~/.firejail_tor-browser" ];
+		extraArgs = [ "--novideo" "--mkdir=~/.firejail/tor-browser" "--private=~/.firejail/tor-browser" ];
 	};
 
 	programs.proxychains = {
