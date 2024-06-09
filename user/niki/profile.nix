@@ -4,6 +4,7 @@
 		(systemPath + /global.nix)
 
 		(systemPath + /profiles/coding/framework/godot.nix)
+		(systemPath + /profiles/coding/framework/ctf.nix)
 		(systemPath + /profiles/coding/basic.nix)
 		
 		(systemPath + /profiles/network/anonymous.nix)
