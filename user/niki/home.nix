@@ -1,8 +1,8 @@
-{ pkgs, ... }:
+{ pkgs, userPath, ... }:
 
 {
 	imports = [
-		./../shared/shared.nix
+		(userPath + /shared/shared.nix)
 		./x.nix
 		./mpd.nix
 		./tmux.nix

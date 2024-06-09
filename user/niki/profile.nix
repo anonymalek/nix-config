@@ -1,22 +1,22 @@
-{ config, pkgs, ... }:
+{ config, pkgs, systemPath, ... }:
 {
 	imports = [
-		./../../system/global.nix
+		(systemPath + /global.nix)
 
-		./../../system/profiles/coding/framework/godot.nix
-		./../../system/profiles/coding/basic.nix
+		(systemPath + /profiles/coding/framework/godot.nix)
+		(systemPath + /profiles/coding/basic.nix)
 		
-		./../../system/profiles/network/anonymous.nix
-		./../../system/profiles/network/zerotier.nix
+		(systemPath + /profiles/network/anonymous.nix)
+		(systemPath + /profiles/network/zerotier.nix)
 		
-		./../../system/profiles/games/steam.nix
+		(systemPath + /profiles/games/steam.nix)
 		
-		./../../system/profiles/core/desktop-tools.nix
-		./../../system/profiles/core/desktop.nix
-		./../../system/profiles/audio/pipewire.nix
+		(systemPath + /profiles/core/desktop-tools.nix)
+		(systemPath + /profiles/core/desktop.nix)
+		(systemPath + /profiles/audio/pipewire.nix)
 		
-		./../../system/profiles/browsers/librewolf.nix
-		./../../system/profiles/chat/vesktop.nix
+		(systemPath + /profiles/browsers/librewolf.nix)
+		(systemPath + /profiles/chat/vesktop.nix)
 
 		./user.nix
 	];

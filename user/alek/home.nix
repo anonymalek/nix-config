@@ -1,10 +1,12 @@
-{ pkgs, ... }:
+{ pkgs, userPath, ... }:
 let
 	terminal = "kitty";
 	browser = "brave";
 in
 {
-	imports = [ ./../shared/shared.nix ];
+	imports = [
+		(userPath + /shared/shared.nix)
+	];
 
 	home.stateVersion = "23.11";
 

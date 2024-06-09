@@ -1,7 +1,7 @@
-{ config, pkgs, ... }:
+{ config, pkgs, systemPath, ... }:
 {
 	imports  = [
-		./../../../system/profiles/core/nvidia.nix
+		(systemPath + /profiles/core/nvidia.nix)
 		./termina-hw.nix
 	];
 

@@ -1,6 +1,8 @@
-{ config, lib, pkgs, ... }:
+{ config, lib, pkgs, systemPath, ... }:
 {
-	imports = [ ./../network/tor.nix ];
+	imports = [
+		(systemPath + /profiles/network/tor.nix)
+	];
 
 	environment.systemPackages = with pkgs; [
 		# utils

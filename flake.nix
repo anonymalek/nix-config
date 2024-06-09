@@ -18,6 +18,9 @@
 				specialArgs = {
 					inherit nixpkgs-stable nixpkgs-unstable musnix;
 
+					systemPath = ./system;
+					userPath = ./user;
+
 					nur-modules = import nur {
 						nurpkgs = nixpkgs.legacyPackages.x86_64-linux;
 						pkgs = nixpkgs.legacyPackages.x86_64-linux;

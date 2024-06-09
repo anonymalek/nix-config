@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, userPath, ... }:
 {
 	users.users.alek = {
 		description = "Artificio";
@@ -8,5 +8,7 @@
 		isNormalUser = true;
 	};
 	
-	home-manager.users.alek = import ./home.nix;
+	home-manager.users.alek = import ./home.nix {
+		inherit config pkgs userPath;
+	};
 }
