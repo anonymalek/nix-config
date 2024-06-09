@@ -21,19 +21,11 @@
 		
 		./desktop/hyprland/hyprland.nix
 		./desktop/plasma/plasma.nix
+
+		./user.nix
 	];
 	
 	time.timeZone = "America/Recife";
-	
-	users.users.alek = {
-		description = "Artificio";
-		
-		extraGroups = [ "networkmanager" "wheel" "libvirtd" "nordvpn" "jackaudio" ];
-		shell = "${pkgs.fish}/bin/fish";
-		isNormalUser = true;
-	};
-	
-	home-manager.users.alek = import ./home.nix;
 	
 	environment.systemPackages = with pkgs; [
 		oh-my-fish

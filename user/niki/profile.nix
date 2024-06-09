@@ -17,15 +17,9 @@
 		
 		./../../system/profiles/browsers/librewolf.nix
 		./../../system/profiles/chat/vesktop.nix
+
+		./user.nix
 	];
-
-	users.users.niki = {
-		description = "Niki";
-		isNormalUser = true;
-		extraGroups = [ "wheel" "networkmanager" "audio" "libvirtd" ];
-	};
-
-	home-manager.users.niki = import ./home.nix;
 
 	services.xserver = {
 		xkb.layout = "us,br";
