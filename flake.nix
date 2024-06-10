@@ -17,6 +17,8 @@
 				inherit system;
 				specialArgs = {
 					inherit nixpkgs-stable nixpkgs-unstable musnix;
+					pkgs-stable = nixpkgs-stable.legacyPackages.${system};
+					pkgs-unstable = nixpkgs-unstable.legacyPackages.${system};
 
 					systemPath = ./system;
 					userPath = ./user;
