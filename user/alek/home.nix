@@ -49,8 +49,6 @@ in
 			"la" = "ls -la";
 			".." = "cd ..";
 
-			"nxs" = "nix search nixpkgs";
-			
 			"nv" = "nordvpn";
 			"nvc" = "nv c";
 			"nvct" = "nv s obfuscate true; nvc";
