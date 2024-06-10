@@ -15,7 +15,7 @@ in
 	];
 
 	home.file = {
-		".config/awesome/".source = ./sources/awesome;
+		".config/awesome/".source = (userPath + /niki/sources/awesome);
 		".local/share/fonts".source = ./sources/fonts;
 	};
 
