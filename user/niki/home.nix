@@ -15,6 +15,7 @@
 		kitty
 		pass
 		gnupg
+		bottles
 	];
 
 	home.file = {
