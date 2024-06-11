@@ -5,6 +5,8 @@
 		./termina-hw.nix
 	];
 
+	tf2cfgPath = "/mnt/Game/SteamLibrary/steamapps/common/Team Fortress 2/tf/cfg/";
+
 	hostname = "termina";
 
 	boot.loader.systemd-boot.enable = true;
@@ -27,6 +29,7 @@
 		 "users" # Allows any user to mount and unmount
 		 "nofail" # Prevent system from failing if this drive doesn't mount
 		 "rw" "uid=1000"
+		 "remove_hiberfile"
 	   ];
 	};
 	
@@ -38,6 +41,7 @@
 		 "users" # Allows any user to mount and unmount
 		 "nofail" # Prevent system from failing if this drive doesn't mount
 		 "rw" "uid=1000"
+		 "remove_hiberfile"
 	   ];
 	};
 
