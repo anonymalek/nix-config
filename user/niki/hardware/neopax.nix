@@ -16,6 +16,13 @@
 		extraModprobeConfig = "options vfio-pci ids=10de:2504,10de:228e";
 	};
 
+	boot.initrd.luks.devices."hdd".device = "/dev/disk/by-uuid/b826b877-19d5-4957-b235-dab1e022b336";
+
+	fileSystems."/home/niki/playground/archive" = {
+		device = "/dev/mapper/hdd";
+		fsType = "ext4";
+	};
+
 	systemd.tmpfiles.rules = [
 		"f /dev/shm/looking-glass 0660 niki qemu-libvirtd -"
 	];
