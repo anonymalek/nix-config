@@ -22,7 +22,6 @@
 		(systemPath + /profiles/chat/vesktop.nix)
 		
 		./desktop/hyprland/hyprland.nix
-		./desktop/plasma/plasma.nix
 
 		./user.nix
 	];

@@ -1,5 +1,9 @@
 { config, pkgs, userPath, ... }:
 {
+	imports = [
+		./desktop/plasma/plasma.nix
+	];
+
 	users.users.alek = {
 		description = "Artificio";
 		
