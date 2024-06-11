@@ -6,6 +6,7 @@ in
 {
 	imports = [
 		(userPath + /shared/shared.nix)
+		./desktop/plasma/dotfiles.nix
 	];
 
 	home.stateVersion = "23.11";
