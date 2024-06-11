@@ -6,8 +6,8 @@
 			profile = "${pkgs.firejail}/etc/firejail/librewolf.profile";
 			extraArgs = [
 				"--dbus-user.talk=org.freedesktop.Notifications"
-				"--mkdir=~/.firejail_librewolf"
-				"--private=~/.firejail_librewolf"
+				"--mkdir=~/.firejail/librewolf"
+				"--private=~/.firejail/librewolf"
 				"--novideo"
 			];
 		};

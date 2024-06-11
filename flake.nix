@@ -1,55 +1,48 @@
 {
 	inputs = {
 		nixpkgs.url = "nixpkgs/nixos-unstable";
-		nixpkgs-stable.url = "nixpkgs/nixos-23.11";
+		nixpkgs-stable.url = "nixpkgs/nixos-24.05";
 		nixpkgs-unstable.url = "nixpkgs/nixos-unstable";
 		
-		nypkgs = {
-            url = "github:yunfachi/nypkgs";
-            inputs.nixpkgs.follows = "nixpkgs";
-        };
-        
         musnix  = { url = "github:musnix/musnix"; };
         
 		nur.url = "github:nix-community/NUR";
 	};
 
-	outputs = inputs@{ nixpkgs, nur, nixpkgs-stable, nixpkgs-unstable, nypkgs, musnix, ... }:
+	outputs = { nixpkgs, nixpkgs-stable, nixpkgs-unstable, nur, musnix, ... }:
 		let
 			system = "x86_64-linux";
 
 			nixosCustomSystem = { modules }: nixpkgs.lib.nixosSystem {
 				inherit system;
 				specialArgs = {
-					inherit nixpkgs-stable;
-					inherit nixpkgs-unstable;
-					inherit system;
-					inherit nypkgs;
-					inherit musnix;
-					
-					master = { ssh = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIODtyJdBnjtc6yXraTaj2Y8PZtx2EuU/gXdUsG2cd4Ng niki@pandora"; };
+					inherit nixpkgs-stable nixpkgs-unstable musnix;
+					pkgs-stable = nixpkgs-stable.legacyPackages.${system};
+					pkgs-unstable = nixpkgs-unstable.legacyPackages.${system};
+
+					systemPath = ./system;
+					userPath = ./user;
+
+					nur-modules = import nur {
+						nurpkgs = nixpkgs.legacyPackages.x86_64-linux;
+						pkgs = nixpkgs.legacyPackages.x86_64-linux;
+					};
 				};
 
-				
-
-				modules = modules ++ [ ./system/global.nix ] ++ [ inputs.musnix.nixosModules.musnix ]
-				++ (let nur-modules = import nur rec {
-					nurpkgs = nixpkgs.legacyPackages.x86_64-linux;
-					pkgs = nixpkgs.legacyPackages.x86_64-linux;
-				};
-				in [
+				modules = modules ++ [
+					./system/global.nix
+					musnix.nixosModules.musnix
 					nur.nixosModules.nur
-					nur-modules.repos.LuisChDev.modules.nordvpn
-				]);
+				];
 			};
 		in {
 		nixosConfigurations = {
 			pandora = nixosCustomSystem {
-				modules = [ ./system/pandora.nix ./system/profiles/niki.nix ];
+				modules = [ ./user/niki/hardware/pandora.nix ./user/niki/profile.nix ];
 			};
 
 			neopax = nixosCustomSystem {
-				modules = [ ./system/neopax.nix ./system/profiles/niki.nix ];
+				modules = [ ./user/niki/hardware/neopax.nix ./user/niki/profile.nix ];
 			};
 
 			termina = nixosCustomSystem {

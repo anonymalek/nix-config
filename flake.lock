@@ -36,16 +36,16 @@
     },
     "nixpkgs-stable": {
       "locked": {
-        "lastModified": 1716361217,
-        "narHash": "sha256-mzZDr00WUiUXVm1ujBVv6A0qRd8okaITyUp4ezYRgc4=",
+        "lastModified": 1717696253,
+        "narHash": "sha256-1+ua0ggXlYYPLTmMl3YeYYsBXDSCqT+Gw3u6l4gvMhA=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "46397778ef1f73414b03ed553a3368f0e7e33c2f",
+        "rev": "9b5328b7f761a7bbdc0e332ac4cf076a3eedb89b",
         "type": "github"
       },
       "original": {
         "id": "nixpkgs",
-        "ref": "nixos-23.11",
+        "ref": "nixos-24.05",
         "type": "indirect"
       }
     },
@@ -94,34 +94,13 @@
         "type": "github"
       }
     },
-    "nypkgs": {
-      "inputs": {
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1715697730,
-        "narHash": "sha256-8/bqSGNgT1jgF5Z5QZ77HNpAPRBHrkfGVmbxmaLDmBs=",
-        "owner": "yunfachi",
-        "repo": "nypkgs",
-        "rev": "45fb532e8911d64fb92a38e66d9643975d7187c6",
-        "type": "github"
-      },
-      "original": {
-        "owner": "yunfachi",
-        "repo": "nypkgs",
-        "type": "github"
-      }
-    },
     "root": {
       "inputs": {
         "musnix": "musnix",
         "nixpkgs": "nixpkgs_2",
         "nixpkgs-stable": "nixpkgs-stable",
         "nixpkgs-unstable": "nixpkgs-unstable",
-        "nur": "nur",
-        "nypkgs": "nypkgs"
+        "nur": "nur"
       }
     }
   },

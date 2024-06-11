@@ -6,8 +6,8 @@
             profile = "${pkgs.firejail}/etc/firejail/qutebrowser.profile";
             extraArgs = [
                 "--dbus-user.talk=org.freedesktop.Notifications"
-                "--mkdir=~/.firejail_qutebrowser"
-                "--private=~/.firejail_qutebrowser"
+                "--mkdir=~/.firejail/qutebrowser"
+                "--private=~/.firejail/qutebrowser"
                 "--novideo"
             ];
         };

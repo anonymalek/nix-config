@@ -1,11 +1,4 @@
 { config, pkgs, ... }:
-let
-	shbinpkgs = {
-		settdp = (pkgs.writeShellScriptBin "settdp" ''
-			ryzenadj --stapm-limit=$@000 --slow-limit=$@000 --fast-limit=$@000
-		'');
-	};
-in
 {
 	imports = [
 		./pandora-hw.nix
@@ -20,8 +13,10 @@ in
 
 	environment.systemPackages = with pkgs; [
 		ryzenadj
-		ollama
-		shbinpkgs.settdp
+
+		(writeShellScriptBin "settdp" ''
+			ryzenadj --stapm-limit=$@000 --slow-limit=$@000 --fast-limit=$@000
+		'')
 	];
 
 	services.xserver.displayManager.setupCommands = ''
@@ -46,7 +41,4 @@ in
 		rocm-opencl-icd
 		rocm-opencl-runtime
 	];
-
-	networking.firewall.allowedTCPPorts = [ 4242 ];
-	networking.firewall.allowedUDPPorts = [ 4242 ];
 }

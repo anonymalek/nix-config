@@ -1,10 +1,12 @@
-{ pkgs, ... }:
+{ pkgs, userPath, ... }:
 let
 	terminal = "kitty";
 	browser = "brave";
 in
 {
-	imports = [ ./../shared/shared.nix ];
+	imports = [
+		(userPath + /shared/shared.nix)
+	];
 
 	home.stateVersion = "23.11";
 
@@ -13,7 +15,7 @@ in
 	];
 
 	home.file = {
-		".config/awesome/".source = ./sources/awesome;
+		".config/awesome/".source = (userPath + /niki/sources/awesome);
 		".local/share/fonts".source = ./sources/fonts;
 	};
 
@@ -47,8 +49,6 @@ in
 			"la" = "ls -la";
 			".." = "cd ..";
 
-			"nxs" = "nix search nixpkgs";
-			
 			"nv" = "nordvpn";
 			"nvc" = "nv c";
 			"nvct" = "nv s obfuscate true; nvc";

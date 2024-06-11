@@ -1,39 +1,33 @@
-{ config, pkgs, ... }:
+{ config, pkgs, systemPath, ... }:
 {
 	imports = [
-		./../../system/profiles/coding/framework/godot.nix
-		./../../system/profiles/coding/editor/rider.nix
-		./../../system/profiles/coding/basic.nix
+		(systemPath + /global.nix)
+
+		(systemPath + /profiles/coding/framework/godot.nix)
+		(systemPath + /profiles/coding/editor/rider.nix)
+		(systemPath + /profiles/coding/basic.nix)
 		
-		./../../system/profiles/network/anonymous.nix
-		./../../system/profiles/network/zerotier.nix
-		./../../system/profiles/network/nordvpn.nix
+		(systemPath + /profiles/network/anonymous.nix)
+		(systemPath + /profiles/network/zerotier.nix)
+		(systemPath + /profiles/network/nordvpn.nix)
 		
-		./../../system/profiles/games/steam.nix
+		(systemPath + /profiles/games/steam.nix)
 		
-		./../../system/profiles/core/desktop-tools.nix
-		./../../system/profiles/core/desktop.nix
+		(systemPath + /profiles/core/desktop-tools.nix)
+		(systemPath + /profiles/core/desktop.nix)
+
+		(systemPath + /profiles/audio/jack-pipewire.nix)
 		
-		./../../system/profiles/audio/jack-pipewire.nix
-		
-		./../../system/profiles/chat/discord.nix
-		./../../system/profiles/chat/vesktop.nix
+		(systemPath + /profiles/chat/discord.nix)
+		(systemPath + /profiles/chat/vesktop.nix)
 		
 		./desktop/hyprland/hyprland.nix
 		./desktop/plasma/plasma.nix
+
+		./user.nix
 	];
 	
 	time.timeZone = "America/Recife";
-	
-	users.users.alek = {
-		description = "Artificio";
-		
-		extraGroups = [ "networkmanager" "wheel" "libvirtd" "nordvpn" "jackaudio" ];
-		shell = "${pkgs.fish}/bin/fish";
-		isNormalUser = true;
-	};
-	
-	home-manager.users.alek = import ./home.nix;
 	
 	environment.systemPackages = with pkgs; [
 		oh-my-fish
