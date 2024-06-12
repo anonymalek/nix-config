@@ -68,6 +68,7 @@
 			'';
 		};
 
+		programs.dconf.enable = pkgs.lib.mkDefault true;
 		programs.firejail.enable = pkgs.lib.mkDefault true;
 
 		system.stateVersion = "23.11";
