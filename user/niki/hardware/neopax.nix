@@ -21,6 +21,7 @@
 	fileSystems."/home/niki/playground/archive" = {
 		device = "/dev/mapper/hdd";
 		fsType = "ext4";
+		options = [ "nofail" ];
 	};
 
 	systemd.tmpfiles.rules = [
