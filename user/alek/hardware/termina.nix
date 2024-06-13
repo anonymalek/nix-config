@@ -5,7 +5,7 @@
 		./termina-hw.nix
 	];
 
-	tf2cfgPath = "/mnt/Game/SteamLibrary/steamapps/common/Team Fortress 2/tf/cfg/";
+	# tf2cfgPath = "/mnt/Game/SteamLibrary/steamapps/common/Team Fortress 2/tf/cfg/";
 
 	hostname = "termina";
 

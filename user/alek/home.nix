@@ -2,6 +2,8 @@
 let
 	terminal = "kitty";
 	browser = "brave";
+	visual = "rider";
+	editor = "nvim";
 in
 {
 	imports = [
@@ -21,10 +23,10 @@ in
 	};
 
 	home.sessionVariables = {
-		TERMINAL = "kitty";
-		BROWSER = "brave";
-		VISUAL = "rider";
-		EDITOR = "nvim";
+		TERMINAL = terminal;
+		BROWSER = browser;
+		VISUAL = visual;
+		EDITOR = editor;
 	};
 
 	programs.rofi = {
@@ -55,22 +57,27 @@ in
 			"nvct" = "nv s obfuscate true; nvc";
 			"nvcf" = "nv s obfuscate false; nvc";
 
+			"omf-install" = "curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish";
+
+			"cd" = "z";
+
 			"p" = "cd ~/playground";
 			"c" = "cd ~/playground/law/nix-config && ls -l";
 		};
+		shellInit = "zoxide init fish | source";
 	};
 
-	services.sxhkd = {
-		enable = true;
-		
-		keybindings = {
-			"super + m + p" = terminal + " pulsemixer";
-			"super + Return" = terminal;
-			"super + q" = browser;
-			
-			"super + shift + s" = "flameshot gui";
-		};
-	};
+#	services.sxhkd = {
+#		enable = true;
+#		
+#		keybindings = {
+#			"super + m + p" = terminal + " pulsemixer";
+#			"super + Return" = terminal;
+#			"super + q" = browser;
+#			
+#			"super + shift + s" = "flameshot gui";
+#		};
+#	};
 
 	programs.home-manager.enable = true;
 }
