@@ -19,8 +19,6 @@
 		extraModprobeConfig = "options vfio-pci ids=10de:2504,10de:228e";
 	};
 	
-	boot.supportedFilesystems = [ "ntfs" ];
-	
 	fileSystems."/mnt/Game" = {
 	   device = "/dev/disk/by-partuuid/2fcb18b3-6f0e-9b4e-b83a-8d727de44819";
 	   fsType = "ntfs-3g"; 

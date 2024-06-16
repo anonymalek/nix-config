@@ -19,7 +19,6 @@ in
 
 	home.file = {
 		".config/awesome/".source = (userPath + /niki/sources/awesome);
-		".local/share/fonts".source = ./sources/fonts;
 	};
 
 	home.sessionVariables = {
