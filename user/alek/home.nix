@@ -62,21 +62,11 @@ in
 
 			"p" = "cd ~/playground";
 			"c" = "cd ~/playground/law/nix-config && ls -l";
+
+			"nirofi" = "unir $(cat /home/alek/playground/law/nix-config/user/alek/sources/pkg-list | rofi -dmenu)";
 		};
 		shellInit = "zoxide init fish | source";
 	};
-
-#	services.sxhkd = {
-#		enable = true;
-#		
-#		keybindings = {
-#			"super + m + p" = terminal + " pulsemixer";
-#			"super + Return" = terminal;
-#			"super + q" = browser;
-#			
-#			"super + shift + s" = "flameshot gui";
-#		};
-#	};
 
 	programs.home-manager.enable = true;
 }

@@ -35,7 +35,10 @@
 		zoxide
 		brave
 		
-		jack2
 		a2jmidid
+		jack2
+		
+		gpu-screen-recorder-gtk
+		gpu-screen-recorder
 	];
 }

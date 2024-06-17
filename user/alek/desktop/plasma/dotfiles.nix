@@ -9,5 +9,5 @@ in
 	home.activation = {
 		konsaveScript = lib.hm.dag.entryAfter ["writeBoundary"]
 			''run ${konsave-apply}/bin/konsave-apply ${./alek.knsv}'';
-	};
+	};	
 }
