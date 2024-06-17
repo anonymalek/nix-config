@@ -1,3 +1,3 @@
 #!/bin/sh
 
-sudo nixos-rebuild switch --flake .#$HOSTNAME --impure $@
+sudo nixos-rebuild switch --flake .#$HOSTNAME $@
