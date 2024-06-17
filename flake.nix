@@ -3,13 +3,18 @@
 		nixpkgs.url = "nixpkgs/nixos-unstable";
 		nixpkgs-stable.url = "nixpkgs/nixos-24.05";
 		nixpkgs-unstable.url = "nixpkgs/nixos-unstable";
+
+		home-manager = {
+			url = "github:nix-community/home-manager";
+			inputs.nixpkgs.follows = "nixpkgs";
+		};
 		
         musnix  = { url = "github:musnix/musnix"; };
         
 		nur.url = "github:nix-community/NUR";
 	};
 
-	outputs = { nixpkgs, nixpkgs-stable, nixpkgs-unstable, nur, musnix, ... }:
+	outputs = { nixpkgs, nixpkgs-stable, nixpkgs-unstable, home-manager, nur, musnix, ... }:
 		let
 			system = "x86_64-linux";
 
@@ -30,6 +35,11 @@
 				};
 
 				modules = modules ++ [
+					home-manager.nixosModules.home-manager {
+						home-manager.useGlobalPkgs = false;
+						home-manager.useUserPackages = true;
+					}
+
 					./system/global.nix
 					musnix.nixosModules.musnix
 					nur.nixosModules.nur
