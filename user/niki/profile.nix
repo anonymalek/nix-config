@@ -14,7 +14,7 @@
 		
 		(systemPath + /profiles/core/desktop-tools.nix)
 		(systemPath + /profiles/core/desktop.nix)
-		(systemPath + /profiles/audio/pipewire.nix)
+		(systemPath + /profiles/audio/pulseaudio.nix)
 		
 		(systemPath + /profiles/browsers/librewolf.nix)
 		(systemPath + /profiles/chat/vesktop.nix)
