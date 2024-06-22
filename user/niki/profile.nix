@@ -22,6 +22,8 @@
 		./user.nix
 	];
 
+	time.timeZone = "America/Recife";
+
 	services.xserver = {
 		xkb.layout = "us,br";
 		xkb.options = "grp:alt_caps_toggle";
