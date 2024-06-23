@@ -27,6 +27,10 @@
 
 					systemPath = ./system;
 					userPath = ./user;
+					law = import ./system/law.nix rec {
+						pkgs = nixpkgs.legacyPackages.x86_64-linux;
+						lib = pkgs.lib;
+					};
 
 					nur-modules = import nur {
 						nurpkgs = nixpkgs.legacyPackages.x86_64-linux;

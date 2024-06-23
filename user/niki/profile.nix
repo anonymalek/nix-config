@@ -1,4 +1,4 @@
-{ config, pkgs, systemPath, ... }:
+args@{ config, pkgs, systemPath, ... }:
 {
 	imports = [
 		(systemPath + /global.nix)
@@ -10,7 +10,7 @@
 		(systemPath + /profiles/network/anonymous.nix)
 		(systemPath + /profiles/network/zerotier.nix)
 		
-		(systemPath + /profiles/games/steam.nix)
+		(import (systemPath + /profiles/games/steam.nix) args).sys
 		
 		(systemPath + /profiles/core/desktop-tools.nix)
 		(systemPath + /profiles/core/desktop.nix)
