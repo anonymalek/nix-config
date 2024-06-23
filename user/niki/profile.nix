@@ -40,6 +40,17 @@ args@{ config, pkgs, systemPath, ... }:
 		configDir = "/home/niki/playground/sync/syncthing";
 	};
 
+	programs.firejail.wrappedBinaries.heroic = {
+		executable = "${pkgs.heroic}/bin/heroic";
+		extraArgs = [
+			"--noprofile"
+			"--mkdir=~/.firejail/heroic"
+			"--private=~/.firejail/heroic"
+			"--ipc-namespace"
+			"--novideo"
+		];
+	};
+
 	# Syncthing ports: 8384 for remote access to GUI
 	# 22000 TCP and/or UDP for sync traffic
 	# 21027/UDP for discovery
