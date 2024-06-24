@@ -1,12 +1,23 @@
-{ config, pkgs, userPath, ... }:
+args@{ pkgs, userPath, systemPath, ... }:
 {
-	users.users.niki = {
+	profiles = [
+		# /network/anonymous
+		# /network/zerotier
+		# /coding/framework/godot
+		# /coding/basic
+		/games/steam
+		# /chat/vesktop
+		# /audio/jack-pipewire
+	];
+
+	username = "niki";
+
+	user = {
 		description = "Niki";
 		isNormalUser = true;
 		extraGroups = [ "wheel" "networkmanager" "audio" "libvirtd" ];
 	};
 
-	home-manager.users.niki = import ./home.nix {
-		inherit config pkgs userPath;
-	};
+	home = import ./home.nix args;
 }
+

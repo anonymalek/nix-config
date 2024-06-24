@@ -1,4 +1,4 @@
-{ config, pkgs, law, ... }:
+{ pkgs, firejailWrap, ... }:
 let
 	firejailData = let steamExtraArgs = [
 		"--mkdir=~/.firejail/steam"
@@ -16,8 +16,7 @@ let
 			extraArgs = steamExtraArgs;
 		};
 	};
-in
-rec {
+in {
 	allowedUnfree = [
 		"steam"
 		"steam-original"
@@ -26,8 +25,6 @@ rec {
 	];
 
 	sys = {
-		allowedUnfree = allowedUnfree;
-
 		environment.systemPackages = with pkgs; [
 			steamcmd
 		];
@@ -55,13 +52,13 @@ rec {
 			localNetworkGameTransfers.openFirewall = true;
 		};
 
-		programs.firejail.wrappedBinaries = (law.firejailWrapSys firejailData);
+		programs.firejail.wrappedBinaries = (firejailWrap.system firejailData);
 	};
 
 	home = {
 		home.packages = [
 			pkgs.steam
 			pkgs.steamcmd
-		] ++ (law.firejailWrapPkgs firejailData);
+		] ++ (firejailWrap.packages firejailData);
 	};
 }

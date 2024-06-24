@@ -1,7 +1,8 @@
-{ pkgs, userPath, ... }:
+args@{ pkgs, userPath, systemPath, ... }:
 
 {
 	imports = [
+		# (import (systemPath + /profiles/games/steam.nix) args).home
 		(userPath + /shared/shared.nix)
 		./x.nix
 		./mpd.nix

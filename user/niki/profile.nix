@@ -1,60 +1,46 @@
-args@{ config, pkgs, systemPath, ... }:
+args@{ pkgs, systemPath, userPath, config, ... }:
+let
+	law = import (systemPath + /law.nix) args;
+in
 {
 	imports = [
-		(systemPath + /global.nix)
-
-		(systemPath + /profiles/coding/framework/godot.nix)
-		(systemPath + /profiles/coding/framework/ctf.nix)
-		(systemPath + /profiles/coding/basic.nix)
-		
-		(systemPath + /profiles/network/anonymous.nix)
-		(systemPath + /profiles/network/zerotier.nix)
-		
-		(import (systemPath + /profiles/games/steam.nix) args).sys
-		
-		(systemPath + /profiles/core/desktop-tools.nix)
-		(systemPath + /profiles/core/desktop.nix)
-		(systemPath + /profiles/audio/pulseaudio.nix)
-		
-		(systemPath + /profiles/browsers/librewolf.nix)
-		(systemPath + /profiles/chat/vesktop.nix)
-
-		./user.nix
+		(law.makeSystemUserModule (import ./user.nix args))
 	];
 
-	time.timeZone = "America/Recife";
+	config = {
+		services.xserver = {
+			xkb.layout = "us,br";
+			xkb.options = "grp:alt_caps_toggle";
 
-	services.xserver = {
-		xkb.layout = "us,br";
-		xkb.options = "grp:alt_caps_toggle";
+			enable = true;
+			windowManager.awesome.enable = true;
+		};
 
-		windowManager.awesome.enable = true;
+		services.displayManager.sddm.enable = true;
+
+		services.syncthing = {
+			enable = true;
+			user = "niki";
+			dataDir = "/home/niki/playground/sync";
+			configDir = "/home/niki/playground/sync/syncthing";
+		};
+
+		programs.firejail.wrappedBinaries.heroic = {
+			executable = "${pkgs.heroic}/bin/heroic";
+			extraArgs = [
+				"--noprofile"
+				"--mkdir=~/.firejail/heroic"
+				"--private=~/.firejail/heroic"
+				"--ipc-namespace"
+				"--novideo"
+			];
+		};
+
+		# Syncthing ports: 8384 for remote access to GUI
+		# 22000 TCP and/or UDP for sync traffic
+		# 21027/UDP for discovery
+		# source: https://docs.syncthing.net/users/firewall.html
+		networking.firewall.allowedTCPPorts = [ 22000 ];
+		networking.firewall.allowedUDPPorts = [ 22000 21027 ];
 	};
-
-	services.displayManager.sddm.enable = true;
-
-	services.syncthing = {
-		enable = true;
-		user = "niki";
-		dataDir = "/home/niki/playground/sync";
-		configDir = "/home/niki/playground/sync/syncthing";
-	};
-
-	programs.firejail.wrappedBinaries.heroic = {
-		executable = "${pkgs.heroic}/bin/heroic";
-		extraArgs = [
-			"--noprofile"
-			"--mkdir=~/.firejail/heroic"
-			"--private=~/.firejail/heroic"
-			"--ipc-namespace"
-			"--novideo"
-		];
-	};
-
-	# Syncthing ports: 8384 for remote access to GUI
-	# 22000 TCP and/or UDP for sync traffic
-	# 21027/UDP for discovery
-	# source: https://docs.syncthing.net/users/firewall.html
-	networking.firewall.allowedTCPPorts = [ 22000 ];
-	networking.firewall.allowedUDPPorts = [ 22000 21027 ];
 }
