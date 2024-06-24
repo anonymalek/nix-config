@@ -1,4 +1,4 @@
-{ config, pkgs, systemPath, ... }:
+args@{ config, pkgs, systemPath, ... }:
 {
 	imports = [
 		(systemPath + /global.nix)
@@ -10,17 +10,19 @@
 		(systemPath + /profiles/network/anonymous.nix)
 		(systemPath + /profiles/network/zerotier.nix)
 		
-		(systemPath + /profiles/games/steam.nix)
+		(import (systemPath + /profiles/games/steam.nix) args).sys
 		
 		(systemPath + /profiles/core/desktop-tools.nix)
 		(systemPath + /profiles/core/desktop.nix)
-		(systemPath + /profiles/audio/pipewire.nix)
+		(systemPath + /profiles/audio/pulseaudio.nix)
 		
 		(systemPath + /profiles/browsers/librewolf.nix)
 		(systemPath + /profiles/chat/vesktop.nix)
 
 		./user.nix
 	];
+
+	time.timeZone = "America/Recife";
 
 	services.xserver = {
 		xkb.layout = "us,br";
@@ -36,6 +38,17 @@
 		user = "niki";
 		dataDir = "/home/niki/playground/sync";
 		configDir = "/home/niki/playground/sync/syncthing";
+	};
+
+	programs.firejail.wrappedBinaries.heroic = {
+		executable = "${pkgs.heroic}/bin/heroic";
+		extraArgs = [
+			"--noprofile"
+			"--mkdir=~/.firejail/heroic"
+			"--private=~/.firejail/heroic"
+			"--ipc-namespace"
+			"--novideo"
+		];
 	};
 
 	# Syncthing ports: 8384 for remote access to GUI

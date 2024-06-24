@@ -1,7 +1,5 @@
 { config, pkgs, ... }:
 {
-	imports = [ <home-manager/nixos> ];
-
 	options.allowedUnfree = pkgs.lib.mkOption {
 		type = pkgs.lib.types.listOf pkgs.lib.types.str;
 		default = [ ];

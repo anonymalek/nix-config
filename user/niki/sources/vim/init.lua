@@ -6,7 +6,8 @@ local Plug = vim.fn["plug#"]
 vim.call("plug#begin")
 	Plug("https://github.com/preservim/nerdtree")
 	Plug("https://github.com/neovim/nvim-lspconfig")
-	Plug("numToStr/Comment.nvim")
+	Plug("https://github.com/numToStr/Comment.nvim")
+	Plug("https://github.com/mfussenegger/nvim-dap")
 
 	Plug("https://github.com/junegunn/fzf", { ["do"] = function()
 		vim.fn["fzf#install"]()
