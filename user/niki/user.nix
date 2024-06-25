@@ -6,13 +6,11 @@ args@{ pkgs, userPath, systemPath, ... }:
 		/browsers/librewolf
 		/network/anonymous
 		/network/zerotier
-		/network/nordvpn
 		/coding/framework/godot
 		/coding/basic
 		/games/steam
 		/chat/vesktop
-		# /audio/pulseaudio
-		/audio/jack-pipewire
+		/audio/pulseaudio
 	];
 
 	username = "niki";
