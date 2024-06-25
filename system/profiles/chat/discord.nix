@@ -1,6 +1,6 @@
-{ config, pkgs, ...}:
+{ pkgs, ...}:
 {
-    environment.systemPackages = with pkgs; [
+    packages = with pkgs; [
 		discord
     ];
     

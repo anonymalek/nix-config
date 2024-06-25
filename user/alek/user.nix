@@ -1,18 +1,36 @@
 { config, pkgs, userPath, ... }:
 {
-	imports = [
-		./desktop/plasma/plasma.nix
+	profiles = [
+		/coding/framework/godot
+		/coding/editor/rider
+		/coding/basic
+		
+		/network/anonymous
+		/network/zerotier
+		/network/nordvpn
+		
+		/games/steam
+		
+		/core/desktop-tools
+		/core/desktop
+
+		/audio/jack-pipewire
+		
+		/chat/discord
+		/chat/vesktop
 	];
 
-	users.users.alek = {
+	username = "alek";
+
+	user = {
 		description = "Artificio";
 		
-		extraGroups = [ "networkmanager" "wheel" "libvirtd" "nordvpn" "jackaudio" ];
+		extraGroups = [ "networkmanager" "wheel" ];
 		shell = "${pkgs.fish}/bin/fish";
 		isNormalUser = true;
 	};
 	
-	home-manager.users.alek = import ./home.nix {
+	home = import ./home.nix {
 		inherit config pkgs userPath;
 	};
 }

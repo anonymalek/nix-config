@@ -1,13 +1,18 @@
 args@{ pkgs, userPath, systemPath, ... }:
 {
 	profiles = [
-		# /network/anonymous
-		# /network/zerotier
-		# /coding/framework/godot
-		# /coding/basic
+		/core/desktop
+		/core/desktop-tools
+		/browsers/librewolf
+		/network/anonymous
+		/network/zerotier
+		/network/nordvpn
+		/coding/framework/godot
+		/coding/basic
 		/games/steam
-		# /chat/vesktop
-		# /audio/jack-pipewire
+		/chat/vesktop
+		# /audio/pulseaudio
+		/audio/jack-pipewire
 	];
 
 	username = "niki";
@@ -15,7 +20,7 @@ args@{ pkgs, userPath, systemPath, ... }:
 	user = {
 		description = "Niki";
 		isNormalUser = true;
-		extraGroups = [ "wheel" "networkmanager" "audio" "libvirtd" ];
+		extraGroups = [ "wheel" "networkmanager" ];
 	};
 
 	home = import ./home.nix args;

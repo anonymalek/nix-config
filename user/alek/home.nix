@@ -15,6 +15,14 @@ in
 
 	home.packages = with pkgs; [
 		neovim
+		oh-my-fish
+		obs-studio
+		bottles
+		zoxide
+		brave
+		
+		jack2
+		a2jmidid
 	];
 
 	home.file = {

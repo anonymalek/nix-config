@@ -1,4 +1,6 @@
-{ config, lib, pkgs, nixpkgs-unstable, ... }:
+{ ... }:
 {
-	hardware.pulseaudio.enable = true;
+	sys = {
+		hardware.pulseaudio.enable = true;
+	};
 }

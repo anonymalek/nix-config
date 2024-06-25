@@ -1,6 +1,6 @@
-{ config, pkgs, lib, ... }:
+{ pkgs, firejailWrap, ... }:
 {
-    programs.firejail.wrappedBinaries = {
+	packages = firejailWrap.packages {
         qutebrowser = {
             executable = "${pkgs.qutebrowser}/bin/qutebrowser";
             profile = "${pkgs.firejail}/etc/firejail/qutebrowser.profile";
@@ -11,5 +11,5 @@
                 "--novideo"
             ];
         };
-    };
+	};
 }

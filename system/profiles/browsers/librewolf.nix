@@ -1,6 +1,6 @@
-{ config, pkgs, lib, ... }:
+{ pkgs, firejailWrap, ... }:
 {
-	programs.firejail.wrappedBinaries = {
+	packages = firejailWrap.packages {
 		librewolf = {
 			executable = "${pkgs.librewolf}/bin/librewolf";
 			profile = "${pkgs.firejail}/etc/firejail/librewolf.profile";

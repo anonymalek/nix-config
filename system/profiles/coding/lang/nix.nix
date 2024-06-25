@@ -1,6 +1,4 @@
-{ config, lib, pkgs, ... }:
+{ pkgs, ... }:
 {
-	environment.systemPackages = with pkgs; [
-		nixd
-	];
+	packages = [ pkgs.nixd ];
 }

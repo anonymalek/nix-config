@@ -1,8 +1,13 @@
-{ config, pkgs, systemPath, ... }:
+{ config, pkgs, lib, systemPath, ... }:
+let
+	law = import (systemPath + /law.nix) {
+		inherit pkgs lib systemPath;
+	};
+in
 {
-	imports  = [
+	imports = [
 		./neopax-hw.nix
-		(systemPath + /profiles/core/nvidia.nix)
+		(law.makeSystemModule [/core/nvidia])
 	];
 
 	hostname = "neopax";

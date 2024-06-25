@@ -1,4 +1,4 @@
-{ umport, config, lib, pkgs, ... }:
+{ ... }:
 {
 	imports = [ 
 	 	./lang/nix.nix

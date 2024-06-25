@@ -1,16 +1,14 @@
-{ config, pkgs, ... }:
+{ pkgs, firejailWrap, ... }:
 {
-	programs.firejail = {
-		wrappedBinaries = {
-			vesktop = {
-				executable = "${pkgs.vesktop}/bin/vesktop";
-				extraArgs = [
-					"--mkdir=~/.firejail/vesktop"
-					"--private=~/.firejail/vesktop"
-					"--noprofile"
-					"--novideo"
-				];
-			};
+	packages = (firejailWrap.packages {
+		vesktop = {
+			executable = "${pkgs.vesktop}/bin/vesktop";
+			extraArgs = [
+				"--mkdir=~/.firejail/vesktop"
+				"--private=~/.firejail/vesktop"
+				"--noprofile"
+				"--novideo"
+			];
 		};
-	};
+	});
 }

@@ -1,10 +1,12 @@
-{ config, lib, pkgs, ... }:
+{ lib, ... }:
 {
-    services.zerotierone = {
-		enable = true;
-	};
-
 	allowedUnfree = [ "zerotierone" ];
 
-	systemd.services.zerotierone.wantedBy = lib.mkForce [];
+	sys = {
+		services.zerotierone = {
+			enable = true;
+		};
+
+		systemd.services.zerotierone.wantedBy = lib.mkForce [];
+	};
 }

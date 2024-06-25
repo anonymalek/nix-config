@@ -1,6 +1,6 @@
-{ config, pkgs, lib, ... }:
+{ pkgs, ... }:
 {
-	environment.systemPackages = with pkgs; [
+	packages = with pkgs; [
 		libreoffice
 		surf
 		gimp
