@@ -18,7 +18,6 @@ in
 	];
 
 	home.file = {
-		".config/awesome/".source = (userPath + /niki/sources/awesome);
 	};
 
 	home.sessionVariables = {
@@ -28,16 +27,16 @@ in
 		EDITOR = editor;
 	};
 
-	programs.rofi = {
-		enable = true;
-		font = pkgs.lib.mkDefault "monospace 14";
-		terminal = "${pkgs.kitty}/bin/kitty";
-		theme = pkgs.lib.mkDefault "Arc-Dark";
-
-		plugins = with pkgs; [
-			rofi-calc
-		];
-	};
+#	programs.rofi = {
+#		enable = true;
+#		font = pkgs.lib.mkDefault "monospace 14";
+#		terminal = "${pkgs.kitty}/bin/kitty";
+#		theme = pkgs.lib.mkDefault "Arc-Dark";
+#
+#		plugins = with pkgs; [
+#			rofi-calc
+#		];
+#	};
 
 	services.unclutter = {
 		enable = true;
