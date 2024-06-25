@@ -6,44 +6,34 @@ rec {
 	];
 
 	makeSystemModule = profiles: {
-		allowedUnfree = unfreeListFromProfiles profiles;
-		imports = (lib.attrsets.mergeAttrsList [
-			(lib.lists.map (profileId: (importProfile profileId).sys) profiles)
-		]) ++ [{
-			environment.systemPackages = (
-				lib.concatLists (
-					lib.lists.map (profileId: (importProfile profileId).packages) profiles
-				)
-			);
-		}];
+		allowedUnfree = listFromProfiles (importProfilesById profiles) "allowedUnfree";
+		environment.systemPackages = listFromProfiles (importProfilesById profiles) "packages";
+
+		imports = lib.lists.forEach (importProfilesById profiles) (profile: profile.sys);
 	};
 
 	makeUserModule = user: {
-		allowedUnfree = unfreeListFromProfiles user.profiles;
+		allowedUnfree = listFromProfiles (importProfilesById user.profiles) "allowedUnfree";
+
 		users.users.${user.username} = lib.attrsets.mergeAttrsList [
 			user.user
 			{
-				extraGroups = (lib.concatLists (lib.lists.map
-					(profileId: (importProfile profileId).groups)
-					user.profiles
-				)) ++ (readUser user.user).extraGroups;
-
-				packages = (lib.concatLists (lib.lists.map
-					(profileId: (importProfile profileId).packages)
-					user.profiles
-				)) ++ (readUser user.user).packages;
+				extraGroups = (readUser user.user).extraGroups
+					++ (listFromProfiles (importProfilesById user.profiles) "groups");
+				
+				packages = (readUser user.user).packages
+					++ (listFromProfiles (importProfilesById user.profiles) "packages");
 			}
 		];
 
 		home-manager.users.${user.username} = {
-			imports = (
+			imports =
 				[user.home] ++
-				(lib.lists.map (profileId: (importProfile profileId).home) user.profiles)
-			);
+				lib.lists.forEach (importProfilesById user.profiles) (profile: profile.home);
 		};
 	};
 
-	importProfile = profileId: (lib.attrsets.mergeAttrsList [
+	importProfileNonRecursively = profilePath: (lib.attrsets.mergeAttrsList [
 		{
 			# Defaults
 			imports = [ ];
@@ -54,10 +44,32 @@ rec {
 			groups = [ ];
 		}
 
-		(import (systemPath + "/profiles" + profileId + ".nix") {
+		(import profilePath {
 			inherit pkgs lib systemPath firejailWrap;
 		})
 	]);
+
+	importProfile = (profilePath:
+		[ (importProfileNonRecursively profilePath) ]
+		++ ( lib.concatLists
+			(lib.lists.forEach (importProfileNonRecursively profilePath).imports
+				(subprofilePath: importProfile subprofilePath)
+			)
+		)
+	);
+
+	importProfileById = profileId:
+		importProfile (profileIdToPath profileId);
+
+	importProfilesById = profileIds: (lib.concatLists
+		(
+			lib.lists.forEach profileIds
+				(profileId: importProfileById profileId)
+		)
+	);
+
+	profileIdToPath = profileId:
+		(systemPath + "/profiles" + profileId + ".nix");
 
 	readUser = user: (lib.attrsets.mergeAttrsList [
 		{
@@ -67,9 +79,9 @@ rec {
 		user
 	]);
 
-	unfreeListFromProfiles = profiles: lib.concatLists (
+	listFromProfiles = profiles: valueName: lib.concatLists (
 		lib.lists.forEach profiles
-		(profileId: (importProfile profileId).allowedUnfree)
+			(profile: profile.${valueName})
 	);
 
 	firejailWrap = {
@@ -78,17 +90,16 @@ rec {
 		packages = (wrappedBinaries:
 			lib.attrsets.mapAttrsToList (name: value:
 				(lib.attrsets.mergeAttrsList [ (pkgs.writeShellScriptBin name
-				''firejail ${value.executable}
+				''firejail \
 					${if (lib.attrsets.hasAttrByPath [ "profile" ] value) then
 						"--profile=${value.profile}"
 					else ""
-					}
-
+					}\
 					${if (lib.attrsets.hasAttrByPath [ "extraArgs" ] value) then
 						(lib.concatStrings (lib.lists.forEach value.extraArgs (arg: arg + " ")))
 					else ""
-					}
-					-- $@
+					}\
+					-- ${value.executable} $@
 				'') { meta.priority = -3; } ])
 			) wrappedBinaries);
 	};
