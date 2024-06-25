@@ -7,5 +7,13 @@
 	environment.systemPackages = with pkgs; [
 		kdeconnect
 		konsave
+		awesome
+	];
+	
+	services.xserver.desktopManager.session = [
+	{
+		name = "awesome-plasma";
+		start = ''exec ${./plasma-awesome.sh}'';
+	}
 	];
 }

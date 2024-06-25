@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=XSession
+Exec=/conf/user/alek/desktop/plasma/plasma-awesome.sh
+DesktopNames=KDE
+Name=Plasma (AwesomeWM)
+Comment=KDE Plasma with AwesomeWM as the WM
