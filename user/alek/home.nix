@@ -63,6 +63,8 @@ in
 			"c" = "cd ~/playground/law/nix-config && ls -l";
 
 			"nirofi" = "unir $(cat /home/alek/playground/law/nix-config/user/alek/sources/pkg-list | rofi -dmenu)";
+			
+			"godotc-env" = "nix-shell -p libGL vulkan-loader xorg.libX11 xorg.libXcursor xorg.libXext xorg.libXi xorg.libXrandr pkg-config pkgsCross.mingwW64.buildPackages.gcc";
 		};
 		shellInit = "zoxide init fish | source";
 	};
