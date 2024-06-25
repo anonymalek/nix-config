@@ -7,9 +7,15 @@ rec {
 
 	makeSystemModule = profiles: {
 		allowedUnfree = unfreeListFromProfiles profiles;
-		imports = lib.attrsets.mergeAttrsList [
+		imports = (lib.attrsets.mergeAttrsList [
 			(lib.lists.map (profileId: (importProfile profileId).sys) profiles)
-		];
+		]) ++ [{
+			environment.systemPackages = (
+				lib.concatLists (
+					lib.lists.map (profileId: (importProfile profileId).packages) profiles
+				)
+			);
+		}];
 	};
 
 	makeUserModule = user: {
@@ -20,7 +26,12 @@ rec {
 				extraGroups = (lib.concatLists (lib.lists.map
 					(profileId: (importProfile profileId).groups)
 					user.profiles
-				)) ++ user.user.extraGroups;
+				)) ++ (readUser user.user).extraGroups;
+
+				packages = (lib.concatLists (lib.lists.map
+					(profileId: (importProfile profileId).packages)
+					user.profiles
+				)) ++ (readUser user.user).packages;
 			}
 		];
 
@@ -35,15 +46,25 @@ rec {
 	importProfile = profileId: (lib.attrsets.mergeAttrsList [
 		{
 			# Defaults
-			allowedUnfree = [ ];
-			groups = [ ];
+			imports = [ ];
 			sys = { };
 			home = { };
+			packages = [ ];
+			allowedUnfree = [ ];
+			groups = [ ];
 		}
 
 		(import (systemPath + "/profiles" + profileId + ".nix") {
 			inherit pkgs lib systemPath firejailWrap;
 		})
+	]);
+
+	readUser = user: (lib.attrsets.mergeAttrsList [
+		{
+			packages = [ ];
+		}
+
+		user
 	]);
 
 	unfreeListFromProfiles = profiles: lib.concatLists (
@@ -58,8 +79,15 @@ rec {
 			lib.attrsets.mapAttrsToList (name: value:
 				(lib.attrsets.mergeAttrsList [ (pkgs.writeShellScriptBin name
 				''firejail ${value.executable}
-					--profile=${value.profile}
-					${lib.concatStrings (lib.lists.forEach value.extraArgs (arg: " ${arg} "))}
+					${if (lib.attrsets.hasAttrByPath [ "profile" ] value) then
+						"--profile=${value.profile}"
+					else ""
+					}
+
+					${if (lib.attrsets.hasAttrByPath [ "extraArgs" ] value) then
+						(lib.concatStrings (lib.lists.forEach value.extraArgs (arg: arg + " ")))
+					else ""
+					}
 					-- $@
 				'') { meta.priority = -3; } ])
 			) wrappedBinaries);

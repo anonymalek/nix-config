@@ -1,6 +1,8 @@
 { pkgs, firejailWrap, ... }:
-let
-	firejailData = let steamExtraArgs = [
+{
+	packages = with pkgs; [
+		steamcmd
+	] ++ (firejailWrap.packages (let steamExtraArgs = [
 		"--mkdir=~/.firejail/steam"
 		"--private=~/.firejail/steam"
 		"--novideo"
@@ -15,8 +17,9 @@ let
 			profile = "${pkgs.firejail}/etc/firejail/steam.profile";
 			extraArgs = steamExtraArgs;
 		};
-	};
-in {
+	}));
+
+
 	allowedUnfree = [
 		"steam"
 		"steam-original"
@@ -25,11 +28,7 @@ in {
 	];
 
 	sys = {
-		environment.systemPackages = with pkgs; [
-			steamcmd
-		];
-
-		# # Required for Steam
+		# Required for Steam
 		hardware.opengl.driSupport32Bit = true;
 		hardware.pulseaudio.support32Bit = true;
 
@@ -51,14 +50,7 @@ in {
 			dedicatedServer.openFirewall = true;
 			localNetworkGameTransfers.openFirewall = true;
 		};
-
-		programs.firejail.wrappedBinaries = (firejailWrap.system firejailData);
-	};
-
-	home = {
-		home.packages = [
-			pkgs.steam
-			pkgs.steamcmd
-		] ++ (firejailWrap.packages firejailData);
+		#
+		# programs.firejail.wrappedBinaries = (firejailWrap.system firejailData);
 	};
 }
