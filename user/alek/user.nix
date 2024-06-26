@@ -10,6 +10,7 @@
 		/network/nordvpn
 		
 		/games/steam
+		/game/alvr
 		
 		/core/desktop-tools
 		/core/desktop
