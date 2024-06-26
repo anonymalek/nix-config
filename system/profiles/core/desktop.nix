@@ -1,4 +1,4 @@
-{ config, lib, pkgs, nixpkgs-unstable, ... }:
+{ pkgs, ... }:
 let
 	srcpkgs = {
 		slock = (pkgs.callPackage ./sources/slock/derivation.nix {});
@@ -6,7 +6,7 @@ let
 	};
 in
 {
-	environment.systemPackages = with pkgs; [
+	packages = with pkgs; [
 		srcpkgs.slock
 		srcpkgs.dmenu
 		xwallpaper
@@ -17,29 +17,31 @@ in
 		xpra
 	];
 
-	fonts.packages = with pkgs; [
-		nerdfonts
-		jetbrains-mono
-		noto-fonts
-		dejavu_fonts 
-		terminus_font_ttf
-	];
+	sys = {
+		fonts.packages = with pkgs; [
+			nerdfonts
+			jetbrains-mono
+			noto-fonts
+			dejavu_fonts 
+			terminus_font_ttf
+		];
 
-	security.wrappers.slock = {
-		setuid = true;
-		owner = "root";
-		group = "root";
-		source = "${srcpkgs.slock.out}/bin/slock";
-	};
+		security.wrappers.slock = {
+			setuid = true;
+			owner = "root";
+			group = "root";
+			source = "${srcpkgs.slock.out}/bin/slock";
+		};
 
-	services.xserver =
-	{
-		enable = true;
-#		extraConfig = ''
-#			Section "ServerFlags"
-#				Option "DontVTSwitch" "True"
-#				Option "DontZap"      "True"
-#			EndSection
-#		'';
+		services.xserver =
+		{
+			enable = true;
+			# extraConfig = ''
+			# 	Section "ServerFlags"
+			# 		Option "DontVTSwitch" "True"
+			# 		Option "DontZap"      "True"
+			# 	EndSection
+			# '';
+		};
 	};
 }

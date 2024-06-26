@@ -1,6 +1,6 @@
-{ config, lib, pkgs, ... }:
+{ pkgs, ... }:
 {
-	environment.systemPackages = with pkgs; [
+	packages = with pkgs; [
         (retroarch.override {
 			cores = with libretro; [
 				ppsspp

@@ -1,10 +1,10 @@
-{ config, lib, pkgs, systemPath, ... }:
+{ pkgs, systemPath, ... }:
 {
 	imports = [
 		(systemPath + /profiles/network/tor.nix)
 	];
 
-	environment.systemPackages = with pkgs; [
+	packages = with pkgs; [
 		# utils
 		util-linux
 		busybox

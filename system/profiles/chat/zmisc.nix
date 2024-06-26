@@ -1,14 +1,14 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 {
-	environment.systemPackages = with pkgs; [
-    		element-desktop
-    		gomuks
-    
-    		weechat
-    		irssi
-    
-    		profanity
-    
-    		mumble
-    	];	
+	packages = with pkgs; [
+		element-desktop
+		gomuks
+
+		weechat
+		irssi
+
+		profanity
+
+		mumble
+	];	
 }

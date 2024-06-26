@@ -1,6 +1,8 @@
-{ config, pkgs, law, ... }:
-let
-	firejailData = let steamExtraArgs = [
+{ pkgs, firejailWrap, ... }:
+{
+	packages = with pkgs; [
+		steamcmd
+	] ++ (firejailWrap.packages (let steamExtraArgs = [
 		"--mkdir=~/.firejail/steam"
 		"--private=~/.firejail/steam"
 		"--novideo"
@@ -15,9 +17,9 @@ let
 			profile = "${pkgs.firejail}/etc/firejail/steam.profile";
 			extraArgs = steamExtraArgs;
 		};
-	};
-in
-rec {
+	}));
+
+
 	allowedUnfree = [
 		"steam"
 		"steam-original"
@@ -26,27 +28,21 @@ rec {
 	];
 
 	sys = {
-		allowedUnfree = allowedUnfree;
-
-		environment.systemPackages = with pkgs; [
-			steamcmd
-		];
-
-		# # Required for Steam
-		hardware.opengl.driSupport32Bit = true;
+		# Required for Steam
+		hardware.graphics.enable32Bit = true;
 		hardware.pulseaudio.support32Bit = true;
 
 		# https://github.com/ValveSoftware/Source-1-Games/issues/5043#issuecomment-1822019817
 		# Launch options: LD_PRELOAD="/usr/lib32/libtcmalloc_minimal.so:$LD_PRELOAD" %command%
-		nixpkgs.overlays = [
-			(final: prev: {
-				steam = prev.steam.override ({ extraLibraries ? pkgs': [], ... }: {
-					extraLibraries = pkgs': (extraLibraries pkgs') ++ ( [
-						pkgs'.gperftools
-					]);
-				});
-			})
-		];
+		# nixpkgs.overlays = [
+		# 	(final: prev: {
+		# 		steam = prev.steam.override ({ extraLibraries ? pkgs': [], ... }: {
+		# 			extraLibraries = pkgs': (extraLibraries pkgs') ++ ( [
+		# 				pkgs'.gperftools
+		# 			]);
+		# 		});
+		# 	})
+		# ];
 		
 		programs.steam = {
 			enable = true;
@@ -54,14 +50,5 @@ rec {
 			dedicatedServer.openFirewall = true;
 			localNetworkGameTransfers.openFirewall = true;
 		};
-
-		programs.firejail.wrappedBinaries = (law.firejailWrapSys firejailData);
-	};
-
-	home = {
-		home.packages = [
-			pkgs.steam
-			pkgs.steamcmd
-		] ++ (law.firejailWrapPkgs firejailData);
 	};
 }

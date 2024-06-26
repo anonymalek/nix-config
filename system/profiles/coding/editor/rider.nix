@@ -1,8 +1,8 @@
-{ config, pkgs, ...}:
+{ pkgs, ... }:
 {
-    environment.systemPackages = with pkgs; [
-		jetbrains-toolbox
+    packages = with pkgs; [
 		jetbrains.rider
+		jetbrains-toolbox
     ];
     
     allowedUnfree = [
@@ -10,3 +10,4 @@
         "rider"
     ];
 }
+

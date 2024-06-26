@@ -1,8 +1,13 @@
 { config, pkgs, systemPath, ... }:
+let
+	law = import (systemPath + /law.nix) {
+		inherit pkgs lib systemPath;
+	};
+in
 {
 	imports  = [
-		(systemPath + /profiles/core/nvidia.nix)
 		./termina-hw.nix
+		(law.makeSystemModule [/core/nvidia])
 	];
 
 	# tf2cfgPath = "/mnt/Game/SteamLibrary/steamapps/common/Team Fortress 2/tf/cfg/";

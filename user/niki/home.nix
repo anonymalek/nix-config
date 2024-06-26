@@ -1,28 +1,27 @@
-{ pkgs, userPath, ... }:
-
+args@{ pkgs, userPath, ... }:
 {
 	imports = [
 		(userPath + /shared/shared.nix)
-		./x.nix
-		./mpd.nix
-		./tmux.nix
-		./vim.nix
+
+		./config/x.nix
+		./config/mpd.nix
+		./config/tmux.nix
+		./config/vim.nix
+		./config/kitty.nix
 	];
 
 	home.stateVersion = "23.11";
 
 	home.packages = with pkgs; [
-		kitty
 		pass
 		gnupg
 		bottles
 	];
 
 	home.file = {
-		".config/kitty".source = ./sources/kitty;
-		".local/share/fonts".source = ./sources/fonts;
-		".config/libvirt".source = ./sources/libvirt;
-		".firejail/qutebrowser/.config/qutebrowser/config.py".source = ./sources/qutebrowser/config.py;
+		".local/share/fonts".source = ./config/sources/fonts;
+		".config/libvirt".source = ./config/sources/libvirt;
+		".firejail/qutebrowser/.config/qutebrowser/config.py".source = ./config/sources/qutebrowser/config.py;
 	};
 
 	home.sessionVariables = {

@@ -1,6 +1,6 @@
-{ config, lib, pkgs, ... }:
+{ pkgs, ... }:
 {
-	environment.systemPackages = with pkgs; [
+	packages = with pkgs; [
 		rustc cargo
 		rust-analyzer
 	];

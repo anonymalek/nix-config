@@ -1,33 +1,17 @@
-args@{ config, pkgs, systemPath, ... }:
+args@{ pkgs, systemPath, userPath, ... }:
+let
+	law = import (systemPath + /law.nix) args;
+in
 {
 	imports = [
-		(systemPath + /global.nix)
-
-		(systemPath + /profiles/coding/framework/godot.nix)
-		(systemPath + /profiles/coding/framework/ctf.nix)
-		(systemPath + /profiles/coding/basic.nix)
-		
-		(systemPath + /profiles/network/anonymous.nix)
-		(systemPath + /profiles/network/zerotier.nix)
-		
-		(import (systemPath + /profiles/games/steam.nix) args).sys
-		
-		(systemPath + /profiles/core/desktop-tools.nix)
-		(systemPath + /profiles/core/desktop.nix)
-		(systemPath + /profiles/audio/pulseaudio.nix)
-		
-		(systemPath + /profiles/browsers/librewolf.nix)
-		(systemPath + /profiles/chat/vesktop.nix)
-
-		./user.nix
+		(law.makeSystemUserModule (import ./user.nix args))
 	];
-
-	time.timeZone = "America/Recife";
 
 	services.xserver = {
 		xkb.layout = "us,br";
 		xkb.options = "grp:alt_caps_toggle";
 
+		enable = true;
 		windowManager.awesome.enable = true;
 	};
 
@@ -57,4 +41,6 @@ args@{ config, pkgs, systemPath, ... }:
 	# source: https://docs.syncthing.net/users/firewall.html
 	networking.firewall.allowedTCPPorts = [ 22000 ];
 	networking.firewall.allowedUDPPorts = [ 22000 21027 ];
+
+	home-manager.backupFileExtension = "backup";
 }

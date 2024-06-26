@@ -20,17 +20,13 @@
 
 			nixosCustomSystem = { modules }: nixpkgs.lib.nixosSystem {
 				inherit system;
-				specialArgs = {
+				specialArgs = rec {
 					inherit nixpkgs-stable nixpkgs-unstable musnix;
 					pkgs-stable = nixpkgs-stable.legacyPackages.${system};
 					pkgs-unstable = nixpkgs-unstable.legacyPackages.${system};
 
 					systemPath = ./system;
 					userPath = ./user;
-					law = import ./system/law.nix rec {
-						pkgs = nixpkgs.legacyPackages.x86_64-linux;
-						lib = pkgs.lib;
-					};
 
 					nur-modules = import nur {
 						nurpkgs = nixpkgs.legacyPackages.x86_64-linux;
@@ -41,7 +37,7 @@
 				modules = modules ++ [
 					home-manager.nixosModules.home-manager {
 						home-manager.useGlobalPkgs = false;
-						home-manager.useUserPackages = true;
+						home-manager.useUserPackages = false;
 					}
 
 					./system/global.nix
