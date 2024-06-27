@@ -1,4 +1,4 @@
-{ config, pkgs, systemPath, ... }:
+{ config, lib, pkgs, systemPath, ... }:
 let
 	law = import (systemPath + /law.nix) {
 		inherit pkgs lib systemPath;
