@@ -3,6 +3,7 @@
 	profiles = [
 		/coding/framework/godot
 		/coding/editor/rider
+		/coding/editor/vscode
 		/coding/basic
 		
 		/network/anonymous
