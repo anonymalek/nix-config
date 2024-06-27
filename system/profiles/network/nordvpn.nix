@@ -19,4 +19,6 @@
 			allowedUDPPorts = [ 1194 ];
 		};
 	};
+	
+	groups = [ "nordvpn" ];
 }
