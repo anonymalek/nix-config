@@ -4,8 +4,8 @@
 		enable = true;
 
 		font = {
-			name = "Terminus (TTF)";
-			size = 14;
+			name = "monospace";
+			size = 12;
 		};
 
 		settings = {

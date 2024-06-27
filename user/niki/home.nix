@@ -1,7 +1,9 @@
-args@{ pkgs, userPath, ... }:
+args@{ pkgs, nixvim, userPath, ... }:
 {
 	imports = [
 		(userPath + /shared/shared.nix)
+
+		nixvim.homeManagerModules.nixvim
 
 		./config/x.nix
 		./config/mpd.nix

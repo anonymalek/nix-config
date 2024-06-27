@@ -10,18 +10,23 @@
 		};
 		
         musnix  = { url = "github:musnix/musnix"; };
+
+		nixvim = {
+			url = "github:nix-community/nixvim";
+			inputs.nixpkgs.follows = "nixpkgs";
+		};
         
 		nur.url = "github:nix-community/NUR";
 	};
 
-	outputs = { nixpkgs, nixpkgs-stable, nixpkgs-unstable, home-manager, nur, musnix, ... }:
+	outputs = { nixpkgs, nixpkgs-stable, nixpkgs-unstable, home-manager, nur, musnix, nixvim, ... }:
 		let
 			system = "x86_64-linux";
 
 			nixosCustomSystem = { modules }: nixpkgs.lib.nixosSystem {
 				inherit system;
 				specialArgs = rec {
-					inherit nixpkgs-stable nixpkgs-unstable musnix;
+					inherit nixpkgs-stable nixpkgs-unstable musnix nixvim;
 					pkgs-stable = nixpkgs-stable.legacyPackages.${system};
 					pkgs-unstable = nixpkgs-unstable.legacyPackages.${system};
 
