@@ -31,7 +31,14 @@
 		globals.mapleader = " ";
 
 		plugins = {
-			fzf-lua.enable = true;
+			fugitive.enable = true;
+
+			neo-tree.enable = true;
+
+			fzf-lua = {
+				enable = true;
+				iconsEnabled = true;
+			};
 
 			treesitter.enable = true;
 			treesitter-context.enable = true;
@@ -66,20 +73,22 @@
 					bashls.enable = true;
 					rust-analyzer = {
 						enable = true;
-						installCargo = true;
-						installRustc = true;
+						installCargo = false;
+						installRustc = false;
 					};
 				};
 			};
 		};
 
 		keymaps = [
-			# General
-			{ action = "<cmd>redo<CR>";
-			  key = "U";
+			# { action = "<cmd>redo<CR>";
+			#   key = "U";
+			#   mode = [ "n" "v" ]; }
+			
+			{ action = "<cmd>Neotree toggle<CR>";
+			  key = "<Leader>a";
 			  mode = [ "n" "v" ]; }
 
-			# Fzf
 			{ action = "<cmd>FzfLua live_grep<CR>";
 			  key = "<Leader>G";
 			  mode = [ "n" "v" ]; }
@@ -97,6 +106,10 @@
 			  mode = [ "n" "v" ]; }
 
 			{ action = "<cmd>FzfLua git_status<CR>";
+			  key = "<Leader>J";
+			  mode = [ "n" "v" ]; }
+
+			{ action = "<cmd>Neotree git_status<CR>";
 			  key = "<Leader>j";
 			  mode = [ "n" "v" ]; }
 
@@ -105,7 +118,7 @@
 			  mode = [ "n" "v" ]; }
 
 			{ action = "<cmd>FzfLua colorschemes<CR>";
-			  key = "<Leader>c";
+			  key = "<Leader>z";
 			  mode = [ "n" "v" ]; }
 
 			# LSP
@@ -117,7 +130,8 @@
 			  key = "<Leader>S";
 			  mode = [ "n" "v" ]; }
 
-			{ action = "<cmd>FzfLua diagnostics_document<CR>";
+			# { action = "<cmd>FzfLua diagnostics_document<CR>";
+			{ action = "<cmd>lua vim.diagnostic.setloclist()<CR>";
 			  key = "<Leader>w";
 			  mode = [ "n" "v" ]; }
 
@@ -125,21 +139,35 @@
 			  key = "<Leader>W";
 			  mode = [ "n" "v" ]; }
 
-			{ action = "<cmd>FzfLua lsp_code_actions<CR>";
-			  key = "<Leader>a";
+			# { action = "<cmd>FzfLua lsp_code_actions<CR>";
+			{ action = "<cmd>lua vim.lsp.buf.code_action()<CR>";
+			  key = "<Leader>c";
 			  mode = [ "n" "v" ]; }
 
-			{ action = "<cmd>FzfLua lsp_definitions<CR>";
+			{ action = "<cmd>lua vim.lsp.buf.definition()<CR>";
 			  key = "gd";
 			  mode = [ "n" ]; }
 
-			{ action = "<cmd>FzfLua lsp_declarations<CR>";
+			{ action = "<cmd>lua vim.lsp.buf.declaration()<CR>";
 			  key = "gD";
 			  mode = [ "n" ]; }
 
-			{ action = "<cmd>FzfLua lsp_references<CR>";
+			# { action = "<cmd>FzfLua lsp_references<CR>";
+			{ action = "<cmd>lua vim.lsp.buf.references()<CR>";
 			  key = "gr";
 			  mode = [ "n" ]; }
+			
+			{ action = "<cmd>lua vim.lsp.buf.implementation()<CR>";
+			  key = "gi";
+			  mode = [ "n" ]; }
+
+			{ action = "<cmd>lua vim.diagonostic.goto_prev()<CR>";
+			  key = "[d";
+			  mode = [ "n" "v" ]; }
+
+			{ action = "<cmd>lua vim.diagonostic.goto_next()<CR>";
+			  key = "]d";
+			  mode = [ "n" "v" ]; }
 		];
 	};
 }
