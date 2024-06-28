@@ -35,6 +35,22 @@
 
 		globals.mapleader = " ";
 
+		autoCmd = [
+			{
+				command = "set ai noet ts=4 sw=4";
+
+				event = [
+					"BufEnter"
+					"BufWinEnter"
+				];
+
+				pattern = [
+					"*"
+				];
+			}
+		];
+
+
 		plugins = {
 			nix.enable = true;
 			nix-develop.enable = true;
