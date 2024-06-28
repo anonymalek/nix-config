@@ -1,9 +1,9 @@
 { config, pkgs, userPath, ... }:
 {
 	profiles = [
-		/coding/framework/godot
 		/coding/editor/rider
 		/coding/editor/vscode
+		/coding/godot/
 		/coding/basic
 		
 		/network/anonymous
