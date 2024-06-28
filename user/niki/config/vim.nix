@@ -36,8 +36,8 @@
 		globals.mapleader = " ";
 
 		plugins = {
+			tmux-navigator.enable = true;
 			fugitive.enable = true;
-
 			neo-tree.enable = true;
 
 			fzf-lua = {
