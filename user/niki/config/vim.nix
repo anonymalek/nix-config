@@ -14,7 +14,12 @@
 			};
 		};
 
-		colorschemes.gruvbox.enable = true;
+		colorschemes = {
+			catppuccin.enable = true;
+			gruvbox.enable = true;
+		};
+
+		colorscheme = "gruvbox";
 
 		opts = {
 			number = true;
