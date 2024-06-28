@@ -36,6 +36,9 @@
 		globals.mapleader = " ";
 
 		plugins = {
+			nix.enable = true;
+			nix-develop.enable = true;
+
 			tmux-navigator.enable = true;
 			fugitive.enable = true;
 			neo-tree.enable = true;
