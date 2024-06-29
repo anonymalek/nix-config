@@ -52,6 +52,7 @@
 
 
 		plugins = {
+			gitsigns.enable = true;
 			nix.enable = true;
 			nix-develop.enable = true;
 
@@ -133,7 +134,7 @@
 			  key = "<Leader>J";
 			  mode = [ "n" "v" ]; }
 
-			{ action = "<cmd>Neotree git_status<CR>";
+			{ action = "<cmd>Gitsigns setloclist<CR>";
 			  key = "<Leader>j";
 			  mode = [ "n" "v" ]; }
 
