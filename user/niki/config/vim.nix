@@ -50,7 +50,6 @@
 			}
 		];
 
-
 		plugins = {
 			gitsigns.enable = true;
 			nix.enable = true;
@@ -103,13 +102,12 @@
 					};
 				};
 			};
+
+			lsp-lines.enable = true;
+			lsp-format.enable = true;
 		};
 
 		keymaps = [
-			# { action = "<cmd>redo<CR>";
-			#   key = "U";
-			#   mode = [ "n" "v" ]; }
-			
 			{ action = "<cmd>Neotree toggle<CR>";
 			  key = "<Leader>a";
 			  mode = [ "n" "v" ]; }
@@ -146,7 +144,6 @@
 			  key = "<Leader>z";
 			  mode = [ "n" "v" ]; }
 
-			# LSP
 			{ action = "<cmd>FzfLua lsp_document_symbols<CR>";
 			  key = "<Leader>s";
 			  mode = [ "n" "v" ]; }
@@ -155,7 +152,6 @@
 			  key = "<Leader>S";
 			  mode = [ "n" "v" ]; }
 
-			# { action = "<cmd>FzfLua diagnostics_document<CR>";
 			{ action = "<cmd>lua vim.diagnostic.setloclist()<CR>";
 			  key = "<Leader>w";
 			  mode = [ "n" "v" ]; }
@@ -164,7 +160,6 @@
 			  key = "<Leader>W";
 			  mode = [ "n" "v" ]; }
 
-			# { action = "<cmd>FzfLua lsp_code_actions<CR>";
 			{ action = "<cmd>lua vim.lsp.buf.code_action()<CR>";
 			  key = "<Leader>c";
 			  mode = [ "n" "v" ]; }
@@ -177,7 +172,6 @@
 			  key = "gD";
 			  mode = [ "n" ]; }
 
-			# { action = "<cmd>FzfLua lsp_references<CR>";
 			{ action = "<cmd>lua vim.lsp.buf.references()<CR>";
 			  key = "gr";
 			  mode = [ "n" ]; }
@@ -186,11 +180,11 @@
 			  key = "gi";
 			  mode = [ "n" ]; }
 
-			{ action = "<cmd>lua vim.diagonostic.goto_prev()<CR>";
+			{ action = "<cmd>lua vim.diagnostic.goto_prev()<CR>";
 			  key = "[d";
 			  mode = [ "n" "v" ]; }
 
-			{ action = "<cmd>lua vim.diagonostic.goto_next()<CR>";
+			{ action = "<cmd>lua vim.diagnostic.goto_next()<CR>";
 			  key = "]d";
 			  mode = [ "n" "v" ]; }
 		];
