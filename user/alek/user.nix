@@ -3,7 +3,7 @@
 	profiles = [
 		/coding/editor/rider
 		/coding/editor/vscode
-		/coding/godot/
+		/coding/godot/default
 		/coding/basic
 		
 		/network/anonymous
@@ -31,7 +31,7 @@
 		shell = "${pkgs.fish}/bin/fish";
 		isNormalUser = true;
 	};
-	
+
 	home = import ./home.nix {
 		inherit config pkgs userPath;
 	};

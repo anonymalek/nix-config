@@ -2,6 +2,10 @@
 
 let
 	commonDependencies = with pkgs; [
+		libGL
+		vulkan-loader
+		xorg.libXext
+
 		scons
 		pkg-config
 		xorg.libX11
@@ -20,22 +24,22 @@ let
 	];
 
 	windowsDependencies = with pkgs; [
-		mingwW64
+		pkgsCross.mingwW64.buildPackages.gcc
 		wine
 		(pkgs.fetchFromGitHub {
 			owner = "lhmouse";
 			repo = "mcfgthread";
 			rev = "v1.8-ga.2";
-			# sha256 = "0z5l0a3p3x5fh7f1hxvznhnp0hwykkl9bh5wkw8h5wkgm3qaz1zn"; # Update this with the actual hash
+			sha256 = "sha256-VxgdIHo5RgW5skiWDixoK7CjF8ALNLGM9gVbch6jFBk=";
 		})
 	];
 
 	macosDependencies = with pkgs; [
-		darwin.apple_sdk.frameworks.CoreAudio
-		darwin.apple_sdk.frameworks.CoreGraphics
-		darwin.apple_sdk.frameworks.CoreServices
-		darwin.apple_sdk.frameworks.Foundation
-		darwin.apple_sdk.frameworks.IOKit
+		# darwin.apple_sdk.frameworks.CoreAudio
+		# darwin.apple_sdk.frameworks.CoreGraphics
+		# darwin.apple_sdk.frameworks.CoreServices
+		# darwin.apple_sdk.frameworks.Foundation
+		# darwin.apple_sdk.frameworks.IOKit
 	];
 
 in

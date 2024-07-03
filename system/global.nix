@@ -38,6 +38,11 @@
 
 		environment = {
 			systemPackages = with pkgs; [
+				(writeShellScriptBin "unir" ''NIXPKGS_ALLOW_UNFREE=1 nir $@'')
+				(writeShellScriptBin "nir" ''nix run nixpkgs#$1 -- ''${@:2}'')
+				(writeShellScriptBin "nxs" ''nix search nixpkgs $@'')
+				(writeShellScriptBin "nrb" ''/conf/rebuild.sh'')
+
 				vim
 				emacs
 				nano
@@ -59,11 +64,10 @@
 				gnupg
 				pinentry-gtk2
 			];
-			
-			interactiveShellInit = ''
-				export HOSTNAME="${config.hostname}"
-				export PS1="\[\e[34m\]\u\[\e[m\]@${config.hostname}:\[\e[36m\]\W\[\e[m\] $ "
-			'';
+
+			variables = {
+				HOSTNAME = "${config.hostname}";
+			};
 		};
 
 		programs.dconf.enable = pkgs.lib.mkDefault true;

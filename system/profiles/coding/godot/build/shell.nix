@@ -6,7 +6,7 @@ let
 in
 
 pkgs.mkShell {
-	buildInputs = with pkgs; allDependencies;
+	buildInputs = allDependencies;
 
 	shellHook = ''
 		echo "Welcome to the Godot development shell"
