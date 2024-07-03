@@ -12,6 +12,7 @@ in
 		keybindings = {
 			"super + d" = "${browser_new_window} https://discord.com/app";
 			"super + q" = "${browser}";
+			"super + ctrl + q" = "qutebrowser";
 
 			"super + a" = terminal + " pulsemixer";
 			"super + Return" = "${terminal}";

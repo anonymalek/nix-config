@@ -24,6 +24,7 @@ args@{ pkgs, nixvim, userPath, ... }:
 		".local/share/fonts".source = ./config/sources/fonts;
 		".config/libvirt".source = ./config/sources/libvirt;
 		".firejail/qutebrowser/.config/qutebrowser/config.py".source = ./config/sources/qutebrowser/config.py;
+		".config/qutebrowser/config.py".source = ./config/sources/qutebrowser/config.py;
 	};
 
 	home.sessionVariables = {

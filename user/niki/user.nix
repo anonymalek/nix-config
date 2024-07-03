@@ -4,6 +4,7 @@ args@{ pkgs, userPath, systemPath, ... }:
 		/core/desktop
 		/core/desktop-tools
 		/browsers/librewolf
+		/browsers/qute
 		/network/anonymous
 		/network/zerotier
 		/coding/godot/default
