@@ -6,7 +6,7 @@ args@{ pkgs, userPath, systemPath, ... }:
 		/browsers/librewolf
 		/network/anonymous
 		/network/zerotier
-		/coding/framework/godot
+		/coding/godot/default
 		/coding/basic
 		/games/steam
 		/chat/vesktop
