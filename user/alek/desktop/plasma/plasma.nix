@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 {
 	services.desktopManager.plasma6.enable = true;
 	services.displayManager.sddm.enable = true;
@@ -13,7 +13,7 @@
 	services.xserver.desktopManager.session = [
 	{
 		name = "awesome-plasma";
-		start = ''exec ${./plasma-awesome.sh}'';
+		start = ''exec (awesome && plasmashell)'';
 	}
 	];
 }
