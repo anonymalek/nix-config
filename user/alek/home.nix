@@ -14,6 +14,8 @@ in
 	home.stateVersion = "23.11";
 
 	home.packages = with pkgs; [
+		atlauncher
+
 		neovim
 		oh-my-fish
 		obs-studio
