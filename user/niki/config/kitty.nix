@@ -18,5 +18,7 @@
 		keybindings = {
 			"kitty_mod+t" = "launch --type=tab --cwd=current";
 		};
+
+		shellIntegration.mode = "disabled";
 	};
 }
