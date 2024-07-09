@@ -1,4 +1,4 @@
-args@{ pkgs, lib, userPath, systemPath, ... }:
+args@{ pkgs, lib, nixvim, userPath, systemPath, ... }:
 {
 	profiles = [
 		/core/desktop
@@ -24,7 +24,7 @@ args@{ pkgs, lib, userPath, systemPath, ... }:
 	};
 
 	home = import ./home.nix {
-		inherit pkgs lib userPath systemPath;
+		inherit pkgs lib nixvim userPath systemPath;
 	};
 }
 
