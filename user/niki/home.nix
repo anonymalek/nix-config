@@ -47,6 +47,9 @@ args@{ pkgs, nixvim, userPath, ... }:
 	programs.bash = {
 		enable = true;
 		historyFileSize = 0;
+		initExtra = ''
+			export PS1="\[\e[34m\]\u\[\e[m\]@$HOSTNAME:\[\e[36m\]\W\[\e[m\] $ "
+		'';
 	};
 
 	programs.home-manager.enable = true;
