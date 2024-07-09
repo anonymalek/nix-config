@@ -1,4 +1,4 @@
-args@{ pkgs, userPath, systemPath, ... }:
+args@{ pkgs, lib, userPath, systemPath, ... }:
 {
 	profiles = [
 		/core/desktop
@@ -10,6 +10,7 @@ args@{ pkgs, userPath, systemPath, ... }:
 		/coding/godot/default
 		/coding/basic
 		/games/steam
+		/games/atlauncher
 		/chat/vesktop
 		/audio/pulseaudio
 	];
@@ -22,6 +23,8 @@ args@{ pkgs, userPath, systemPath, ... }:
 		extraGroups = [ "wheel" "networkmanager" ];
 	};
 
-	home = import ./home.nix args;
+	home = import ./home.nix {
+		inherit pkgs lib userPath systemPath;
+	};
 }
 
