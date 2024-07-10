@@ -4,6 +4,7 @@ system/profiles/codinf/godot/build/bin/*
 .idea/
 .vs/
 
+user/niki/config/ncmpcpp/error.log
 user/niki/config/emacs/emacs.d/eln-cache/
 user/niki/config/emacs/**/*.elc
 user/niki/config/emacs/emacs.d/auto-save-list
