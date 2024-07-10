@@ -1,0 +1,107 @@
+XF86AudioLowerVolume
+  pulsemixer --change-volume -5
+
+XF86AudioMute
+  pulsemixer --toggle-mute
+
+XF86AudioNext
+  mpc prev
+
+XF86AudioPlay
+  mpc toggle
+
+XF86AudioPrev
+  mpc next
+
+XF86AudioRaiseVolume
+  pulsemixer --change-volume +5
+
+XF86AudioStop
+  mpc stop
+
+XF86MonBrightnessDown
+  brightnessctl s 10%-
+
+XF86MonBrightnessUp
+  brightnessctl s +10%
+
+super + Return
+  kitty --directory ~/
+
+super + a
+  kitty --directory ~/ pulsemixer
+
+super + alt + 0
+  slock -m 'shutting down in 24 hours' -t 86400 -c 'systemctl poweroff -i'
+
+super + alt + 1
+  slock -m 'shutting down in 1 minute' -t 60 -c 'systemctl poweroff -i'
+
+super + alt + 2
+  slock -m 'shutting down in 5 minutes' -t 300 -c 'systemctl poweroff -i'
+
+super + alt + 3
+  slock -m 'shutting down in 15 minutes' -t 900 -c 'systemctl poweroff -i'
+
+super + alt + 4
+  slock -m 'shutting down in 30 minutes' -t 1800 -c 'systemctl poweroff -i'
+
+super + alt + 5
+  slock -m 'shutting down in 1 hour' -t 3600 -c 'systemctl poweroff -i'
+
+super + alt + 6
+  slock -m 'shutting down in 1 hour and 30 minutes' -t 5400 -c 'systemctl poweroff -i'
+
+super + alt + 7
+  slock -m 'shutting down in 3 hours' -t 10800 -c 'systemctl poweroff -i'
+
+super + alt + 8
+  slock -m 'shutting down in 6 hours' -t 21600 -c 'systemctl poweroff -i'
+
+super + alt + 9
+  slock -m 'shutting down in 12 hours' -t 43200 -c 'systemctl poweroff -i'
+
+super + alt + d
+  slock
+
+super + alt + f
+  slock -i -t 86400 -c 'systemctl poweroff -i'
+
+super + alt + s
+  slock & sleep 0.5 && systemctl suspend
+
+super + ctrl + Return
+  kitty --directory ~/ tmux attach
+
+super + ctrl + q
+  qutebrowser
+
+super + d
+  librewolf --new-window https://discord.com/app
+
+super + e
+  pass -c $(find .password-store/ -iname "*.gpg" | sed -e "s/\.password-store\///g" -e "s/\.gpg//g" | sort | dmenu)
+
+super + i
+  mpc prev
+
+super + o
+  mpc toggle
+
+super + p
+  mpc next
+
+super + q
+  librewolf
+
+super + shift + Return
+  kitty --directory ~/ tmux
+
+super + shift + m
+  kitty --directory ~/ ncmpcpp
+
+super + shift + s
+  flameshot gui
+
+super + w
+  surf localhost:8384
