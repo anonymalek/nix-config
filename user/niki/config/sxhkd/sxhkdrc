@@ -105,3 +105,9 @@ super + shift + s
 
 super + w
   surf localhost:8384
+
+super + v
+  tempvm
+
+super + shift + v
+  vmprompt

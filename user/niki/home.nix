@@ -18,6 +18,23 @@ args@{ pkgs, userPath, ... }:
 		neovim
 		emacs
 		kitty
+
+    (pkgs.writeShellScriptBin "vmprompt" ''
+			cd ~/playground/vm/ && ~/playground/vm/$(ls *.sh | dmenu -i)
+		'')
+
+		(pkgs.writeShellScriptBin "tempvm" ''
+			qemu-system-x86_64\
+				-cdrom ~/playground/common/iso/$(ls ~/playground/common/iso | dmenu -i)\
+				-m 6G\
+				-smp 4\
+				-accel kvm\
+				-display sdl\
+				-device virtio-vga\
+				-audiodev pa,id=snd0\
+					-device intel-hda\
+					-device hda-output,audiodev=snd0 $@
+		'')
 	];
 
 	home.sessionVariables = {
