@@ -10,7 +10,14 @@ args@{ pkgs, userPath, ... }:
 		pass
 		gnupg
 		bottles
-    zathura
+		zathura
+		mpd
+		ncmpcpp
+		qemu_full
+		sxhkd
+		neovim
+		emacs
+		kitty
 	];
 
 	home.sessionVariables = {
@@ -18,12 +25,14 @@ args@{ pkgs, userPath, ... }:
 		EDITOR = "nvim";
 	};
 
-  services.unclutter = {
+	services.unclutter = {
 		enable = true;
 		timeout = 2;
 	};
 
-  home.file.".config/libvirt/qemu.conf".source = ./qemu.conf;
-  
+	xsession.initExtra = "sxhkd & mpd &";
+
+	home.file.".config/libvirt/qemu.conf".source = ./qemu.conf;
+	
 	programs.home-manager.enable = true;
 }
