@@ -30,7 +30,7 @@ args@{ pkgs, userPath, ... }:
 		timeout = 2;
 	};
 
-	home.file.".config/libvirt/qemu.conf".source = ./qemu.conf;
+	home.file.".config/libvirt".source = ./libvirt;
 	
 	programs.home-manager.enable = true;
 }
