@@ -782,3 +782,6 @@ client.connect_signal("unmanage", backham)
 tag.connect_signal("property::selected", backham)
 
 -- }}}
+
+awful.spawn.with_shell("sxhkd")
+awful.spawn.with_shell("mpd")

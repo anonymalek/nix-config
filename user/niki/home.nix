@@ -30,8 +30,6 @@ args@{ pkgs, userPath, ... }:
 		timeout = 2;
 	};
 
-	xsession.initExtra = "sxhkd & mpd &";
-
 	home.file.".config/libvirt/qemu.conf".source = ./qemu.conf;
 	
 	programs.home-manager.enable = true;
