@@ -9,6 +9,7 @@ args@{ pkgs, lib, nixvim, userPath, systemPath, ... }:
 		/network/zerotier
 		/coding/godot/default
 		/coding/basic
+		/coding/framework/ctf
 		/games/steam
 		/games/atlauncher
 		/chat/vesktop
