@@ -111,3 +111,6 @@ super + v
 
 super + shift + v
   vmprompt
+
+super + shift + b
+  kitty bluetoothctl
