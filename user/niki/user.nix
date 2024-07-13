@@ -3,6 +3,7 @@ args@{ pkgs, lib, nixvim, userPath, systemPath, ... }:
 	profiles = [
 		/core/desktop
 		/core/desktop-tools
+		/core/science
 		/browsers/librewolf
 		/browsers/qute
 		/network/anonymous
