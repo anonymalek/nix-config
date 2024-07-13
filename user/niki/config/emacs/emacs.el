@@ -9,12 +9,12 @@
 (package-initialize)
 
 (defun become-evil ()
-	(interactive)
-	(setq evil-want-keybinding nil)
-	(evil-mode 1)
-	(evil-collection-init)
-	(modify-syntax-entry ?_ "w")
-	)
+  (interactive)
+  (setq evil-want-keybinding nil)
+  (evil-mode 1)
+  (evil-collection-init)
+  (modify-syntax-entry ?_ "w")
+  )
 
 (become-evil)
 
@@ -44,22 +44,22 @@
    (org-bullets-mode 1)))
 
 (with-eval-after-load "org"
-	(define-key org-mode-map (kbd "C-M-n") 'org-metadown)
-	(define-key org-mode-map (kbd "C-M-p") 'org-metaup)
-	(define-key org-mode-map (kbd "M-p") 'org-backward-heading-same-level)
-	(define-key org-mode-map (kbd "M-n") 'org-forward-heading-same-level)
+  (define-key org-mode-map (kbd "C-M-n") 'org-metadown)
+  (define-key org-mode-map (kbd "C-M-p") 'org-metaup)
+  (define-key org-mode-map (kbd "M-p") 'org-backward-heading-same-level)
+  (define-key org-mode-map (kbd "M-n") 'org-forward-heading-same-level)
 
-	(define-key org-mode-map (kbd "C-M-n") 'org-metadown)
-	(define-key org-mode-map (kbd "C-M-b") 'org-metaleft)
-	(define-key org-mode-map (kbd "C-M-f") 'org-metaright)
-	(define-key org-mode-map (kbd "C-M-f") 'org-metaright)
+  (define-key org-mode-map (kbd "C-M-n") 'org-metadown)
+  (define-key org-mode-map (kbd "C-M-b") 'org-metaleft)
+  (define-key org-mode-map (kbd "C-M-f") 'org-metaright)
+  (define-key org-mode-map (kbd "C-M-f") 'org-metaright)
 
-	(define-key org-mode-map (kbd "C-M-a") 'org-shiftleft)
-	(define-key org-mode-map (kbd "C-M-e") 'org-shiftright)
+  (define-key org-mode-map (kbd "C-M-a") 'org-shiftleft)
+  (define-key org-mode-map (kbd "C-M-e") 'org-shiftright)
 
-	(define-key org-mode-map (kbd "C-M-k") 'org-shiftup)
-	(define-key org-mode-map (kbd "C-M-j") 'org-shiftdown)
-)
+  (define-key org-mode-map (kbd "C-M-k") 'org-shiftup)
+  (define-key org-mode-map (kbd "C-M-j") 'org-shiftdown)
+  )
 
 (setq c-default-style "linux"
 	  c-basic-offset 4)
