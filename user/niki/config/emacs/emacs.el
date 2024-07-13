@@ -12,7 +12,9 @@
 	(interactive)
 	(setq evil-want-keybinding nil)
 	(evil-mode 1)
-	(evil-collection-init))
+	(evil-collection-init)
+	(modify-syntax-entry ?_ "w")
+	)
 
 (become-evil)
 
