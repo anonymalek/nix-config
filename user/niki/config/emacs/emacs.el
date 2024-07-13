@@ -6,7 +6,9 @@
 (menu-bar-mode 0)
 (tool-bar-mode 0)
 (scroll-bar-mode -1)
-(ido-mode 1)
+(ido-mode 0)
+
+(defalias 'yes-or-no-p 'y-or-n-p)
 
 (setq display-line-numbers-type 'relative) 
 (global-display-line-numbers-mode 1)
