@@ -63,7 +63,7 @@
 (keymap-global-set "C-c p" 'projectile-command-map)
 (setq projectile-completion-system 'ivy)
 
-(define-key projectile-mode-map "C-c f") 'projectile-find-file)
+(define-key projectile-mode-map (kbd "C-c f") 'projectile-find-file)
 (define-key projectile-mode-map (kbd "C-c g") 'projectile-grep)
 
 (popwin-mode 1)
