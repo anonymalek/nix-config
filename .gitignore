@@ -4,6 +4,8 @@ system/profiles/codinf/godot/build/bin/*
 .idea/
 .vs/
 
+*.sync-conflict-*
+
 user/niki/config/ncmpcpp/error.log
 user/niki/config/emacs/emacs.d/eln-cache/
 user/niki/config/emacs/**/*.elc
