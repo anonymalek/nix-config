@@ -14,7 +14,7 @@
 	(evil-mode 1)
 	(evil-collection-init))
 
-;; (become-evil)
+(become-evil)
 
 (keymap-global-set "C-c c" '(lambda () (interactive) (find-file "~/.emacs")))
 
