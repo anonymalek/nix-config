@@ -4,13 +4,14 @@
 (custom-set-variables
  '(custom-enabled-themes '(modus-vivendi))
  '(package-selected-packages
-   '(evil-collection pdf-tools popup-imenu popwin company eglot magit nix-mode projectile ivy lua-mode org-bullets)))
+   '(undo-tree evil-collection pdf-tools popup-imenu popwin company eglot magit nix-mode projectile ivy lua-mode org-bullets)))
 
 (package-initialize)
 
 (defun become-evil ()
   (interactive)
   (setq evil-want-keybinding nil)
+  (setq evil-undo-system 'undo-tree)
   (evil-mode 1)
   (evil-collection-init)
   (modify-syntax-entry ?_ "w")
@@ -63,6 +64,9 @@
 
 (setq c-default-style "linux"
 	  c-basic-offset 4)
+
+(setq undo-tree-auto-save-history nil)
+(global-undo-tree-mode)
 
 (keymap-global-set "C-c d" 'eglot-find-declaration)
 
