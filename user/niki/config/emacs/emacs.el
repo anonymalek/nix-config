@@ -81,6 +81,7 @@
 
 (add-to-list 'auto-mode-alist '("\\.nix\\'" . nix-mode))
 
+(require 'pdf-tools)
 (add-to-list 'auto-mode-alist '("\\.pdf\\'" . pdf-view-mode))
 (add-hook 'pdf-view-mode-hook '(lambda () (interactive) (display-line-numbers-mode -1)))
 
