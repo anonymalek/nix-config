@@ -3,11 +3,18 @@
 
 (custom-set-variables
  '(custom-enabled-themes '(modus-vivendi))
-
- '(package-selected-packages '(pdf-tools popup-imenu popwin company eglot magit nix-mode projectile ivy lua-mode org-bullets))
-  )
+ '(package-selected-packages
+   '(evil-collection pdf-tools popup-imenu popwin company eglot magit nix-mode projectile ivy lua-mode org-bullets)))
 
 (package-initialize)
+
+(defun become-evil ()
+	(interactive)
+	(setq evil-want-keybinding nil)
+	(evil-mode 1)
+	(evil-collection-init))
+
+;; (become-evil)
 
 (keymap-global-set "C-c c" '(lambda () (interactive) (find-file "~/.emacs")))
 
@@ -35,21 +42,21 @@
    (org-bullets-mode 1)))
 
 (with-eval-after-load "org"
-  (define-key org-mode-map (kbd "C-M-n") 'org-metadown)
-  (define-key org-mode-map (kbd "C-M-p") 'org-metaup)
-  (define-key org-mode-map (kbd "M-p") 'org-backward-heading-same-level)
-  (define-key org-mode-map (kbd "M-n") 'org-forward-heading-same-level)
+	(define-key org-mode-map (kbd "C-M-n") 'org-metadown)
+	(define-key org-mode-map (kbd "C-M-p") 'org-metaup)
+	(define-key org-mode-map (kbd "M-p") 'org-backward-heading-same-level)
+	(define-key org-mode-map (kbd "M-n") 'org-forward-heading-same-level)
 
-  (define-key org-mode-map (kbd "C-M-n") 'org-metadown)
-  (define-key org-mode-map (kbd "C-M-b") 'org-metaleft)
-  (define-key org-mode-map (kbd "C-M-f") 'org-metaright)
-  (define-key org-mode-map (kbd "C-M-f") 'org-metaright)
+	(define-key org-mode-map (kbd "C-M-n") 'org-metadown)
+	(define-key org-mode-map (kbd "C-M-b") 'org-metaleft)
+	(define-key org-mode-map (kbd "C-M-f") 'org-metaright)
+	(define-key org-mode-map (kbd "C-M-f") 'org-metaright)
 
-  (define-key org-mode-map (kbd "C-M-a") 'org-shiftleft)
-  (define-key org-mode-map (kbd "C-M-e") 'org-shiftright)
+	(define-key org-mode-map (kbd "C-M-a") 'org-shiftleft)
+	(define-key org-mode-map (kbd "C-M-e") 'org-shiftright)
 
-  (define-key org-mode-map (kbd "C-M-k") 'org-shiftup)
-  (define-key org-mode-map (kbd "C-M-j") 'org-shiftdown)
+	(define-key org-mode-map (kbd "C-M-k") 'org-shiftup)
+	(define-key org-mode-map (kbd "C-M-j") 'org-shiftdown)
 )
 
 (setq c-default-style "linux"
@@ -70,14 +77,10 @@
 
 (keymap-global-set "M-g i" 'popup-imenu)
 
-(add-to-list 'load-path "~/.emacs.d/evil")
-(require 'evil)
-;; (evil-mode 1)
-
 (use-package ivy
   :config
   '((ivy-mode 1)
-    (ivy--regex-fuzzy 1)))
+	(ivy--regex-fuzzy 1)))
 
 (add-to-list 'auto-mode-alist '("\\.nix\\'" . nix-mode))
 
