@@ -67,6 +67,10 @@
 (setq c-default-style "linux"
 	  c-basic-offset 4)
 
+(defun insert-date ()
+  (interactive)
+  (insert (shell-command-to-string "printf %s \"$(date '+%Y-%m-%d %H:%M:%S')\"")))
+
 (setq undo-tree-auto-save-history nil)
 (global-undo-tree-mode)
 
