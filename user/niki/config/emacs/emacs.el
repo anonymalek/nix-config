@@ -61,7 +61,7 @@
   (define-key org-mode-map (kbd "C-M-j") 'org-shiftdown)
 
   (define-key org-mode-map (kbd "M-<return>") '(lambda () (interactive)
-											(org-insert-heading)
+											(org-insert-heading-after-current)
 											(org-demote-subtree)))
   )
 
