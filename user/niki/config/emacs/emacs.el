@@ -17,9 +17,10 @@
   (modify-syntax-entry ?_ "w")
   )
 
-(become-evil)
+;; (become-evil)
 
 (keymap-global-set "C-c c" '(lambda () (interactive) (find-file "~/.emacs")))
+(keymap-global-set "C-S-v" '(lambda () (interactive) (set-rectangular-region-anchor)))
 
 (ido-mode 1)
 
@@ -28,16 +29,16 @@
 (scroll-bar-mode 0)
 
 (global-display-line-numbers-mode 1)
-(setq-default display-line-numbers-type 'relative)
 
-(setq-default scroll-step 1)
-(setq-default scroll-margin 10)
-(setq-default use-dialog-box nil)
-(setq-default tab-width 4)
+(setq-default display-line-numbers-type 'relative
+			  scroll-step 1
+			  scroll-margin 10
+			  use-dialog-box nil
+			  tab-width 4
+			  make-backup-files nil
+			  )
 
 (defalias 'yes-or-no-p 'y-or-n-p)
-
-(setq make-backup-files nil)
 
 (add-hook
  'org-mode-hook
@@ -50,16 +51,18 @@
   (define-key org-mode-map (kbd "M-p") 'org-backward-heading-same-level)
   (define-key org-mode-map (kbd "M-n") 'org-forward-heading-same-level)
 
-  (define-key org-mode-map (kbd "C-M-n") 'org-metadown)
-  (define-key org-mode-map (kbd "C-M-b") 'org-metaleft)
-  (define-key org-mode-map (kbd "C-M-f") 'org-metaright)
-  (define-key org-mode-map (kbd "C-M-f") 'org-metaright)
+  (define-key org-mode-map (kbd "C-M-b") 'org-promote-subtree)
+  (define-key org-mode-map (kbd "C-M-f") 'org-demote-subtree)
 
   (define-key org-mode-map (kbd "C-M-a") 'org-shiftleft)
   (define-key org-mode-map (kbd "C-M-e") 'org-shiftright)
 
   (define-key org-mode-map (kbd "C-M-k") 'org-shiftup)
   (define-key org-mode-map (kbd "C-M-j") 'org-shiftdown)
+
+  (define-key org-mode-map (kbd "M-<return>") '(lambda () (interactive)
+											(org-insert-heading)
+											(org-demote-subtree)))
   )
 
 (setq c-default-style "linux"
