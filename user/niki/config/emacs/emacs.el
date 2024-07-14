@@ -43,7 +43,9 @@
 (add-hook
  'org-mode-hook
  (lambda ()
-   (org-bullets-mode 1)))
+   (org-bullets-mode 1)
+   (auto-fill-mode 1)
+   ))
 
 (with-eval-after-load "org"
   (define-key org-mode-map (kbd "C-M-n") 'org-metadown)
