@@ -60,9 +60,8 @@
   (define-key org-mode-map (kbd "C-M-k") 'org-shiftup)
   (define-key org-mode-map (kbd "C-M-j") 'org-shiftdown)
 
-  (define-key org-mode-map (kbd "M-<return>") '(lambda () (interactive)
-											(org-insert-heading-after-current)
-											(org-demote-subtree)))
+  (define-key org-mode-map (kbd "M-<return>") 'org-insert-subheading)
+  (define-key org-mode-map (kbd "C-<return>") 'org-insert-heading)
   )
 
 (setq c-default-style "linux"
