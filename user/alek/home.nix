@@ -14,7 +14,10 @@ in
 	home.stateVersion = "23.11";
 
 	home.packages = with pkgs; [
-		atlauncher
+		(atlauncher.override { additionalLibs = [ xorg.libX11 xorg.libXcursor ]; })
+		zed-editor
+		
+		jre
 
 		neovim
 		oh-my-fish

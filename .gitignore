@@ -1,5 +1,5 @@
 system/profiles/codinf/godot/build/src/*
 system/profiles/codinf/godot/build/bin/*
-
+.vscode/
 .idea/
 .vs/
