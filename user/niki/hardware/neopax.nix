@@ -15,6 +15,8 @@ in
 	boot.loader.systemd-boot.enable = true;
 	boot.loader.efi.canTouchEfiVariables = true;
 
+	hardware.ckb-next.enable = true;
+
 	# passthrough
 	# boot = {
 	# 	kernelModules = [ "kvm-amd" "vfio_virqfd" "vfio_pci" "vfio_iommu_type1" "vfio" ];

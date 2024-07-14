@@ -1,0 +1,6 @@
+[[ $- == *i* ]] || return
+
+HISTFILESIZE=0
+HISTSIZE=10000
+
+export PS1="\[\e[34m\]\u\[\e[m\]@$HOSTNAME:\[\e[36m\]\W\[\e[m\] $ "

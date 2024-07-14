@@ -1,15 +1,7 @@
-args@{ pkgs, nixvim, userPath, ... }:
+args@{ pkgs, userPath, ... }:
 {
 	imports = [
 		(userPath + /shared/shared.nix)
-
-		nixvim.homeManagerModules.nixvim
-
-		./config/x.nix
-		./config/mpd.nix
-		./config/tmux.nix
-		./config/vim.nix
-		./config/kitty.nix
 	];
 
 	home.stateVersion = "23.11";
@@ -18,35 +10,44 @@ args@{ pkgs, nixvim, userPath, ... }:
 		pass
 		gnupg
 		bottles
-	];
+		zathura
+		mpd
+		ncmpcpp
+		qemu_full
+		sxhkd
+		neovim
+		emacs
+		kitty
 
-	home.file = {
-		".local/share/fonts".source = ./config/sources/fonts;
-		".config/libvirt".source = ./config/sources/libvirt;
-		".firejail/qutebrowser/.config/qutebrowser/config.py".source = ./config/sources/qutebrowser/config.py;
-	};
+    (pkgs.writeShellScriptBin "vmprompt" ''
+			cd ~/playground/vm/ && ~/playground/vm/$(ls *.sh | dmenu -i)
+		'')
+
+		(pkgs.writeShellScriptBin "tempvm" ''
+			qemu-system-x86_64\
+				-cdrom ~/playground/common/iso/$(ls ~/playground/common/iso | dmenu -i)\
+				-m 6G\
+				-smp 4\
+				-accel kvm\
+				-display sdl\
+				-device virtio-vga\
+				-audiodev pa,id=snd0\
+					-device intel-hda\
+					-device hda-output,audiodev=snd0 $@
+		'')
+	];
 
 	home.sessionVariables = {
 		BROWSER = "librewolf";
 		EDITOR = "nvim";
 	};
 
-	programs.zathura = {
+	services.unclutter = {
 		enable = true;
+		timeout = 2;
 	};
 
-	programs.git = {
-		enable = true;
-		lfs.enable = true;
-		userName = "Niki";
-		userEmail = "<>";
-		extraConfig.credential.helper = "store";
-	};
-
-	programs.bash = {
-		enable = true;
-		historyFileSize = 0;
-	};
-
+	home.file.".config/libvirt".source = ./libvirt;
+	
 	programs.home-manager.enable = true;
 }

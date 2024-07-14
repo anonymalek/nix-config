@@ -15,7 +15,7 @@ in
 		windowManager.awesome.enable = true;
 	};
 
-	services.displayManager.sddm.enable = true;
+	services.xserver.displayManager.lightdm.enable = true;
 
 	services.syncthing = {
 		enable = true;

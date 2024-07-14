@@ -281,7 +281,7 @@ root.buttons(mytable.join(
 
 globalkeys = mytable.join(
 	-- Destroy all notifications
-	awful.key({ "Control",		   }, "space", function() naughty.destroy_all_notifications() end,
+	awful.key({ "Control", altkey }, "space", function() naughty.destroy_all_notifications() end,
 			  {description = "destroy all notifications", group = "hotkeys"}),
 
 	-- Show help
@@ -782,3 +782,6 @@ client.connect_signal("unmanage", backham)
 tag.connect_signal("property::selected", backham)
 
 -- }}}
+
+awful.spawn.with_shell("sxhkd")
+awful.spawn.with_shell("mpd")

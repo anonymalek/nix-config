@@ -1,14 +1,18 @@
-args@{ pkgs, userPath, systemPath, ... }:
+args@{ pkgs, lib, nixvim, userPath, systemPath, ... }:
 {
 	profiles = [
 		/core/desktop
 		/core/desktop-tools
+		/core/science
 		/browsers/librewolf
+		/browsers/qute
 		/network/anonymous
 		/network/zerotier
 		/coding/godot/default
 		/coding/basic
+		/coding/framework/ctf
 		/games/steam
+		/games/atlauncher
 		/chat/vesktop
 		/audio/pulseaudio
 	];
@@ -21,6 +25,8 @@ args@{ pkgs, userPath, systemPath, ... }:
 		extraGroups = [ "wheel" "networkmanager" ];
 	};
 
-	home = import ./home.nix args;
+	home = import ./home.nix {
+		inherit pkgs lib nixvim userPath systemPath;
+	};
 }
 
