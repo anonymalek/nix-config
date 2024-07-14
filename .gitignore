@@ -5,11 +5,6 @@ system/profiles/codinf/godot/build/bin/*
 .vs/
 
 user/niki/config/ncmpcpp/error.log
-user/niki/config/emacs/emacs.d/eln-cache/
+user/niki/config/emacs/emacs.d/*
 user/niki/config/emacs/**/*.elc
-user/niki/config/emacs/emacs.d/auto-save-list
-user/niki/config/emacs/emacs.d/transient
-user/niki/config/emacs/emacs.d/eshell
-user/niki/config/emacs/emacs.d/ido.last
-user/niki/config/emacs/emacs.d/projectile-bookmarks.eld
 
