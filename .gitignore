@@ -1,10 +1,8 @@
 system/profiles/codinf/godot/build/src/*
 system/profiles/codinf/godot/build/bin/*
-
+.vscode/
 .idea/
 .vs/
-
-*.sync-conflict-*
 
 user/niki/config/ncmpcpp/error.log
 user/niki/config/emacs/emacs.d/eln-cache/
@@ -14,3 +12,4 @@ user/niki/config/emacs/emacs.d/transient
 user/niki/config/emacs/emacs.d/eshell
 user/niki/config/emacs/emacs.d/ido.last
 user/niki/config/emacs/emacs.d/projectile-bookmarks.eld
+
