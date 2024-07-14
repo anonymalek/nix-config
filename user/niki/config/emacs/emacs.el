@@ -4,7 +4,7 @@
 (custom-set-variables
  '(custom-enabled-themes '(modus-vivendi))
  '(package-selected-packages
-   '(undo-tree evil-collection pdf-tools popup-imenu popwin company eglot magit nix-mode projectile ivy lua-mode org-bullets)))
+   '(multiple-cursors undo-tree evil-collection pdf-tools popup-imenu popwin company eglot magit nix-mode projectile ivy lua-mode org-bullets)))
 
 (package-initialize)
 
@@ -70,6 +70,8 @@
 
 (setq undo-tree-auto-save-history nil)
 (global-undo-tree-mode)
+
+(setq mc/always-run-for-all t)
 
 (keymap-global-set "C-c d" 'eglot-find-declaration)
 
