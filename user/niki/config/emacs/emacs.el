@@ -27,6 +27,7 @@
  use-dialog-box nil
  tab-width 4
  make-backup-files nil
+ warning-minimum-level :emergency
  )
 
 (defalias 'yes-or-no-p 'y-or-n-p)
