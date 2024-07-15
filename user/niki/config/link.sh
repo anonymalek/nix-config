@@ -10,8 +10,8 @@ ln -sn -T $BASEDIR/fonts ~/.local/share/fonts
 ln -sn -T $BASEDIR/tmux ~/.config/tmux
 ln -sn -T $BASEDIR/gitconfig ~/.gitconfig
 
-ln -sn -T $BASEDIR/emacs/emacs.el ~/.emacs
-ln -sn -T $BASEDIR/emacs/emacs.d ~/.emacs.d
+ln -sn -T $BASEDIR/emacs ~/.config/emacs
+ln -sn -T $BASEDIR/emacs/emacs.el ~/.emacs.el
 
 ln -sn -T $BASEDIR/vim/vimrc ~/.vimrc
 ln -sn -T $BASEDIR/vim ~/.config/nvim
