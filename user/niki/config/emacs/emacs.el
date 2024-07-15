@@ -2,9 +2,8 @@
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
 
 (custom-set-variables
- '(custom-enabled-themes '(modus-vivendi))
  '(package-selected-packages
-   '(multiple-cursors undo-tree evil-collection pdf-tools popup-imenu popwin company eglot magit nix-mode projectile ivy lua-mode org-bullets)))
+   '(auctex multiple-cursors undo-tree evil-collection pdf-tools popup-imenu popwin company eglot magit nix-mode projectile ivy lua-mode org-bullets)))
 
 (package-initialize)
 
