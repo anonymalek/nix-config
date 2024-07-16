@@ -2,6 +2,8 @@
 
 BASEDIR=$(dirname $(realpath "$0"))
 
+mkdir -p ~/.config
+
 ln -sn -T $BASEDIR/qutebrowser ~/.config/qutebrowser
 ln -sn -T $BASEDIR/kitty ~/.config/kitty
 ln -sn -T $BASEDIR/awesome ~/.config/awesome
