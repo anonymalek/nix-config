@@ -57,6 +57,15 @@
 	 (org-bullets-mode 1)
 	 (auto-fill-mode 1)
 	 ))
+
+  (org-babel-do-load-languages
+   'org-babel-load-languages
+   '(
+	 (emacs-lisp . t)
+	 (shell . t)
+	 (C . t)
+	 ))
+
   :bind (
 		 :map org-mode-map
 		 ("C-M-n" . 'org-metadown)
