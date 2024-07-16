@@ -5,7 +5,7 @@
  ;; If there is more than one, they won't work right.
  '(custom-enabled-themes '(modus-vivendi))
  '(package-selected-packages
-   '(auctex multiple-cursors undo-tree evil-collection pdf-tools popup-imenu popwin company eglot magit nix-mode projectile ivy lua-mode org-bullets)))
+   '(auctex multiple-cursors undo-tree evil-collection pdf-tools popup-imenu company eglot magit nix-mode projectile ivy lua-mode org-bullets)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -120,10 +120,6 @@
   :config
   (setq projectile-completion-system 'ivy)
   (projectile-mode 1))
-
-(use-package popwin
-  :config
-  (popwin-mode 1))
 
 (use-package popup-imenu
   :bind
