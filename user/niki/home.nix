@@ -31,6 +31,7 @@ args@{ pkgs, userPath, ... }:
 				-accel kvm\
 				-display sdl\
 				-device virtio-vga\
+				-monitor none\
 				-audiodev pa,id=snd0\
 					-device intel-hda\
 					-device hda-output,audiodev=snd0 $@
