@@ -49,7 +49,10 @@
 
 (setq use-package-always-ensure t)
 
+(use-package org-bullets)
+
 (use-package org
+  :after (org-bullets)
   :config
   (add-hook
    'org-mode-hook
@@ -99,6 +102,7 @@
 			  ("C-u" . 'evil-scroll-up)))
 
 (use-package evil-collection
+  :after (evil)
   :config
   (evil-collection-init)
   )
@@ -143,6 +147,10 @@
   (add-to-list 'auto-mode-alist '("\\.nix\\'" . nix-mode)))
 
 (use-package envrc)
+
+(use-package auctex)
+
+(use-package lua-mode)
 
 (use-package pdf-tools
   :config
