@@ -18,6 +18,7 @@ args@{ pkgs, userPath, ... }:
 		neovim
 		emacs
 		kitty
+		direnv
 
     (pkgs.writeShellScriptBin "vmprompt" ''
 			cd ~/playground/vm/ && ~/playground/vm/$(ls *.sh | dmenu -i)

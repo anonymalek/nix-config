@@ -5,7 +5,7 @@
  ;; If there is more than one, they won't work right.
  '(custom-enabled-themes '(modus-vivendi))
  '(package-selected-packages
-   '(auctex multiple-cursors undo-tree evil-collection pdf-tools popup-imenu company eglot magit nix-mode projectile ivy lua-mode org-bullets)))
+   '(envrc auctex multiple-cursors undo-tree evil-collection pdf-tools popup-imenu company eglot magit nix-mode projectile ivy lua-mode org-bullets)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -141,6 +141,8 @@
 (use-package nix-mode
   :config
   (add-to-list 'auto-mode-alist '("\\.nix\\'" . nix-mode)))
+
+(use-package envrc)
 
 (use-package pdf-tools
   :config
