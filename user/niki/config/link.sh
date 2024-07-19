@@ -4,7 +4,8 @@ BASEDIR=$(dirname $(realpath "$0"))
 
 mkdir -p ~/.config
 
-ln -sn -T $BASEDIR/qutebrowser ~/.config/qutebrowser
+mkdir -p ~/.config/qutebrowser
+ln -sn -T $BASEDIR/qutebrowser.py ~/.config/qutebrowser/config.py
 ln -sn -T $BASEDIR/kitty ~/.config/kitty
 ln -sn -T $BASEDIR/awesome ~/.config/awesome
 ln -sn -T $BASEDIR/sxhkd ~/.config/sxhkd
