@@ -103,8 +103,11 @@ super + shift + m
 super + shift + s
   flameshot gui
 
-super + w
+super + shift + w
   surf localhost:8384
+
+super + w
+  xdg-open $(find ~/playground/common/doc -type f | grep -E "\.html|\.xhtml|\.htm|\.md|\.pdf" | dmenu)
 
 super + v
   tempvm
