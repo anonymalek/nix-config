@@ -11,6 +11,7 @@ ln -sn -T $BASEDIR/sxhkd ~/.config/sxhkd
 ln -sn -T $BASEDIR/fonts ~/.local/share/fonts
 ln -sn -T $BASEDIR/tmux ~/.config/tmux
 ln -sn -T $BASEDIR/gitconfig ~/.gitconfig
+ln -sn -T $BASEDIR/mimeapps.list ~/.config/mimeapps.list
 
 ln -sn -T $BASEDIR/emacs ~/.config/emacs
 ln -sn -T $BASEDIR/emacs/emacs.el ~/.emacs.el
