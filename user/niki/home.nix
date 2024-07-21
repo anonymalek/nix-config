@@ -7,6 +7,7 @@ args@{ pkgs, userPath, ... }:
 	home.stateVersion = "23.11";
 
 	home.packages = with pkgs; [
+		qutebrowser
 		pass
 		gnupg
 		bottles

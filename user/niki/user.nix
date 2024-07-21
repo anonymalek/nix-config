@@ -5,7 +5,6 @@ args@{ pkgs, lib, nixvim, userPath, systemPath, ... }:
 		/core/desktop-tools
 		/core/science
 		/browsers/librewolf
-		/browsers/qute
 		/network/anonymous
 		/network/zerotier
 		/coding/godot/default
