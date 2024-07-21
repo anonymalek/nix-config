@@ -26,9 +26,13 @@
  scroll-margin 10
  use-dialog-box nil
  tab-width 4
+ indent-tabs-mode t
  make-backup-files nil
  warning-minimum-level :emergency
  )
+
+(setq whitespace-style '(space-mark tab-mark))
+(keymap-global-set "C-c w" 'global-whitespace-mode)
 
 (defalias 'yes-or-no-p 'y-or-n-p)
 
