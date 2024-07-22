@@ -30,10 +30,6 @@ in
 		a2jmidid
 	];
 
-	home.file = {
-		".config/awesome".source = ../niki/config/sources/awesome;
-	};
-
 	home.sessionVariables = {
 		TERMINAL = terminal;
 		BROWSER = browser;
