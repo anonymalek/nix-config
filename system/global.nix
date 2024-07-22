@@ -4,7 +4,7 @@
 		type = pkgs.lib.types.listOf pkgs.lib.types.str;
 		default = [ ];
 	};
-	
+
 	config.nixpkgs.config = {
 		allowUnfreePredicate = pkg: pkgs.lib.elem (pkgs.lib.getName pkg) config.allowedUnfree;
 	};
@@ -38,10 +38,15 @@
 
 		environment = {
 			systemPackages = with pkgs; [
-				(writeShellScriptBin "unir" ''NIXPKGS_ALLOW_UNFREE=1 nir $@'')
+				(writeShellScriptBin "punir" ''NIXPKGS_ALLOW_BROKEN=1 NIXPKGS_ALLOW_UNSUPPORTED_SYSTEM=1 NIXPKGS_ALLOW_UNFREE=1 nix run nixpkgs#$1 -- ''${@:2}'')
+				(writeShellScriptBin "unir" ''NIXPKGS_ALLOW_UNFREE=1 nix run nixpkgs#$1 -- ''${@:2}'')
 				(writeShellScriptBin "nir" ''nix run nixpkgs#$1 -- ''${@:2}'')
 				(writeShellScriptBin "nxs" ''nix search nixpkgs $@'')
+
+
 				(writeShellScriptBin "nrb" ''/conf/rebuild.sh'')
+				(writeShellScriptBin "ncrb" ''nix-collect-garbage -d && sudo nix-collect-garbage -d && /conf/rebuild.sh'')
+
 
 				vim
 				emacs
