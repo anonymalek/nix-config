@@ -63,6 +63,10 @@
 			termina = nixosCustomSystem {
 				modules = [ ./user/alek/hardware/termina.nix ./user/alek/profile.nix ];
 			};
+
+      hologramsummeragain = nixosCustomSystem {
+        modules = [ ./user/malwareskunk/hardware/hologramsummeragain.nix ./user/malwareskunk/profile.nix ];
+      };
 		};
 	};
 }
