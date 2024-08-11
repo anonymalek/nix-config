@@ -15,6 +15,10 @@
 		programs.nix-ld.libraries = with pkgs; [
       xorg.libX11
       xorg.libXcursor
+      xorg.libXext
+      xorg.libXrender
+      xorg.libXtst
+      xorg.libXi
     ];
   };
 }
