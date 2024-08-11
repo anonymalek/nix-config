@@ -6,7 +6,6 @@
 		/coding/godot/default
 		/coding/basic
 		
-		/network/anonymous
 		/network/zerotier
 		/network/nordvpn
 		
@@ -23,7 +22,7 @@
 	];
 
 	username = "trigo";
-
+	
 	user = {
 		description = "Grão";
 		
@@ -31,6 +30,7 @@
 		shell = "${pkgs.fish}/bin/fish";
 		isNormalUser = true;
 	};
+
 
 	home = import ./home.nix {
 		inherit config pkgs userPath;

@@ -65,7 +65,7 @@
 			};
 
 			galactia = nixosCustomSystem {
-				modules = [ ./user/trigo/hardware/galactia.nix ./user/trigo/profile.nix ];
+				modules = [ ./user/trigo/hardware/galactia.nix ./user/trigo/profile.nix ./user/alek/profile.nix];
 			};
 
       hologramsummeragain = nixosCustomSystem {
