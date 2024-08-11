@@ -64,6 +64,10 @@
 				modules = [ ./user/alek/hardware/termina.nix ./user/alek/profile.nix ];
 			};
 
+			galactia = nixosCustomSystem {
+				modules = [ ./user/trigo/hardware/galactia.nix ./user/trigo/profile.nix ];
+			};
+
       hologramsummeragain = nixosCustomSystem {
         modules = [ ./user/malwareskunk/hardware/hologramsummeragain.nix ./user/malwareskunk/profile.nix ];
       };
