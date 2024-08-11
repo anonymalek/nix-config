@@ -8,6 +8,7 @@
 		gnumake
 		cmake
 		scons
+    ninja
 		
 		gdb
 	];
