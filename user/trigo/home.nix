@@ -19,6 +19,8 @@ in
 		
 		jre
 
+		github-desktop
+		yakuake
 		neovim
 		oh-my-fish
 		obs-studio

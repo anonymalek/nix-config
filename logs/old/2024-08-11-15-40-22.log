@@ -1,0 +1,52 @@
+15:40:13.438 [ATL-Logging-Thread] INFO  - Organising filesystem
+
+15:40:13.475 [ATL-Logging-Thread] INFO  - ATLauncher Version: 3.4.36.9 [591787b9c8c568d7403c1b5c47e43df7a9600d36]
+
+15:40:13.478 [ATL-Logging-Thread] INFO  - App Arguments: ["--working-dir","**USERSDIR**","--no-launcher-update"]
+
+15:40:13.480 [ATL-Logging-Thread] INFO  - JVM Arguments: []
+
+15:40:13.484 [ATL-Logging-Thread] INFO  - Java Version: Java 21 (21)
+
+15:40:13.486 [ATL-Logging-Thread] INFO  - Java Path: /nix/store/bk3x3ia7gxqic1jgr3dz05gwi8zw671y-openjdk-21+35/lib/openjdk
+
+15:40:13.487 [ATL-Logging-Thread] INFO  - 64 Bit Java: true
+
+15:40:13.488 [ATL-Logging-Thread] INFO  - RAM Available: 31911MB
+
+15:40:13.488 [ATL-Logging-Thread] INFO  - Launcher Directory: **USERSDIR**
+
+15:40:13.529 [ATL-Logging-Thread] INFO  - GPU: Navi 33 [Radeon RX 7700S/7600/7600S/7600M XT/PRO W7600] (Advanced Micro Devices, Inc. [AMD/ATI] (0x1002)) unknown 8448MB VRAM
+
+15:40:13.615 [ATL-Logging-Thread] INFO  - CPU: 13th Gen Intel(R) Core(TM) i5-13600KF 14 cores/20 threads
+
+15:40:13.616 [ATL-Logging-Thread] INFO  - Operating System: NixOS (24.11 (Vicuna) build 6.6.35)
+
+15:40:13.617 [ATL-Logging-Thread] INFO  - Bitness: 64
+
+15:40:13.618 [ATL-Logging-Thread] INFO  - Uptime: 6257
+
+15:40:13.619 [ATL-Logging-Thread] INFO  - Manufacturer: GNU/Linux
+
+15:40:13.622 [ATL-Logging-Thread] INFO  - Showing splash screen and loading everything
+
+15:40:13.623 [ATL-Logging-Thread] INFO  - Checking for updated files!
+
+15:40:22.492 [ATL-Logging-Thread] INFO  - Launcher finished loading everything
+
+15:40:22.501 [ATL-Logging-Thread] INFO  - Launcher opening
+
+15:40:22.501 [ATL-Logging-Thread] INFO  - Made By Bob*
+
+15:40:22.501 [ATL-Logging-Thread] INFO  - *(Not Actually)
+
+15:40:22.502 [ATL-Logging-Thread] INFO  - Setting up Bottom Bar
+
+15:40:22.537 [ATL-Logging-Thread] INFO  - Finished Setting up Bottom Bar
+
+15:40:22.537 [ATL-Logging-Thread] INFO  - Setting up Tabs
+
+15:40:22.705 [ATL-Logging-Thread] INFO  - Finished Setting up Tabs
+
+15:40:22.710 [ATL-Logging-Thread] INFO  - Showing Launcher
+

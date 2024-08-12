@@ -1,0 +1,1538 @@
+15:41:33.687 [ATL-Logging-Thread] INFO  - Organising filesystem
+
+15:41:33.722 [ATL-Logging-Thread] INFO  - ATLauncher Version: 3.4.36.9 [591787b9c8c568d7403c1b5c47e43df7a9600d36]
+
+15:41:33.724 [ATL-Logging-Thread] INFO  - App Arguments: ["--working-dir","**USERSDIR**","--no-launcher-update"]
+
+15:41:33.727 [ATL-Logging-Thread] INFO  - JVM Arguments: []
+
+15:41:33.728 [ATL-Logging-Thread] INFO  - Java Version: Java 21 (21)
+
+15:41:33.731 [ATL-Logging-Thread] INFO  - Java Path: /nix/store/bk3x3ia7gxqic1jgr3dz05gwi8zw671y-openjdk-21+35/lib/openjdk
+
+15:41:33.732 [ATL-Logging-Thread] INFO  - 64 Bit Java: true
+
+15:41:33.735 [ATL-Logging-Thread] INFO  - RAM Available: 31911MB
+
+15:41:33.736 [ATL-Logging-Thread] INFO  - Launcher Directory: **USERSDIR**
+
+15:41:33.770 [ATL-Logging-Thread] INFO  - GPU: Navi 33 [Radeon RX 7700S/7600/7600S/7600M XT/PRO W7600] (Advanced Micro Devices, Inc. [AMD/ATI] (0x1002)) unknown 8448MB VRAM
+
+15:41:33.874 [ATL-Logging-Thread] INFO  - CPU: 13th Gen Intel(R) Core(TM) i5-13600KF 14 cores/20 threads
+
+15:41:33.878 [ATL-Logging-Thread] INFO  - Operating System: NixOS (24.11 (Vicuna) build 6.6.35)
+
+15:41:33.879 [ATL-Logging-Thread] INFO  - Bitness: 64
+
+15:41:33.883 [ATL-Logging-Thread] INFO  - Uptime: 6337
+
+15:41:33.885 [ATL-Logging-Thread] INFO  - Manufacturer: GNU/Linux
+
+15:41:33.888 [ATL-Logging-Thread] INFO  - Showing splash screen and loading everything
+
+15:41:33.889 [ATL-Logging-Thread] INFO  - Checking for updated files!
+
+15:41:36.463 [ATL-Logging-Thread] INFO  - Launcher finished loading everything
+
+15:41:36.475 [ATL-Logging-Thread] INFO  - Launcher opening
+
+15:41:36.475 [ATL-Logging-Thread] INFO  - Made By Bob*
+
+15:41:36.475 [ATL-Logging-Thread] INFO  - *(Not Actually)
+
+15:41:36.477 [ATL-Logging-Thread] INFO  - Setting up Bottom Bar
+
+15:41:36.507 [ATL-Logging-Thread] INFO  - Finished Setting up Bottom Bar
+
+15:41:36.508 [ATL-Logging-Thread] INFO  - Setting up Tabs
+
+15:41:36.647 [ATL-Logging-Thread] INFO  - Finished Setting up Tabs
+
+15:41:36.652 [ATL-Logging-Thread] INFO  - Showing Launcher
+
+15:41:52.807 [ATL-Logging-Thread] INFO  - Preparing for launch!
+
+15:41:53.569 [ATL-Logging-Thread] INFO  - Launching pack Minecraft 1.20.1 (Vanilla) for Minecraft 1.20.1
+
+15:41:53.570 [ATL-Logging-Thread] INFO  - Logging into Minecraft!
+
+15:41:53.589 [ATL-Logging-Thread] INFO  - Using Java runtime java-runtime-gamma (Java 17.0.8) at path **USERSDIR**/runtimes/minecraft/java-runtime-gamma/linux/java-runtime-gamma
+
+15:41:53.643 [ATL-Logging-Thread] INFO  - Loader: NeoForge 47.1.106
+
+15:41:53.643 [ATL-Logging-Thread] INFO  - Mods:
+
+15:41:53.644 [ATL-Logging-Thread] INFO  -  - /physics-mod-3.0.14-mc-1.20.1-forge.jar (Added)
+
+15:41:53.645 [ATL-Logging-Thread] INFO  -  - /entityculling-forge-1.6.6-mc1.20.1.jar (Added)
+
+15:41:53.646 [ATL-Logging-Thread] INFO  - Launching Minecraft with the following arguments (user related stuff has been removed): [USERSDIR/runtimes/minecraft/java-runtime-gamma/linux/java-runtime-gamma/bin/java, -Xmx4096M, -XX:MetaspaceSize=256M, -Duser.language=en, -Duser.country=US, -Dfml.log.level=INFO, -Dlog4j.configurationFile=USERSDIR/assets/log_configs/client-1.12.xml, -XX:+UnlockExperimentalVMOptions, -XX:+UseG1GC, -XX:G1NewSizePercent=20, -XX:G1ReservePercent=20, -XX:MaxGCPauseMillis=50, -XX:G1HeapRegionSize=32M, -Xss1M, -Djava.library.path=USERSDIR/temp/natives-e7c60e92de6c4337acf72fd736ed7ba9, -Djna.tmpdir=USERSDIR/temp/natives-e7c60e92de6c4337acf72fd736ed7ba9, -Dorg.lwjgl.system.SharedLibraryExtractPath=USERSDIR/temp/natives-e7c60e92de6c4337acf72fd736ed7ba9, -Dio.netty.native.workdir=USERSDIR/temp/natives-e7c60e92de6c4337acf72fd736ed7ba9, -Dminecraft.launcher.brand=ATLauncher, -Dminecraft.launcher.version=3.4.36.9, -cp, USERSDIR/libraries/net/neoforged/fancymodloader/loader/47.2.2/loader-47.2.2.jar:USERSDIR/libraries/net/neoforged/fancymodloader/earlydisplay/47.2.2/earlydisplay-47.2.2.jar:USERSDIR/libraries/cpw/mods/securejarhandler/2.1.10/securejarhandler-2.1.10.jar:USERSDIR/libraries/org/ow2/asm/asm/9.5/asm-9.5.jar:USERSDIR/libraries/org/ow2/asm/asm-commons/9.5/asm-commons-9.5.jar:USERSDIR/libraries/org/ow2/asm/asm-tree/9.5/asm-tree-9.5.jar:USERSDIR/libraries/org/ow2/asm/asm-util/9.5/asm-util-9.5.jar:USERSDIR/libraries/org/ow2/asm/asm-analysis/9.5/asm-analysis-9.5.jar:USERSDIR/libraries/net/minecraftforge/accesstransformers/8.0.4/accesstransformers-8.0.4.jar:USERSDIR/libraries/org/antlr/antlr4-runtime/4.9.1/antlr4-runtime-4.9.1.jar:USERSDIR/libraries/net/minecraftforge/eventbus/6.0.5/eventbus-6.0.5.jar:USERSDIR/libraries/net/minecraftforge/forgespi/7.0.1/forgespi-7.0.1.jar:USERSDIR/libraries/net/minecraftforge/coremods/5.0.1/coremods-5.0.1.jar:USERSDIR/libraries/cpw/mods/modlauncher/10.0.9/modlauncher-10.0.9.jar:USERSDIR/libraries/net/minecraftforge/unsafe/0.2.0/unsafe-0.2.0.jar:USERSDIR/libraries/net/minecraftforge/mergetool/1.1.5/mergetool-1.1.5-api.jar:USERSDIR/libraries/com/electronwill/night-config/core/3.6.4/core-3.6.4.jar:USERSDIR/libraries/com/electronwill/night-config/toml/3.6.4/toml-3.6.4.jar:USERSDIR/libraries/org/apache/maven/maven-artifact/3.8.5/maven-artifact-3.8.5.jar:USERSDIR/libraries/net/jodah/typetools/0.6.3/typetools-0.6.3.jar:USERSDIR/libraries/net/minecrell/terminalconsoleappender/1.2.0/terminalconsoleappender-1.2.0.jar:USERSDIR/libraries/org/jline/jline-reader/3.12.1/jline-reader-3.12.1.jar:USERSDIR/libraries/org/jline/jline-terminal/3.12.1/jline-terminal-3.12.1.jar:USERSDIR/libraries/org/spongepowered/mixin/0.8.5/mixin-0.8.5.jar:USERSDIR/libraries/org/openjdk/nashorn/nashorn-core/15.3/nashorn-core-15.3.jar:USERSDIR/libraries/net/minecraftforge/JarJarSelector/0.3.19/JarJarSelector-0.3.19.jar:USERSDIR/libraries/net/minecraftforge/JarJarMetadata/0.3.19/JarJarMetadata-0.3.19.jar:USERSDIR/libraries/cpw/mods/bootstraplauncher/1.1.2/bootstraplauncher-1.1.2.jar:USERSDIR/libraries/net/minecraftforge/JarJarFileSystems/0.3.19/JarJarFileSystems-0.3.19.jar:USERSDIR/libraries/net/neoforged/fancymodloader/events/47.2.2/events-47.2.2.jar:USERSDIR/libraries/net/neoforged/fancymodloader/core/47.2.2/core-47.2.2.jar:USERSDIR/libraries/net/neoforged/fancymodloader/language-java/47.2.2/language-java-47.2.2.jar:USERSDIR/libraries/net/neoforged/fancymodloader/language-lowcode/47.2.2/language-lowcode-47.2.2.jar:USERSDIR/libraries/net/neoforged/fancymodloader/language-minecraft/47.2.2/language-minecraft-47.2.2.jar:USERSDIR/libraries/com/github/oshi/oshi-core/6.2.2/oshi-core-6.2.2.jar:USERSDIR/libraries/com/google/code/gson/gson/2.10/gson-2.10.jar:USERSDIR/libraries/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:USERSDIR/libraries/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar:USERSDIR/libraries/com/ibm/icu/icu4j/71.1/icu4j-71.1.jar:USERSDIR/libraries/com/mojang/authlib/4.0.43/authlib-4.0.43.jar:USERSDIR/libraries/com/mojang/blocklist/1.0.10/blocklist-1.0.10.jar:USERSDIR/libraries/com/mojang/brigadier/1.1.8/brigadier-1.1.8.jar:USERSDIR/libraries/com/mojang/datafixerupper/6.0.8/datafixerupper-6.0.8.jar:USERSDIR/libraries/com/mojang/logging/1.1.1/logging-1.1.1.jar:USERSDIR/libraries/com/mojang/patchy/2.2.10/patchy-2.2.10.jar:USERSDIR/libraries/com/mojang/text2speech/1.17.9/text2speech-1.17.9.jar:USERSDIR/libraries/commons-codec/commons-codec/1.15/commons-codec-1.15.jar:USERSDIR/libraries/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar:USERSDIR/libraries/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:USERSDIR/libraries/io/netty/netty-buffer/4.1.82.Final/netty-buffer-4.1.82.Final.jar:USERSDIR/libraries/io/netty/netty-codec/4.1.82.Final/netty-codec-4.1.82.Final.jar:USERSDIR/libraries/io/netty/netty-common/4.1.82.Final/netty-common-4.1.82.Final.jar:USERSDIR/libraries/io/netty/netty-handler/4.1.82.Final/netty-handler-4.1.82.Final.jar:USERSDIR/libraries/io/netty/netty-resolver/4.1.82.Final/netty-resolver-4.1.82.Final.jar:USERSDIR/libraries/io/netty/netty-transport-classes-epoll/4.1.82.Final/netty-transport-classes-epoll-4.1.82.Final.jar:USERSDIR/libraries/io/netty/netty-transport-native-epoll/4.1.82.Final/netty-transport-native-epoll-4.1.82.Final-linux-aarch_64.jar:USERSDIR/libraries/io/netty/netty-transport-native-epoll/4.1.82.Final/netty-transport-native-epoll-4.1.82.Final-linux-x86_64.jar:USERSDIR/libraries/io/netty/netty-transport-native-unix-common/4.1.82.Final/netty-transport-native-unix-common-4.1.82.Final.jar:USERSDIR/libraries/io/netty/netty-transport/4.1.82.Final/netty-transport-4.1.82.Final.jar:USERSDIR/libraries/it/unimi/dsi/fastutil/8.5.9/fastutil-8.5.9.jar:USERSDIR/libraries/net/java/dev/jna/jna-platform/5.12.1/jna-platform-5.12.1.jar:USERSDIR/libraries/net/java/dev/jna/jna/5.12.1/jna-5.12.1.jar:USERSDIR/libraries/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:USERSDIR/libraries/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar:USERSDIR/libraries/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:USERSDIR/libraries/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:USERSDIR/libraries/org/apache/httpcomponents/httpcore/4.4.15/httpcore-4.4.15.jar:USERSDIR/libraries/org/apache/logging/log4j/log4j-api/2.19.0/log4j-api-2.19.0.jar:USERSDIR/libraries/org/apache/logging/log4j/log4j-core/2.19.0/log4j-core-2.19.0.jar:USERSDIR/libraries/org/apache/logging/log4j/log4j-slf4j2-impl/2.19.0/log4j-slf4j2-impl-2.19.0.jar:USERSDIR/libraries/org/joml/joml/1.10.5/joml-1.10.5.jar:USERSDIR/libraries/org/lwjgl/lwjgl-glfw/3.3.1/lwjgl-glfw-3.3.1.jar:USERSDIR/libraries/org/lwjgl/lwjgl-glfw/3.3.1/lwjgl-glfw-3.3.1-natives-linux.jar:USERSDIR/libraries/org/lwjgl/lwjgl-jemalloc/3.3.1/lwjgl-jemalloc-3.3.1.jar:USERSDIR/libraries/org/lwjgl/lwjgl-jemalloc/3.3.1/lwjgl-jemalloc-3.3.1-natives-linux.jar:USERSDIR/libraries/org/lwjgl/lwjgl-openal/3.3.1/lwjgl-openal-3.3.1.jar:USERSDIR/libraries/org/lwjgl/lwjgl-openal/3.3.1/lwjgl-openal-3.3.1-natives-linux.jar:USERSDIR/libraries/org/lwjgl/lwjgl-opengl/3.3.1/lwjgl-opengl-3.3.1.jar:USERSDIR/libraries/org/lwjgl/lwjgl-opengl/3.3.1/lwjgl-opengl-3.3.1-natives-linux.jar:USERSDIR/libraries/org/lwjgl/lwjgl-stb/3.3.1/lwjgl-stb-3.3.1.jar:USERSDIR/libraries/org/lwjgl/lwjgl-stb/3.3.1/lwjgl-stb-3.3.1-natives-linux.jar:USERSDIR/libraries/org/lwjgl/lwjgl-tinyfd/3.3.1/lwjgl-tinyfd-3.3.1.jar:USERSDIR/libraries/org/lwjgl/lwjgl-tinyfd/3.3.1/lwjgl-tinyfd-3.3.1-natives-linux.jar:USERSDIR/libraries/org/lwjgl/lwjgl/3.3.1/lwjgl-3.3.1.jar:USERSDIR/libraries/org/lwjgl/lwjgl/3.3.1/lwjgl-3.3.1-natives-linux.jar:USERSDIR/libraries/org/slf4j/slf4j-api/2.0.1/slf4j-api-2.0.1.jar:USERSDIR/libraries/net/minecraft/client/1.20.1/client-1.20.1.jar, -Djava.net.preferIPv6Addresses=system, -DignoreList=bootstraplauncher,securejarhandler,asm-commons,asm-util,asm-analysis,asm-tree,asm,JarJarFileSystems,events-47.2.2.jar,core-47.2.2.jar,language-java,language-lowcode,language-minecraft,client-extra,forge-,client-1.20.1.jar, -DmergeModules=jna-5.10.0.jar,jna-platform-5.10.0.jar, -Dfml.pluginLayerLibraries=core-47.2.2.jar,language-java-47.2.2.jar,language-lowcode-47.2.2.jar,language-minecraft-47.2.2.jar, -Dfml.gameLayerLibraries=events-47.2.2.jar, -DlibraryDirectory=USERSDIR/libraries, -p, USERSDIR/libraries/cpw/mods/bootstraplauncher/1.1.2/bootstraplauncher-1.1.2.jar:USERSDIR/libraries/cpw/mods/securejarhandler/2.1.10/securejarhandler-2.1.10.jar:USERSDIR/libraries/org/ow2/asm/asm-commons/9.5/asm-commons-9.5.jar:USERSDIR/libraries/org/ow2/asm/asm-util/9.5/asm-util-9.5.jar:USERSDIR/libraries/org/ow2/asm/asm-analysis/9.5/asm-analysis-9.5.jar:USERSDIR/libraries/org/ow2/asm/asm-tree/9.5/asm-tree-9.5.jar:USERSDIR/libraries/org/ow2/asm/asm/9.5/asm-9.5.jar:USERSDIR/libraries/net/minecraftforge/JarJarFileSystems/0.3.19/JarJarFileSystems-0.3.19.jar, --add-modules, ALL-MODULE-PATH, --add-opens, java.base/java.util.jar=cpw.mods.securejarhandler, --add-opens, java.base/java.lang.invoke=cpw.mods.securejarhandler, --add-exports, java.base/sun.security.util=cpw.mods.securejarhandler, --add-exports, jdk.naming.dns/com.sun.jndi.dns=java.naming, cpw.mods.bootstraplauncher.BootstrapLauncher, --username, REDACTED, --version, 1.20.1, --gameDir, USERSDIR/instances/Cashworks, --assetsDir, USERSDIR/assets, --assetIndex, 5, --uuid, REDACTED, --accessToken, REDACTED, --userType, msa, --versionType, release, --launchTarget, forgeclient, --fml.forgeVersion, 47.1.106, --fml.fmlVersion, 47.2.2, --fml.mcVersion, 1.20.1, --fml.mcpVersion, 20230612.114412, --width=854, --height=480]
+
+15:42:12.162 [ATL-Logging-Thread] INFO  - Checking for updated files!
+
+15:42:21.399 [ATL-Logging-Thread] INFO  - Preparing for launch!
+
+15:42:21.713 [ATL-Logging-Thread] INFO  - Launching pack Minecraft 1.20.1 (Vanilla) for Minecraft 1.20.1
+
+15:42:21.713 [ATL-Logging-Thread] INFO  - Logging into Minecraft!
+
+15:42:21.719 [ATL-Logging-Thread] INFO  - Using Java runtime java-runtime-gamma (Java 17.0.8) at path **USERSDIR**/runtimes/minecraft/java-runtime-gamma/linux/java-runtime-gamma
+
+15:42:21.719 [ATL-Logging-Thread] INFO  - Running command: ""**USERSDIR**/runtimes/minecraft/java-runtime-gamma/linux/java-runtime-gamma/bin/java" -jar packwiz-installer-bootstrap.jar https://raw.githubusercontent.com/seriousfreezing/Cashworks/main/client-side/pack.toml"
+
+15:42:22.682 [ATL-Logging-Thread] INFO  - Current version is: null
+
+15:42:22.683 [ATL-Logging-Thread] INFO  - New version is: v0.5.14
+
+15:42:22.683 [ATL-Logging-Thread] INFO  - Attempting to update...
+
+15:42:25.493 [ATL-Logging-Thread] INFO  - Update successful!
+
+15:42:25.566 [ATL-Logging-Thread] INFO  - Loading manifest file...
+
+15:42:25.586 [ATL-Logging-Thread] INFO  - Loading pack file...
+
+15:42:25.897 [ATL-Logging-Thread] INFO  - Loading MultiMC pack file...
+
+15:42:25.898 [ATL-Logging-Thread] INFO  - MultiMC not detected
+
+15:42:25.898 [ATL-Logging-Thread] INFO  - Checking local files...
+
+15:42:25.898 [ATL-Logging-Thread] INFO  - Modpack name: Cashworks
+
+15:42:25.980 [ATL-Logging-Thread] INFO  - Checking local files...
+
+15:42:25.980 [ATL-Logging-Thread] INFO  - Comparing new files...
+
+15:42:27.971 [ATL-Logging-Thread] INFO  - Validating existing files...
+
+15:42:27.994 [ATL-Logging-Thread] INFO  - Resolving CurseForge metadata...
+
+15:42:38.602 [ATL-Logging-Thread] INFO  - Update cancelled by user!
+
+15:42:38.940 [ATL-Logging-Thread] ERROR - 
+
+15:42:39.831 [ATL-Logging-Thread] ERROR - Failed to execute pre-launch command
+
+15:42:48.953 [ATL-Logging-Thread] INFO  - Preparing for launch!
+
+15:42:49.283 [ATL-Logging-Thread] INFO  - Launching pack Minecraft 1.20.1 (Vanilla) for Minecraft 1.20.1
+
+15:42:49.283 [ATL-Logging-Thread] INFO  - Logging into Minecraft!
+
+15:42:49.294 [ATL-Logging-Thread] INFO  - Using Java runtime java-runtime-gamma (Java 17.0.8) at path **USERSDIR**/runtimes/minecraft/java-runtime-gamma/linux/java-runtime-gamma
+
+15:42:49.294 [ATL-Logging-Thread] INFO  - Running command: ""**USERSDIR**/runtimes/minecraft/java-runtime-gamma/linux/java-runtime-gamma/bin/java" -jar packwiz-installer-bootstrap.jar https://raw.githubusercontent.com/seriousfreezing/Cashworks/main/client-side/pack.toml"
+
+15:42:50.271 [ATL-Logging-Thread] INFO  - Current version is: v0.5.14
+
+15:42:50.273 [ATL-Logging-Thread] INFO  - New version is: v0.5.14
+
+15:42:50.275 [ATL-Logging-Thread] INFO  - Already up to date!
+
+15:42:50.562 [ATL-Logging-Thread] INFO  - Loading manifest file...
+
+15:42:50.584 [ATL-Logging-Thread] INFO  - Loading pack file...
+
+15:42:50.901 [ATL-Logging-Thread] INFO  - Loading MultiMC pack file...
+
+15:42:50.901 [ATL-Logging-Thread] INFO  - MultiMC not detected
+
+15:42:50.901 [ATL-Logging-Thread] INFO  - Checking local files...
+
+15:42:50.901 [ATL-Logging-Thread] INFO  - Modpack name: Cashworks
+
+15:42:51.007 [ATL-Logging-Thread] INFO  - Checking local files...
+
+15:42:51.007 [ATL-Logging-Thread] INFO  - Comparing new files...
+
+15:42:51.252 [ATL-Logging-Thread] INFO  - Validating existing files...
+
+15:42:51.260 [ATL-Logging-Thread] INFO  - Resolving CurseForge metadata...
+
+15:42:51.806 [ATL-Logging-Thread] INFO  - (1/147) Downloaded alexsmobs.toml
+
+15:42:51.814 [ATL-Logging-Thread] INFO  - (2/147) Downloaded embeddium-options.json
+
+15:42:51.825 [ATL-Logging-Thread] INFO  - (3/147) Downloaded enhanced_bes.properties
+
+15:42:51.827 [ATL-Logging-Thread] INFO  - (4/147) Downloaded NCR-Client.json
+
+15:42:51.831 [ATL-Logging-Thread] INFO  - (5/147) Downloaded common.toml
+
+15:42:51.833 [ATL-Logging-Thread] INFO  - (6/147) Downloaded carryon-common.json
+
+15:42:51.836 [ATL-Logging-Thread] INFO  - (7/147) Downloaded badoptimizations.txt
+
+15:42:51.842 [ATL-Logging-Thread] INFO  - (8/147) Downloaded entityculling.json
+
+15:42:51.847 [ATL-Logging-Thread] INFO  - (9/147) Downloaded ars_nouveau-client.toml
+
+15:42:51.866 [ATL-Logging-Thread] INFO  - (10/147) Downloaded dynamic_fps.json
+
+15:42:52.089 [ATL-Logging-Thread] INFO  - (11/147) Downloaded farmersdelight-common.toml
+
+15:42:52.099 [ATL-Logging-Thread] INFO  - (12/147) Downloaded explorerscompass.json
+
+15:42:52.105 [ATL-Logging-Thread] INFO  - (13/147) Downloaded ferritecore.mixin.properties
+
+15:42:52.126 [ATL-Logging-Thread] INFO  - (14/147) Downloaded oculus.properties
+
+15:42:52.130 [ATL-Logging-Thread] INFO  - (15/147) Downloaded jei-client.ini
+
+15:42:52.133 [ATL-Logging-Thread] INFO  - (16/147) Downloaded immediatelyfast.json
+
+15:42:52.137 [ATL-Logging-Thread] INFO  - (17/147) Downloaded naturescompass.json
+
+15:42:52.139 [ATL-Logging-Thread] INFO  - (18/147) Downloaded jeg-common.toml
+
+15:42:52.142 [ATL-Logging-Thread] INFO  - (19/147) Downloaded jade.json
+
+15:42:52.157 [ATL-Logging-Thread] INFO  - (20/147) Downloaded physics_client_config.json
+
+15:42:52.386 [ATL-Logging-Thread] INFO  - (21/147) Downloaded quark-common.toml
+
+15:42:52.393 [ATL-Logging-Thread] INFO  - (22/147) Downloaded physics_server_config.json
+
+15:42:52.413 [ATL-Logging-Thread] INFO  - (23/147) Downloaded refinedstorage-client.toml
+
+15:42:52.424 [ATL-Logging-Thread] INFO  - (24/147) Downloaded securitycraft-client.toml
+
+15:42:52.430 [ATL-Logging-Thread] INFO  - (25/147) Downloaded smoothboot.json
+
+15:42:52.436 [ATL-Logging-Thread] INFO  - (26/147) Downloaded voicechat-server.properties
+
+15:42:52.438 [ATL-Logging-Thread] INFO  - (27/147) Downloaded options.txt
+
+15:42:52.441 [ATL-Logging-Thread] INFO  - (28/147) Downloaded voicechat-client.properties
+
+15:42:52.552 [ATL-Logging-Thread] INFO  - (29/147) Downloaded Advanced Peripherals
+
+15:42:52.601 [ATL-Logging-Thread] INFO  - (30/147) Downloaded AppleSkin
+
+15:42:52.699 [ATL-Logging-Thread] INFO  - (31/147) Downloaded BadOptimizations
+
+15:42:52.773 [ATL-Logging-Thread] INFO  - (32/147) Downloaded Better Third Person
+
+15:42:52.950 [ATL-Logging-Thread] INFO  - (33/147) Downloaded Botarium
+
+15:42:53.000 [ATL-Logging-Thread] INFO  - (34/147) Downloaded Building Gadgets
+
+15:42:53.043 [ATL-Logging-Thread] INFO  - (35/147) Downloaded Caelus API (Forge/NeoForge)
+
+15:42:53.058 [ATL-Logging-Thread] INFO  - (36/147) Downloaded Alex's Mobs
+
+15:42:53.088 [ATL-Logging-Thread] INFO  - (37/147) Downloaded Carry On
+
+15:42:53.088 [ATL-Logging-Thread] INFO  - (38/147) Downloaded Ars Creo
+
+15:42:53.089 [ATL-Logging-Thread] INFO  - (39/147) Downloaded Blockus
+
+15:42:53.144 [ATL-Logging-Thread] INFO  - (40/147) Downloaded CC: Tweaked
+
+15:42:53.191 [ATL-Logging-Thread] INFO  - (41/147) Downloaded Configured Defaults [Forge & Fabric]
+
+15:42:53.193 [ATL-Logging-Thread] INFO  - (42/147) Downloaded Citadel
+
+15:42:53.210 [ATL-Logging-Thread] INFO  - (43/147) Downloaded Connector Extras
+
+15:42:53.248 [ATL-Logging-Thread] INFO  - (44/147) Downloaded Controlling
+
+15:42:53.398 [ATL-Logging-Thread] INFO  - (45/147) Downloaded Clockwork: Create x Valkyrien Skies
+
+15:42:53.432 [ATL-Logging-Thread] INFO  - (46/147) Downloaded Create Big Cannons
+
+15:42:53.450 [ATL-Logging-Thread] INFO  - (47/147) Downloaded Create: Extended Cogwheels 
+
+15:42:53.572 [ATL-Logging-Thread] INFO  - (48/147) Downloaded Cosmetic Armor Reworked
+
+15:42:53.667 [ATL-Logging-Thread] INFO  - (49/147) Downloaded CullLessLeaves Reforged (Unofficial)
+
+15:42:53.669 [ATL-Logging-Thread] INFO  - (50/147) Downloaded Croptopia
+
+15:42:53.701 [ATL-Logging-Thread] INFO  - (51/147) Downloaded Create
+
+15:42:53.751 [ATL-Logging-Thread] INFO  - (52/147) Downloaded Curios API (Forge/NeoForge)
+
+15:42:53.752 [ATL-Logging-Thread] INFO  - (53/147) Downloaded Create Deco
+
+15:42:53.752 [ATL-Logging-Thread] INFO  - (54/147) Entity Culling Fabric/Forge already exists (validated)
+
+15:42:53.762 [ATL-Logging-Thread] INFO  - (55/147) Downloaded Create: New Age
+
+15:42:53.995 [ATL-Logging-Thread] INFO  - (56/147) Downloaded Enhanced Block Entities
+
+15:42:53.996 [ATL-Logging-Thread] INFO  - (57/147) Downloaded Embeddium
+
+15:42:53.996 [ATL-Logging-Thread] INFO  - (58/147) Downloaded Dynamic FPS
+
+15:42:53.996 [ATL-Logging-Thread] INFO  - (59/147) Downloaded [EMF] Entity Model Features [Fabric & Forge]
+
+15:42:54.010 [ATL-Logging-Thread] INFO  - (60/147) Downloaded EpheroLib
+
+15:42:54.012 [ATL-Logging-Thread] INFO  - (61/147) FastBoot already exists (validated)
+
+15:42:54.017 [ATL-Logging-Thread] INFO  - (62/147) Downloaded Distant Horizons: A Level of Detail mod
+
+15:42:54.025 [ATL-Logging-Thread] INFO  - (63/147) Downloaded [ETF] Entity Texture Features - [Fabric & Forge]
+
+15:42:54.257 [ATL-Logging-Thread] INFO  - (64/147) Downloaded CC: VS
+
+15:42:54.393 [ATL-Logging-Thread] INFO  - (65/147) Downloaded Eureka! Ships! for Valkyrien Skies (Forge/Fabric)
+
+15:42:54.394 [ATL-Logging-Thread] INFO  - (66/147) Downloaded Explorer's Compass
+
+15:42:54.396 [ATL-Logging-Thread] INFO  - (67/147) Downloaded FerriteCore ((Neo)Forge)
+
+15:42:54.399 [ATL-Logging-Thread] INFO  - (68/147) Downloaded Flux Networks
+
+15:42:54.475 [ATL-Logging-Thread] INFO  - (69/147) Downloaded Farmer's Delight
+
+15:42:54.480 [ATL-Logging-Thread] INFO  - (70/147) Downloaded Forgified Fabric API
+
+15:42:54.547 [ATL-Logging-Thread] INFO  - (71/147) Downloaded Create: Estrogen
+
+15:42:54.591 [ATL-Logging-Thread] INFO  - (72/147) Downloaded Framework
+
+15:42:54.593 [ATL-Logging-Thread] INFO  - (73/147) Downloaded GraveStone Mod
+
+15:42:54.594 [ATL-Logging-Thread] INFO  - (74/147) Downloaded Fusion (Connected Textures)
+
+15:42:54.597 [ATL-Logging-Thread] INFO  - (75/147) Downloaded ImmediatelyFast
+
+15:42:54.597 [ATL-Logging-Thread] INFO  - (76/147) Downloaded FramedBlocks
+
+15:42:54.663 [ATL-Logging-Thread] INFO  - (77/147) Downloaded Etched
+
+15:42:54.766 [ATL-Logging-Thread] INFO  - (78/147) Downloaded Jade 🔍
+
+15:42:54.816 [ATL-Logging-Thread] INFO  - (79/147) Downloaded JourneyMap
+
+15:42:54.821 [ATL-Logging-Thread] INFO  - (80/147) Downloaded Macaw's Doors
+
+15:42:55.053 [ATL-Logging-Thread] INFO  - (81/147) Downloaded Macaw's Bridges
+
+15:42:55.062 [ATL-Logging-Thread] INFO  - (82/147) Downloaded Macaw's Fences and Walls
+
+15:42:55.068 [ATL-Logging-Thread] INFO  - (83/147) Downloaded Macaw's Lights and Lamps
+
+15:42:55.075 [ATL-Logging-Thread] INFO  - (84/147) Downloaded Just Enough Resources (JER)
+
+15:42:55.110 [ATL-Logging-Thread] INFO  - (85/147) Downloaded Macaw's Roofs
+
+15:42:55.188 [ATL-Logging-Thread] INFO  - (86/147) Downloaded Macaw's Trapdoors
+
+15:42:55.198 [ATL-Logging-Thread] INFO  - (87/147) Downloaded Kotlin for Forge
+
+15:42:55.211 [ATL-Logging-Thread] INFO  - (88/147) Downloaded Just Enough Guns
+
+15:42:55.230 [ATL-Logging-Thread] INFO  - (89/147) Downloaded Just Enough Items (JEI)
+
+15:42:55.251 [ATL-Logging-Thread] INFO  - (90/147) Downloaded Mekanism Generators
+
+15:42:55.414 [ATL-Logging-Thread] INFO  - (91/147) Downloaded MmmMmmMmmMmm (Target Dummy)
+
+15:42:55.430 [ATL-Logging-Thread] INFO  - (92/147) Downloaded Mouse Tweaks
+
+15:42:55.434 [ATL-Logging-Thread] INFO  - (93/147) Downloaded Mob Grinding Utils
+
+15:42:55.436 [ATL-Logging-Thread] INFO  - (94/147) Downloaded Mekanism
+
+15:42:55.522 [ATL-Logging-Thread] INFO  - (95/147) Downloaded Mo' Than Enough Guns
+
+15:42:55.582 [ATL-Logging-Thread] INFO  - (96/147) Downloaded Nature's Compass
+
+15:42:55.605 [ATL-Logging-Thread] INFO  - (97/147) Downloaded Not Enough Crashes (Forge)
+
+15:42:55.640 [ATL-Logging-Thread] INFO  - (98/147) Downloaded No Chat Reports
+
+15:42:55.642 [ATL-Logging-Thread] INFO  - (99/147) Downloaded Noisium
+
+15:42:55.672 [ATL-Logging-Thread] INFO  - (100/147) Downloaded Not Enough Recipe Book [NERB]
+
+15:42:55.724 [ATL-Logging-Thread] INFO  - (101/147) Downloaded Macaw's Windows
+
+15:42:55.740 [ATL-Logging-Thread] INFO  - (102/147) Downloaded Mekanism Tools
+
+15:42:56.004 [ATL-Logging-Thread] INFO  - (103/147) Downloaded Origins (Forge)
+
+15:42:56.015 [ATL-Logging-Thread] INFO  - (104/147) Downloaded Packet Fixer
+
+15:42:56.033 [ATL-Logging-Thread] INFO  - (105/147) Downloaded Aquamirae (Forge)
+
+15:42:56.050 [ATL-Logging-Thread] INFO  - (106/147) Downloaded Oculus
+
+15:42:56.053 [ATL-Logging-Thread] INFO  - (107/147) Downloaded Mouse Wheelie (Fabric)
+
+15:42:56.077 [ATL-Logging-Thread] INFO  - (108/147) Downloaded M.R.U
+
+15:42:56.113 [ATL-Logging-Thread] INFO  - (109/147) Downloaded Patchouli
+
+15:42:56.145 [ATL-Logging-Thread] INFO  - (110/147) Downloaded Paladin's Furniture
+
+15:42:56.172 [ATL-Logging-Thread] INFO  - (111/147) Downloaded Polymorph (Fabric/Forge/Quilt)
+
+15:42:56.232 [ATL-Logging-Thread] INFO  - (112/147) Downloaded Puzzles Lib [Forge & Fabric]
+
+15:42:56.405 [ATL-Logging-Thread] INFO  - (113/147) Downloaded Refined Polymorphism
+
+15:42:56.408 [ATL-Logging-Thread] INFO  - (114/147) Downloaded Refined Storage Addons
+
+15:42:56.412 [ATL-Logging-Thread] INFO  - (115/147) Downloaded Obscure API (Forge)
+
+15:42:56.434 [ATL-Logging-Thread] INFO  - (116/147) Downloaded Quark
+
+15:42:56.486 [ATL-Logging-Thread] INFO  - (117/147) Downloaded Refined Storage
+
+15:42:56.552 [ATL-Logging-Thread] INFO  - (118/147) Downloaded MrCrayfish's Furniture Mod: Refurbished
+
+15:42:56.554 [ATL-Logging-Thread] INFO  - (119/147) Downloaded Radium Reforged
+
+15:42:56.556 [ATL-Logging-Thread] INFO  - (120/147) Downloaded Redstone Pen
+
+15:42:56.576 [ATL-Logging-Thread] INFO  - (121/147) Downloaded Resourceful Lib
+
+15:42:56.593 [ATL-Logging-Thread] INFO  - (122/147) Downloaded RSInfinityBooster
+
+15:42:56.662 [ATL-Logging-Thread] INFO  - (123/147) Downloaded Searchables
+
+15:42:56.737 [ATL-Logging-Thread] INFO  - (124/147) Downloaded Quark Oddities
+
+15:42:56.745 [ATL-Logging-Thread] INFO  - (125/147) Downloaded Security Craft
+
+15:42:56.763 [ATL-Logging-Thread] INFO  - (126/147) Downloaded Moonlight Lib
+
+15:42:56.886 [ATL-Logging-Thread] INFO  - (127/147) Downloaded Simple Shops
+
+15:42:56.890 [ATL-Logging-Thread] INFO  - (128/147) Downloaded Sinytra Connector
+
+15:42:56.948 [ATL-Logging-Thread] INFO  - (129/147) Downloaded Create Slice & Dice
+
+15:42:56.948 [ATL-Logging-Thread] INFO  - (130/147) Downloaded Simple Voice Chat
+
+15:42:56.955 [ATL-Logging-Thread] INFO  - (131/147) Downloaded Sophisticated Backpacks
+
+15:42:57.045 [ATL-Logging-Thread] INFO  - (132/147) Downloaded Sophisticated Core
+
+15:42:57.118 [ATL-Logging-Thread] INFO  - (133/147) Downloaded Tiny Redstone
+
+15:42:57.190 [ATL-Logging-Thread] INFO  - (134/147) Downloaded Smooth Boot (Reloaded)
+
+15:42:57.193 [ATL-Logging-Thread] INFO  - (135/147) packwiz-installer-bootstrap.jar already exists (validated)
+
+15:42:57.331 [ATL-Logging-Thread] INFO  - (136/147) Downloaded Visual Workbench [Forge & Fabric]
+
+15:42:57.339 [ATL-Logging-Thread] INFO  - (137/147) Downloaded Valkyrien Skies (Forge/Fabric)
+
+15:42:57.341 [ATL-Logging-Thread] INFO  - (138/147) Downloaded Zeta
+
+15:42:57.393 [ATL-Logging-Thread] INFO  - (139/147) Downloaded Selfexpression
+
+15:42:57.395 [ATL-Logging-Thread] INFO  - (140/147) Downloaded Fresh Animations
+
+15:42:57.531 [ATL-Logging-Thread] INFO  - (141/147) Downloaded Sound Physics Remastered
+
+15:42:57.622 [ATL-Logging-Thread] INFO  - (142/147) Downloaded Trackwork
+
+15:42:58.158 [ATL-Logging-Thread] INFO  - (143/147) Downloaded ComplementaryReimagined_r5.2.2.zip
+
+15:42:58.460 [ATL-Logging-Thread] INFO  - (144/147) Downloaded Midnighttigger's Default Connected Textures
+
+15:42:58.813 [ATL-Logging-Thread] INFO  - (145/147) Downloaded Sound​s
+
+15:43:00.428 [ATL-Logging-Thread] INFO  - (146/147) Downloaded replaymod-1.20.1-2.6.15.jar
+
+15:43:00.796 [ATL-Logging-Thread] INFO  - (147/147) Downloaded Ars Nouveau
+
+15:43:00.803 [ATL-Logging-Thread] INFO  - Finished successfully!
+
+15:43:02.147 [ATL-Logging-Thread] INFO  - Using Java runtime java-runtime-gamma (Java 17.0.8) at path **USERSDIR**/runtimes/minecraft/java-runtime-gamma/linux/java-runtime-gamma
+
+15:43:02.197 [ATL-Logging-Thread] INFO  - Loader: NeoForge 47.1.106
+
+15:43:02.198 [ATL-Logging-Thread] INFO  - Mods:
+
+15:43:02.200 [ATL-Logging-Thread] INFO  -  - /JustEnoughGuns-0.5.3-1.20.1.jar (Added)
+
+15:43:02.202 [ATL-Logging-Thread] INFO  -  - /ImmediatelyFast-Forge-1.2.18+1.20.4.jar (Added)
+
+15:43:02.205 [ATL-Logging-Thread] INFO  -  - /mcw-lights-1.1.0-mc1.20.1forge.jar (Added)
+
+15:43:02.206 [ATL-Logging-Thread] INFO  -  - /NoChatReports-FORGE-1.20.1-v2.2.2.jar (Added)
+
+15:43:02.207 [ATL-Logging-Thread] INFO  -  - /smoothboot(reloaded)-mc1.20.1-0.0.4.jar (Added)
+
+15:43:02.208 [ATL-Logging-Thread] INFO  -  - /aquamirae-6.API15.jar (Added)
+
+15:43:02.209 [ATL-Logging-Thread] INFO  -  - /etched-3.0.2.jar (Added)
+
+15:43:02.209 [ATL-Logging-Thread] INFO  -  - /M'TEG-1.0.1-1.20.1.jar (Added)
+
+15:43:02.209 [ATL-Logging-Thread] INFO  -  - /CullLessLeaves-Reforged-1.20.1-1.0.5.jar (Added)
+
+15:43:02.210 [ATL-Logging-Thread] INFO  -  - /refinedstorage-1.12.4.jar (Added)
+
+15:43:02.210 [ATL-Logging-Thread] INFO  -  - /noisium-forge-2.0.3+mc1.20-1.20.1.jar (Added)
+
+15:43:02.211 [ATL-Logging-Thread] INFO  -  - /physics-mod-3.0.14-mc-1.20.1-forge.jar (Added)
+
+15:43:02.211 [ATL-Logging-Thread] INFO  -  - /mcw-bridges-3.0.0-mc1.20.1forge.jar (Added)
+
+15:43:02.212 [ATL-Logging-Thread] INFO  -  - /refurbished_furniture-forge-1.20.1-1.0.3.jar (Added)
+
+15:43:02.213 [ATL-Logging-Thread] INFO  -  - /trackwork-1.20.1-1.0.1-beta.jar (Added)
+
+15:43:02.213 [ATL-Logging-Thread] INFO  -  - /Controlling-forge-1.20.1-12.0.2.jar (Added)
+
+15:43:02.213 [ATL-Logging-Thread] INFO  -  - /ferritecore-6.0.1-forge.jar (Added)
+
+15:43:02.214 [ATL-Logging-Thread] INFO  -  - /BetterThirdPerson-Forge-1.20-1.9.0.jar (Added)
+
+15:43:02.214 [ATL-Logging-Thread] INFO  -  - /extendedgears-2.1.1-1.20.1-0.5.1.f-forge.jar (Added)
+
+15:43:02.215 [ATL-Logging-Thread] INFO  -  - /FarmersDelight-1.20.1-1.2.4.jar (Added)
+
+15:43:02.216 [ATL-Logging-Thread] INFO  -  - /mob_grinding_utils-1.20.1-1.1.0.jar (Added)
+
+15:43:02.217 [ATL-Logging-Thread] INFO  -  - /Searchables-forge-1.20.1-1.0.3.jar (Added)
+
+15:43:02.218 [ATL-Logging-Thread] INFO  -  - /entityculling-forge-1.6.6-mc1.20.1.jar (Added)
+
+15:43:02.219 [ATL-Logging-Thread] INFO  -  - /redstonepen-1.20.1-neoforge-1.3.33.jar (Added)
+
+15:43:02.220 [ATL-Logging-Thread] INFO  -  - /enhancedblockentities-0.9+1.20.jar (Added)
+
+15:43:02.221 [ATL-Logging-Thread] INFO  -  - /resourcefullib-forge-1.20.1-2.1.28.jar (Added)
+
+15:43:02.221 [ATL-Logging-Thread] INFO  -  - /entity_model_features_forge_1.20.1-2.1.3.jar (Added)
+
+15:43:02.222 [ATL-Logging-Thread] INFO  -  - /ConnectorExtras-1.11.2+1.20.1.jar (Added)
+
+15:43:02.223 [ATL-Logging-Thread] INFO  -  - /mcw-windows-2.3.0-mc1.20.1forge.jar (Added)
+
+15:43:02.224 [ATL-Logging-Thread] INFO  -  - /cc-tweaked-1.20.1-forge-1.112.0.jar (Added)
+
+15:43:02.225 [ATL-Logging-Thread] INFO  -  - /replaymod-1.20.1-2.6.15.jar (Added)
+
+15:43:02.226 [ATL-Logging-Thread] INFO  -  - /journeymap-1.20.1-5.10.1-forge.jar (Added)
+
+15:43:02.227 [ATL-Logging-Thread] INFO  -  - /cc_vs-1.20.1-forge-0.1.0.jar (Added)
+
+15:43:02.227 [ATL-Logging-Thread] INFO  -  - /mcw-fences-1.1.2-mc1.20.1forge.jar (Added)
+
+15:43:02.228 [ATL-Logging-Thread] INFO  -  - /create-new-age-forge-1.20.1-1.1.2.jar (Added)
+
+15:43:02.229 [ATL-Logging-Thread] INFO  -  - /dummmmmmy-1.20-1.8.19.jar (Added)
+
+15:43:02.229 [ATL-Logging-Thread] INFO  -  - /valkyrienskies-120-2.3.0-beta.5.jar (Added)
+
+15:43:02.230 [ATL-Logging-Thread] INFO  -  - /ConfiguredDefaults-v8.0.1-1.20.1-Forge.jar (Added)
+
+15:43:02.230 [ATL-Logging-Thread] INFO  -  - /createbigcannons-5.5.1-mc.1.20.1-forge.jar (Added)
+
+15:43:02.231 [ATL-Logging-Thread] INFO  -  - /polymorph-forge-0.49.5+1.20.1.jar (Added)
+
+15:43:02.231 [ATL-Logging-Thread] INFO  -  - /NaturesCompass-1.20.1-1.11.2-forge.jar (Added)
+
+15:43:02.232 [ATL-Logging-Thread] INFO  -  - /buildinggadgets2-1.0.7.jar (Added)
+
+15:43:02.232 [ATL-Logging-Thread] INFO  -  - /botarium-forge-1.20.1-2.3.4.jar (Added)
+
+15:43:02.233 [ATL-Logging-Thread] INFO  -  - /simpleshops-1.2.2.jar (Added)
+
+15:43:02.234 [ATL-Logging-Thread] INFO  -  - /appleskin-forge-mc1.20.1-2.5.1.jar (Added)
+
+15:43:02.235 [ATL-Logging-Thread] INFO  -  - /notenoughcrashes-4.4.7+1.20.1-forge.jar (Added)
+
+15:43:02.236 [ATL-Logging-Thread] INFO  -  - /citadel-2.5.6-1.20.1.jar (Added)
+
+15:43:02.237 [ATL-Logging-Thread] INFO  -  - /blockus-2.7.15+1.20.1.jar (Added)
+
+15:43:02.237 [ATL-Logging-Thread] INFO  -  - /FramedBlocks-9.3.0.jar (Added)
+
+15:43:02.238 [ATL-Logging-Thread] INFO  -  - /refinedpolymorph-0.1.1-1.20.1.jar (Added)
+
+15:43:02.238 [ATL-Logging-Thread] INFO  -  - /fabric-api-0.92.2+1.11.8+1.20.1.jar (Added)
+
+15:43:02.239 [ATL-Logging-Thread] INFO  -  - /clockwork-1.20.1-0.1.16-forge-b3b22e39fe.jar (Added)
+
+15:43:02.240 [ATL-Logging-Thread] INFO  -  - /Jade-1.20.1-forge-11.9.4.jar (Added)
+
+15:43:02.240 [ATL-Logging-Thread] INFO  -  - /tinyredstone-1.20-5.0.2.jar (Added)
+
+15:43:02.241 [ATL-Logging-Thread] INFO  -  - /moonlight-1.20-2.12.9-forge.jar (Added)
+
+15:43:02.241 [ATL-Logging-Thread] INFO  -  - /Zeta-1.0-24.jar (Added)
+
+15:43:02.242 [ATL-Logging-Thread] INFO  -  - /jei-1.20.1-forge-15.10.0.40.jar (Added)
+
+15:43:02.242 [ATL-Logging-Thread] INFO  -  - /EpheroLib-1.20.1-FORGE-1.2.0.jar (Added)
+
+15:43:02.243 [ATL-Logging-Thread] INFO  -  - /framework-forge-1.20.1-0.7.6.jar (Added)
+
+15:43:02.244 [ATL-Logging-Thread] INFO  -  - /packetfixer-forge-1.4.2-1.19-to-1.20.1.jar (Added)
+
+15:43:02.245 [ATL-Logging-Thread] INFO  -  - /QuarkOddities-1.20.1.jar (Added)
+
+15:43:02.245 [ATL-Logging-Thread] INFO  -  - /Mekanism-1.20.1-10.4.8.43.jar (Added)
+
+15:43:02.246 [ATL-Logging-Thread] INFO  -  - /mcw-doors-1.1.1forge-mc1.20.1.jar (Added)
+
+15:43:02.247 [ATL-Logging-Thread] INFO  -  - /embeddium-0.3.28+mc1.20.1.jar (Added)
+
+15:43:02.248 [ATL-Logging-Thread] INFO  -  - /BadOptimizations-2.1.4-1.20.1.jar (Added)
+
+15:43:02.249 [ATL-Logging-Thread] INFO  -  - /curios-forge-5.9.1+1.20.1.jar (Added)
+
+15:43:02.251 [ATL-Logging-Thread] INFO  -  - /AdvancedPeripherals-1.20.1-0.7.40r.jar (Added)
+
+15:43:02.252 [ATL-Logging-Thread] INFO  -  - /VisualWorkbench-v8.0.0-1.20.1-Forge.jar (Added)
+
+15:43:02.253 [ATL-Logging-Thread] INFO  -  - /radium-mc1.20.1-0.12.3+git.50c5c33.jar (Added)
+
+15:43:02.254 [ATL-Logging-Thread] INFO  -  - /oculus-mc1.20.1-1.7.0.jar (Added)
+
+15:43:02.255 [ATL-Logging-Thread] INFO  -  - /carryon-forge-1.20.1-2.1.2.7.jar (Added)
+
+15:43:02.255 [ATL-Logging-Thread] INFO  -  - /alexsmobs-1.22.8.jar (Added)
+
+15:43:02.256 [ATL-Logging-Thread] INFO  -  - /sound-physics-remastered-forge-1.20.1-1.4.5.jar (Added)
+
+15:43:02.256 [ATL-Logging-Thread] INFO  -  - /PuzzlesLib-v8.1.21-1.20.1-Forge.jar (Added)
+
+15:43:02.257 [ATL-Logging-Thread] INFO  -  - /Sounds-1.1.1+1.20.1.jar (Added)
+
+15:43:02.257 [ATL-Logging-Thread] INFO  -  - /voicechat-forge-1.20.1-2.5.20.jar (Added)
+
+15:43:02.257 [ATL-Logging-Thread] INFO  -  - /origins-forge-1.20.1-1.10.0.9-all.jar (Added)
+
+15:43:02.258 [ATL-Logging-Thread] INFO  -  - /cosmeticarmorreworked-1.20.1-v1a.jar (Added)
+
+15:43:02.258 [ATL-Logging-Thread] INFO  -  - /createdeco-2.0.2-1.20.1-forge.jar (Added)
+
+15:43:02.259 [ATL-Logging-Thread] INFO  -  - /Croptopia-1.20.1-FORGE-3.0.4.jar (Added)
+
+15:43:02.260 [ATL-Logging-Thread] INFO  -  - /ars_creo-1.20.1-4.0.1.jar (Added)
+
+15:43:02.261 [ATL-Logging-Thread] INFO  -  - /refinedstorageaddons-0.10.0.jar (Added)
+
+15:43:02.261 [ATL-Logging-Thread] INFO  -  - /gravestone-forge-1.20.1-1.0.18.jar (Added)
+
+15:43:02.262 [ATL-Logging-Thread] INFO  -  - /[1.20.1] SecurityCraft v1.9.10.jar (Added)
+
+15:43:02.262 [ATL-Logging-Thread] INFO  -  - /create-1.20.1-0.5.1.f.jar (Added)
+
+15:43:02.263 [ATL-Logging-Thread] INFO  -  - /entity_texture_features_forge_1.20.1-6.1.3.jar (Added)
+
+15:43:02.264 [ATL-Logging-Thread] INFO  -  - /Connector-1.0.0-beta.45+1.20.1.jar (Added)
+
+15:43:02.265 [ATL-Logging-Thread] INFO  -  - /obscure_api-15.jar (Added)
+
+15:43:02.265 [ATL-Logging-Thread] INFO  -  - /mcw-roofs-2.3.1-mc1.20.1forge.jar (Added)
+
+15:43:02.266 [ATL-Logging-Thread] INFO  -  - /selfexpression-2.11.2-forge-1.20.1.jar (Added)
+
+15:43:02.267 [ATL-Logging-Thread] INFO  -  - /ars_nouveau-1.20.1-4.9.0-all.jar (Added)
+
+15:43:02.268 [ATL-Logging-Thread] INFO  -  - /Quark-4.0-460.jar (Added)
+
+15:43:02.269 [ATL-Logging-Thread] INFO  -  - /fastboot-1.20.x-1.1.jar (Added)
+
+15:43:02.270 [ATL-Logging-Thread] INFO  -  - /paladin-furniture-mod-1.2.1-forge-mc1.20.1.jar (Added)
+
+15:43:02.271 [ATL-Logging-Thread] INFO  -  - /mru-0.4.4+1.20.1.jar (Added)
+
+15:43:02.272 [ATL-Logging-Thread] INFO  -  - /mousewheelie-1.13.0+mc1.20.1.jar (Added)
+
+15:43:02.272 [ATL-Logging-Thread] INFO  -  - /fusion-1.1.1-forge-mc1.20.1.jar (Added)
+
+15:43:02.273 [ATL-Logging-Thread] INFO  -  - /RSInfinityBooster-1.20.1-1.0+32.jar (Added)
+
+15:43:02.274 [ATL-Logging-Thread] INFO  -  - /mcw-trapdoors-1.1.3-mc1.20.1forge.jar (Added)
+
+15:43:02.274 [ATL-Logging-Thread] INFO  -  - /DistantHorizons-2.1.2-a-1.20.1-forge-fabric.jar (Added)
+
+15:43:02.275 [ATL-Logging-Thread] INFO  -  - /Patchouli-1.20.1-84-FORGE.jar (Added)
+
+15:43:02.276 [ATL-Logging-Thread] INFO  -  - /MekanismGenerators-1.20.1-10.4.8.43.jar (Added)
+
+15:43:02.277 [ATL-Logging-Thread] INFO  -  - /sophisticatedbackpacks-1.20.1-3.20.5.1044.jar (Added)
+
+15:43:02.278 [ATL-Logging-Thread] INFO  -  - /FluxNetworks-1.20.1-7.2.1.15.jar (Added)
+
+15:43:02.279 [ATL-Logging-Thread] INFO  -  - /JustEnoughResources-1.20.1-1.4.0.247.jar (Added)
+
+15:43:02.279 [ATL-Logging-Thread] INFO  -  - /MouseTweaks-forge-mc1.20.1-2.25.1.jar (Added)
+
+15:43:02.280 [ATL-Logging-Thread] INFO  -  - /kotlinforforge-4.11.0-all.jar (Added)
+
+15:43:02.281 [ATL-Logging-Thread] INFO  -  - /eureka-1201-1.5.1-beta.3.jar (Added)
+
+15:43:02.282 [ATL-Logging-Thread] INFO  -  - /nerb-1.20.1-0.3-FORGE.jar (Added)
+
+15:43:02.283 [ATL-Logging-Thread] INFO  -  - /sliceanddice-forge-3.2.1.jar (Added)
+
+15:43:02.283 [ATL-Logging-Thread] INFO  -  - /ExplorersCompass-1.20.1-1.3.3-forge.jar (Added)
+
+15:43:02.284 [ATL-Logging-Thread] INFO  -  - /sophisticatedcore-1.20.1-0.6.22.611.jar (Added)
+
+15:43:02.285 [ATL-Logging-Thread] INFO  -  - /MekanismTools-1.20.1-10.4.8.43.jar (Added)
+
+15:43:02.286 [ATL-Logging-Thread] INFO  -  - /dynamic-fps-3.6.3+minecraft-1.20.0-forge.jar (Added)
+
+15:43:02.287 [ATL-Logging-Thread] INFO  -  - /Estrogen-4.2.10+1.20.1-forge.jar (Added)
+
+15:43:02.288 [ATL-Logging-Thread] INFO  -  - /caelus-forge-3.2.0+1.20.1.jar (Added)
+
+15:43:02.295 [ATL-Logging-Thread] INFO  - Launching Minecraft with the following arguments (user related stuff has been removed): [USERSDIR/runtimes/minecraft/java-runtime-gamma/linux/java-runtime-gamma/bin/java, -Xmx4096M, -XX:MetaspaceSize=256M, -Duser.language=en, -Duser.country=US, -Dfml.log.level=INFO, -Dlog4j.configurationFile=USERSDIR/assets/log_configs/client-1.12.xml, -XX:+UnlockExperimentalVMOptions, -XX:+UseG1GC, -XX:G1NewSizePercent=20, -XX:G1ReservePercent=20, -XX:MaxGCPauseMillis=50, -XX:G1HeapRegionSize=32M, -Xss1M, -Djava.library.path=USERSDIR/temp/natives-42caaf33b64f45e0a1412a7f0a017900, -Djna.tmpdir=USERSDIR/temp/natives-42caaf33b64f45e0a1412a7f0a017900, -Dorg.lwjgl.system.SharedLibraryExtractPath=USERSDIR/temp/natives-42caaf33b64f45e0a1412a7f0a017900, -Dio.netty.native.workdir=USERSDIR/temp/natives-42caaf33b64f45e0a1412a7f0a017900, -Dminecraft.launcher.brand=ATLauncher, -Dminecraft.launcher.version=3.4.36.9, -cp, USERSDIR/libraries/net/neoforged/fancymodloader/loader/47.2.2/loader-47.2.2.jar:USERSDIR/libraries/net/neoforged/fancymodloader/earlydisplay/47.2.2/earlydisplay-47.2.2.jar:USERSDIR/libraries/cpw/mods/securejarhandler/2.1.10/securejarhandler-2.1.10.jar:USERSDIR/libraries/org/ow2/asm/asm/9.5/asm-9.5.jar:USERSDIR/libraries/org/ow2/asm/asm-commons/9.5/asm-commons-9.5.jar:USERSDIR/libraries/org/ow2/asm/asm-tree/9.5/asm-tree-9.5.jar:USERSDIR/libraries/org/ow2/asm/asm-util/9.5/asm-util-9.5.jar:USERSDIR/libraries/org/ow2/asm/asm-analysis/9.5/asm-analysis-9.5.jar:USERSDIR/libraries/net/minecraftforge/accesstransformers/8.0.4/accesstransformers-8.0.4.jar:USERSDIR/libraries/org/antlr/antlr4-runtime/4.9.1/antlr4-runtime-4.9.1.jar:USERSDIR/libraries/net/minecraftforge/eventbus/6.0.5/eventbus-6.0.5.jar:USERSDIR/libraries/net/minecraftforge/forgespi/7.0.1/forgespi-7.0.1.jar:USERSDIR/libraries/net/minecraftforge/coremods/5.0.1/coremods-5.0.1.jar:USERSDIR/libraries/cpw/mods/modlauncher/10.0.9/modlauncher-10.0.9.jar:USERSDIR/libraries/net/minecraftforge/unsafe/0.2.0/unsafe-0.2.0.jar:USERSDIR/libraries/net/minecraftforge/mergetool/1.1.5/mergetool-1.1.5-api.jar:USERSDIR/libraries/com/electronwill/night-config/core/3.6.4/core-3.6.4.jar:USERSDIR/libraries/com/electronwill/night-config/toml/3.6.4/toml-3.6.4.jar:USERSDIR/libraries/org/apache/maven/maven-artifact/3.8.5/maven-artifact-3.8.5.jar:USERSDIR/libraries/net/jodah/typetools/0.6.3/typetools-0.6.3.jar:USERSDIR/libraries/net/minecrell/terminalconsoleappender/1.2.0/terminalconsoleappender-1.2.0.jar:USERSDIR/libraries/org/jline/jline-reader/3.12.1/jline-reader-3.12.1.jar:USERSDIR/libraries/org/jline/jline-terminal/3.12.1/jline-terminal-3.12.1.jar:USERSDIR/libraries/org/spongepowered/mixin/0.8.5/mixin-0.8.5.jar:USERSDIR/libraries/org/openjdk/nashorn/nashorn-core/15.3/nashorn-core-15.3.jar:USERSDIR/libraries/net/minecraftforge/JarJarSelector/0.3.19/JarJarSelector-0.3.19.jar:USERSDIR/libraries/net/minecraftforge/JarJarMetadata/0.3.19/JarJarMetadata-0.3.19.jar:USERSDIR/libraries/cpw/mods/bootstraplauncher/1.1.2/bootstraplauncher-1.1.2.jar:USERSDIR/libraries/net/minecraftforge/JarJarFileSystems/0.3.19/JarJarFileSystems-0.3.19.jar:USERSDIR/libraries/net/neoforged/fancymodloader/events/47.2.2/events-47.2.2.jar:USERSDIR/libraries/net/neoforged/fancymodloader/core/47.2.2/core-47.2.2.jar:USERSDIR/libraries/net/neoforged/fancymodloader/language-java/47.2.2/language-java-47.2.2.jar:USERSDIR/libraries/net/neoforged/fancymodloader/language-lowcode/47.2.2/language-lowcode-47.2.2.jar:USERSDIR/libraries/net/neoforged/fancymodloader/language-minecraft/47.2.2/language-minecraft-47.2.2.jar:USERSDIR/libraries/com/github/oshi/oshi-core/6.2.2/oshi-core-6.2.2.jar:USERSDIR/libraries/com/google/code/gson/gson/2.10/gson-2.10.jar:USERSDIR/libraries/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:USERSDIR/libraries/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar:USERSDIR/libraries/com/ibm/icu/icu4j/71.1/icu4j-71.1.jar:USERSDIR/libraries/com/mojang/authlib/4.0.43/authlib-4.0.43.jar:USERSDIR/libraries/com/mojang/blocklist/1.0.10/blocklist-1.0.10.jar:USERSDIR/libraries/com/mojang/brigadier/1.1.8/brigadier-1.1.8.jar:USERSDIR/libraries/com/mojang/datafixerupper/6.0.8/datafixerupper-6.0.8.jar:USERSDIR/libraries/com/mojang/logging/1.1.1/logging-1.1.1.jar:USERSDIR/libraries/com/mojang/patchy/2.2.10/patchy-2.2.10.jar:USERSDIR/libraries/com/mojang/text2speech/1.17.9/text2speech-1.17.9.jar:USERSDIR/libraries/commons-codec/commons-codec/1.15/commons-codec-1.15.jar:USERSDIR/libraries/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar:USERSDIR/libraries/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:USERSDIR/libraries/io/netty/netty-buffer/4.1.82.Final/netty-buffer-4.1.82.Final.jar:USERSDIR/libraries/io/netty/netty-codec/4.1.82.Final/netty-codec-4.1.82.Final.jar:USERSDIR/libraries/io/netty/netty-common/4.1.82.Final/netty-common-4.1.82.Final.jar:USERSDIR/libraries/io/netty/netty-handler/4.1.82.Final/netty-handler-4.1.82.Final.jar:USERSDIR/libraries/io/netty/netty-resolver/4.1.82.Final/netty-resolver-4.1.82.Final.jar:USERSDIR/libraries/io/netty/netty-transport-classes-epoll/4.1.82.Final/netty-transport-classes-epoll-4.1.82.Final.jar:USERSDIR/libraries/io/netty/netty-transport-native-epoll/4.1.82.Final/netty-transport-native-epoll-4.1.82.Final-linux-aarch_64.jar:USERSDIR/libraries/io/netty/netty-transport-native-epoll/4.1.82.Final/netty-transport-native-epoll-4.1.82.Final-linux-x86_64.jar:USERSDIR/libraries/io/netty/netty-transport-native-unix-common/4.1.82.Final/netty-transport-native-unix-common-4.1.82.Final.jar:USERSDIR/libraries/io/netty/netty-transport/4.1.82.Final/netty-transport-4.1.82.Final.jar:USERSDIR/libraries/it/unimi/dsi/fastutil/8.5.9/fastutil-8.5.9.jar:USERSDIR/libraries/net/java/dev/jna/jna-platform/5.12.1/jna-platform-5.12.1.jar:USERSDIR/libraries/net/java/dev/jna/jna/5.12.1/jna-5.12.1.jar:USERSDIR/libraries/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:USERSDIR/libraries/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar:USERSDIR/libraries/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:USERSDIR/libraries/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:USERSDIR/libraries/org/apache/httpcomponents/httpcore/4.4.15/httpcore-4.4.15.jar:USERSDIR/libraries/org/apache/logging/log4j/log4j-api/2.19.0/log4j-api-2.19.0.jar:USERSDIR/libraries/org/apache/logging/log4j/log4j-core/2.19.0/log4j-core-2.19.0.jar:USERSDIR/libraries/org/apache/logging/log4j/log4j-slf4j2-impl/2.19.0/log4j-slf4j2-impl-2.19.0.jar:USERSDIR/libraries/org/joml/joml/1.10.5/joml-1.10.5.jar:USERSDIR/libraries/org/lwjgl/lwjgl-glfw/3.3.1/lwjgl-glfw-3.3.1.jar:USERSDIR/libraries/org/lwjgl/lwjgl-glfw/3.3.1/lwjgl-glfw-3.3.1-natives-linux.jar:USERSDIR/libraries/org/lwjgl/lwjgl-jemalloc/3.3.1/lwjgl-jemalloc-3.3.1.jar:USERSDIR/libraries/org/lwjgl/lwjgl-jemalloc/3.3.1/lwjgl-jemalloc-3.3.1-natives-linux.jar:USERSDIR/libraries/org/lwjgl/lwjgl-openal/3.3.1/lwjgl-openal-3.3.1.jar:USERSDIR/libraries/org/lwjgl/lwjgl-openal/3.3.1/lwjgl-openal-3.3.1-natives-linux.jar:USERSDIR/libraries/org/lwjgl/lwjgl-opengl/3.3.1/lwjgl-opengl-3.3.1.jar:USERSDIR/libraries/org/lwjgl/lwjgl-opengl/3.3.1/lwjgl-opengl-3.3.1-natives-linux.jar:USERSDIR/libraries/org/lwjgl/lwjgl-stb/3.3.1/lwjgl-stb-3.3.1.jar:USERSDIR/libraries/org/lwjgl/lwjgl-stb/3.3.1/lwjgl-stb-3.3.1-natives-linux.jar:USERSDIR/libraries/org/lwjgl/lwjgl-tinyfd/3.3.1/lwjgl-tinyfd-3.3.1.jar:USERSDIR/libraries/org/lwjgl/lwjgl-tinyfd/3.3.1/lwjgl-tinyfd-3.3.1-natives-linux.jar:USERSDIR/libraries/org/lwjgl/lwjgl/3.3.1/lwjgl-3.3.1.jar:USERSDIR/libraries/org/lwjgl/lwjgl/3.3.1/lwjgl-3.3.1-natives-linux.jar:USERSDIR/libraries/org/slf4j/slf4j-api/2.0.1/slf4j-api-2.0.1.jar:USERSDIR/libraries/net/minecraft/client/1.20.1/client-1.20.1.jar, -Djava.net.preferIPv6Addresses=system, -DignoreList=bootstraplauncher,securejarhandler,asm-commons,asm-util,asm-analysis,asm-tree,asm,JarJarFileSystems,events-47.2.2.jar,core-47.2.2.jar,language-java,language-lowcode,language-minecraft,client-extra,forge-,client-1.20.1.jar, -DmergeModules=jna-5.10.0.jar,jna-platform-5.10.0.jar, -Dfml.pluginLayerLibraries=core-47.2.2.jar,language-java-47.2.2.jar,language-lowcode-47.2.2.jar,language-minecraft-47.2.2.jar, -Dfml.gameLayerLibraries=events-47.2.2.jar, -DlibraryDirectory=USERSDIR/libraries, -p, USERSDIR/libraries/cpw/mods/bootstraplauncher/1.1.2/bootstraplauncher-1.1.2.jar:USERSDIR/libraries/cpw/mods/securejarhandler/2.1.10/securejarhandler-2.1.10.jar:USERSDIR/libraries/org/ow2/asm/asm-commons/9.5/asm-commons-9.5.jar:USERSDIR/libraries/org/ow2/asm/asm-util/9.5/asm-util-9.5.jar:USERSDIR/libraries/org/ow2/asm/asm-analysis/9.5/asm-analysis-9.5.jar:USERSDIR/libraries/org/ow2/asm/asm-tree/9.5/asm-tree-9.5.jar:USERSDIR/libraries/org/ow2/asm/asm/9.5/asm-9.5.jar:USERSDIR/libraries/net/minecraftforge/JarJarFileSystems/0.3.19/JarJarFileSystems-0.3.19.jar, --add-modules, ALL-MODULE-PATH, --add-opens, java.base/java.util.jar=cpw.mods.securejarhandler, --add-opens, java.base/java.lang.invoke=cpw.mods.securejarhandler, --add-exports, java.base/sun.security.util=cpw.mods.securejarhandler, --add-exports, jdk.naming.dns/com.sun.jndi.dns=java.naming, cpw.mods.bootstraplauncher.BootstrapLauncher, --username, REDACTED, --version, 1.20.1, --gameDir, USERSDIR/instances/Cashworks, --assetsDir, USERSDIR/assets, --assetIndex, 5, --uuid, REDACTED, --accessToken, REDACTED, --userType, msa, --versionType, release, --launchTarget, forgeclient, --fml.forgeVersion, 47.1.106, --fml.fmlVersion, 47.2.2, --fml.mcVersion, 1.20.1, --fml.mcpVersion, 20230612.114412, --width=854, --height=480]
+
+15:43:20.913 [ATL-Logging-Thread] ERROR - Oh no. Minecraft crashed. Please check the logs for any errors and provide these logs when asking for support.
+
+15:43:20.919 [ATL-Logging-Thread] INFO  - Checking for updated files!
+
+15:43:36.767 [ATL-Logging-Thread] INFO  - Preparing for launch!
+
+15:43:41.166 [ATL-Logging-Thread] ERROR - Failed to scan all mods for Fractureiser
+
+15:43:41.167 [ATL-Logging-Thread] ERROR - java.lang.InterruptedException
+
+15:43:41.167 [ATL-Logging-Thread] ERROR - 	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1765)
+
+15:43:41.169 [ATL-Logging-Thread] ERROR - 	at java.base/java.util.concurrent.ThreadPoolExecutor.awaitTermination(ThreadPoolExecutor.java:1475)
+
+15:43:41.169 [ATL-Logging-Thread] ERROR - 	at com.atlauncher.utils.SecurityUtils.scanForFractureiser(SecurityUtils.java:88)
+
+15:43:41.171 [ATL-Logging-Thread] ERROR - 	at com.atlauncher.data.Instance.prepareForLaunch(Instance.java:817)
+
+15:43:41.171 [ATL-Logging-Thread] ERROR - Failed to prepare instance Cashworks for launch. Check the logs and try again.
+
+15:43:41.172 [ATL-Logging-Thread] ERROR - 	at com.atlauncher.data.Instance.lambda$launch$16(Instance.java:932)
+
+15:43:41.172 [ATL-Logging-Thread] ERROR - 	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+15:43:41.173 [ATL-Logging-Thread] ERROR - java.lang.InterruptedException
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1765)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.awaitTermination(ThreadPoolExecutor.java:1475)
+	at com.atlauncher.utils.SecurityUtils.scanForFractureiser(SecurityUtils.java:88)
+	at com.atlauncher.data.Instance.prepareForLaunch(Instance.java:817)
+	at com.atlauncher.data.Instance.lambda$launch$16(Instance.java:932)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+15:43:46.737 [ATL-Logging-Thread] INFO  - Preparing for launch!
+
+15:43:47.063 [ATL-Logging-Thread] INFO  - Launching pack Minecraft 1.20.1 (Vanilla) for Minecraft 1.20.1
+
+15:43:47.063 [ATL-Logging-Thread] INFO  - Logging into Minecraft!
+
+15:43:47.072 [ATL-Logging-Thread] INFO  - Using Java runtime java-runtime-gamma (Java 17.0.8) at path **USERSDIR**/runtimes/minecraft/java-runtime-gamma/linux/java-runtime-gamma
+
+15:43:47.122 [ATL-Logging-Thread] INFO  - Loader: NeoForge 47.1.106
+
+15:43:47.123 [ATL-Logging-Thread] INFO  - Mods:
+
+15:43:47.125 [ATL-Logging-Thread] INFO  -  - /JustEnoughGuns-0.5.3-1.20.1.jar (Added)
+
+15:43:47.126 [ATL-Logging-Thread] INFO  -  - /ImmediatelyFast-Forge-1.2.18+1.20.4.jar (Added)
+
+15:43:47.127 [ATL-Logging-Thread] INFO  -  - /mcw-lights-1.1.0-mc1.20.1forge.jar (Added)
+
+15:43:47.128 [ATL-Logging-Thread] INFO  -  - /NoChatReports-FORGE-1.20.1-v2.2.2.jar (Added)
+
+15:43:47.128 [ATL-Logging-Thread] INFO  -  - /smoothboot(reloaded)-mc1.20.1-0.0.4.jar (Added)
+
+15:43:47.129 [ATL-Logging-Thread] INFO  -  - /aquamirae-6.API15.jar (Added)
+
+15:43:47.129 [ATL-Logging-Thread] INFO  -  - /etched-3.0.2.jar (Added)
+
+15:43:47.130 [ATL-Logging-Thread] INFO  -  - /M'TEG-1.0.1-1.20.1.jar (Added)
+
+15:43:47.130 [ATL-Logging-Thread] INFO  -  - /CullLessLeaves-Reforged-1.20.1-1.0.5.jar (Added)
+
+15:43:47.131 [ATL-Logging-Thread] INFO  -  - /refinedstorage-1.12.4.jar (Added)
+
+15:43:47.131 [ATL-Logging-Thread] INFO  -  - /noisium-forge-2.0.3+mc1.20-1.20.1.jar (Added)
+
+15:43:47.132 [ATL-Logging-Thread] INFO  -  - /physics-mod-3.0.14-mc-1.20.1-forge.jar (Added)
+
+15:43:47.133 [ATL-Logging-Thread] INFO  -  - /mcw-bridges-3.0.0-mc1.20.1forge.jar (Added)
+
+15:43:47.133 [ATL-Logging-Thread] INFO  -  - /refurbished_furniture-forge-1.20.1-1.0.3.jar (Added)
+
+15:43:47.133 [ATL-Logging-Thread] INFO  -  - /trackwork-1.20.1-1.0.1-beta.jar (Added)
+
+15:43:47.134 [ATL-Logging-Thread] INFO  -  - /Controlling-forge-1.20.1-12.0.2.jar (Added)
+
+15:43:47.135 [ATL-Logging-Thread] INFO  -  - /ferritecore-6.0.1-forge.jar (Added)
+
+15:43:47.136 [ATL-Logging-Thread] INFO  -  - /BetterThirdPerson-Forge-1.20-1.9.0.jar (Added)
+
+15:43:47.136 [ATL-Logging-Thread] INFO  -  - /extendedgears-2.1.1-1.20.1-0.5.1.f-forge.jar (Added)
+
+15:43:47.137 [ATL-Logging-Thread] INFO  -  - /FarmersDelight-1.20.1-1.2.4.jar (Added)
+
+15:43:47.137 [ATL-Logging-Thread] INFO  -  - /mob_grinding_utils-1.20.1-1.1.0.jar (Added)
+
+15:43:47.138 [ATL-Logging-Thread] INFO  -  - /Searchables-forge-1.20.1-1.0.3.jar (Added)
+
+15:43:47.138 [ATL-Logging-Thread] INFO  -  - /entityculling-forge-1.6.6-mc1.20.1.jar (Added)
+
+15:43:47.139 [ATL-Logging-Thread] INFO  -  - /redstonepen-1.20.1-neoforge-1.3.33.jar (Added)
+
+15:43:47.140 [ATL-Logging-Thread] INFO  -  - /enhancedblockentities-0.9+1.20.jar (Added)
+
+15:43:47.140 [ATL-Logging-Thread] INFO  -  - /resourcefullib-forge-1.20.1-2.1.28.jar (Added)
+
+15:43:47.141 [ATL-Logging-Thread] INFO  -  - /.connector/mru-0.4.4+1.20.1$yet-another-config-lib-3.4.2+1.20.1-fabric$imageio-metadata-3.10.0_mapped_srg_1.20.1.jar
+
+15:43:47.142 [ATL-Logging-Thread] INFO  -  - /.connector/mru-0.4.4+1.20.1$yet-another-config-lib-3.4.2+1.20.1-fabric$common-image-3.10.0_mapped_srg_1.20.1.jar
+
+15:43:47.142 [ATL-Logging-Thread] INFO  -  - /.connector/mru-0.4.4+1.20.1$yet-another-config-lib-3.4.2+1.20.1-fabric$json-0.2.1_mapped_srg_1.20.1.jar
+
+15:43:47.143 [ATL-Logging-Thread] INFO  -  - /.connector/mru-0.4.4+1.20.1$yet-another-config-lib-3.4.2+1.20.1-fabric$imageio-webp-3.10.0_mapped_srg_1.20.1.jar
+
+15:43:47.144 [ATL-Logging-Thread] INFO  -  - /.connector/blockus-2.7.15+1.20.1$terraform-wood-api-v1-7.0.2$mixinextras-fabric-0.2.0_mapped_srg_1.20.1.jar
+
+15:43:47.144 [ATL-Logging-Thread] INFO  -  - /.connector/mru-0.4.4+1.20.1$yet-another-config-lib-3.4.2+1.20.1-fabric_mapped_srg_1.20.1.jar
+
+15:43:47.145 [ATL-Logging-Thread] INFO  -  - /.connector/mousewheelie-1.13.0+mc1.20.1$tweed4-tailor-lang-json-descriptions-1.20-1.1.0+mc1.20-pre1_mapped_srg_1.20.1.jar
+
+15:43:47.146 [ATL-Logging-Thread] INFO  -  - /.connector/temp/mousewheelie-1.13.0+mc1.20.1$amecsapi-1.20-1.5.1+mc1.20-pre1.jar
+
+15:43:47.146 [ATL-Logging-Thread] INFO  -  - /.connector/temp/mousewheelie-1.13.0+mc1.20.1$fabric-screen-api-v1-2.0.7+b3afc78b77.jar
+
+15:43:47.147 [ATL-Logging-Thread] INFO  -  - /.connector/temp/Sounds-1.1.1+1.20.1$yet-another-config-lib-3.4.2+1.20.1-fabric$gson-0.2.1.jar
+
+15:43:47.147 [ATL-Logging-Thread] INFO  -  - /.connector/temp/mousewheelie-1.13.0+mc1.20.1$fabric-registry-sync-v0-2.3.0+2e061fd477.jar
+
+15:43:47.148 [ATL-Logging-Thread] INFO  -  - /.connector/temp/replaymod-1.20.1-2.6.15$fabric-screen-api-v1-2.0.6+b3afc78b77.jar
+
+15:43:47.148 [ATL-Logging-Thread] INFO  -  - /.connector/temp/replaymod-1.20.1-2.6.15$fabric-resource-loader-v0-0.11.7+f7923f6d77.jar
+
+15:43:47.149 [ATL-Logging-Thread] INFO  -  - /.connector/temp/Sounds-1.1.1+1.20.1$yet-another-config-lib-3.4.2+1.20.1-fabric.jar
+
+15:43:47.149 [ATL-Logging-Thread] INFO  -  - /.connector/temp/mousewheelie-1.13.0+mc1.20.1$coat-1.20-1.0.0-beta.20+mc1.20-pre1.jar
+
+15:43:47.150 [ATL-Logging-Thread] INFO  -  - /.connector/temp/mousewheelie-1.13.0+mc1.20.1$tweed4-data-hjson-1.20-1.1.1+mc1.20-pre1.jar
+
+15:43:47.151 [ATL-Logging-Thread] INFO  -  - /.connector/temp/mousewheelie-1.13.0+mc1.20.1$tweed4-tailor-screen-1.20-1.1.4+mc1.20-pre1.jar
+
+15:43:47.151 [ATL-Logging-Thread] INFO  -  - /.connector/temp/Sounds-1.1.1+1.20.1$yet-another-config-lib-3.4.2+1.20.1-fabric$imageio-webp-3.10.0.jar
+
+15:43:47.152 [ATL-Logging-Thread] INFO  -  - /.connector/temp/mousewheelie-1.13.0+mc1.20.1$tweed4-annotated-1.20-1.3.1+mc1.20-pre1.jar
+
+15:43:47.153 [ATL-Logging-Thread] INFO  -  - /.connector/temp/mousewheelie-1.13.0+mc1.20.1$fabric-item-api-v1-2.1.27+b3afc78b77.jar
+
+15:43:47.154 [ATL-Logging-Thread] INFO  -  - /.connector/temp/mru-0.4.4+1.20.1$yet-another-config-lib-3.4.2+1.20.1-fabric$common-lang-3.10.0.jar
+
+15:43:47.154 [ATL-Logging-Thread] INFO  -  - /.connector/temp/blockus-2.7.15+1.20.1$terraform-wood-api-v1-7.0.2.jar
+
+15:43:47.155 [ATL-Logging-Thread] INFO  -  - /.connector/temp/mru-0.4.4+1.20.1$yet-another-config-lib-3.4.2+1.20.1-fabric$gson-0.2.1.jar
+
+15:43:47.155 [ATL-Logging-Thread] INFO  -  - /.connector/temp/Sounds-1.1.1+1.20.1$yet-another-config-lib-3.4.2+1.20.1-fabric$imageio-metadata-3.10.0.jar
+
+15:43:47.156 [ATL-Logging-Thread] INFO  -  - /.connector/temp/mru-0.4.4+1.20.1$yet-another-config-lib-3.4.2+1.20.1-fabric$imageio-metadata-3.10.0.jar
+
+15:43:47.156 [ATL-Logging-Thread] INFO  -  - /.connector/temp/enhancedblockentities-0.9+1.20$arrp-0.6.7.jar
+
+15:43:47.157 [ATL-Logging-Thread] INFO  -  - /.connector/temp/mousewheelie-1.13.0+mc1.20.1$fabric-networking-api-v1-1.3.9+b3afc78b77.jar
+
+15:43:47.158 [ATL-Logging-Thread] INFO  -  - /.connector/temp/replaymod-1.20.1-2.6.15$fabric-key-binding-api-v1-1.0.36+fb8d95da77.jar
+
+15:43:47.158 [ATL-Logging-Thread] INFO  -  - /.connector/temp/mousewheelie-1.13.0+mc1.20.1$fabric-lifecycle-events-v1-2.2.21+b3afc78b77.jar
+
+15:43:47.159 [ATL-Logging-Thread] INFO  -  - /.connector/temp/mousewheelie-1.13.0+mc1.20.1$tweed4-tailor-lang-json-descriptions-1.20-1.1.0+mc1.20-pre1.jar
+
+15:43:47.159 [ATL-Logging-Thread] INFO  -  - /.connector/temp/blockus-2.7.15+1.20.1$terraform-wood-api-v1-7.0.2$mixinextras-fabric-0.2.0.jar
+
+15:43:47.160 [ATL-Logging-Thread] INFO  -  - /.connector/temp/mru-0.4.4+1.20.1$yet-another-config-lib-3.4.2+1.20.1-fabric$common-image-3.10.0.jar
+
+15:43:47.160 [ATL-Logging-Thread] INFO  -  - /.connector/temp/enhancedblockentities-0.9+1.20$arrp-0.6.7$fabric-api-base-0.4.19+8d1895cf72.jar
+
+15:43:47.161 [ATL-Logging-Thread] INFO  -  - /.connector/temp/Sounds-1.1.1+1.20.1$yet-another-config-lib-3.4.2+1.20.1-fabric$common-io-3.10.0.jar
+
+15:43:47.161 [ATL-Logging-Thread] INFO  -  - /.connector/temp/mousewheelie-1.13.0+mc1.20.1$tweed4-tailor-coat-1.20-1.1.3+mc1.20-pre1.jar
+
+15:43:47.162 [ATL-Logging-Thread] INFO  -  - /.connector/temp/Sounds-1.1.1+1.20.1$yet-another-config-lib-3.4.2+1.20.1-fabric$imageio-core-3.10.0.jar
+
+15:43:47.162 [ATL-Logging-Thread] INFO  -  - /.connector/temp/mousewheelie-1.13.0+mc1.20.1$tweed4-data-1.20-1.2.1+mc1.20-pre1.jar
+
+15:43:47.163 [ATL-Logging-Thread] INFO  -  - /.connector/temp/mru-0.4.4+1.20.1$yet-another-config-lib-3.4.2+1.20.1-fabric$imageio-core-3.10.0.jar
+
+15:43:47.163 [ATL-Logging-Thread] INFO  -  - /.connector/temp/mru-0.4.4+1.20.1$yet-another-config-lib-3.4.2+1.20.1-fabric$json-0.2.1.jar
+
+15:43:47.164 [ATL-Logging-Thread] INFO  -  - /.connector/temp/mru-0.4.4+1.20.1$yet-another-config-lib-3.4.2+1.20.1-fabric$common-io-3.10.0.jar
+
+15:43:47.165 [ATL-Logging-Thread] INFO  -  - /.connector/temp/Sounds-1.1.1+1.20.1$yet-another-config-lib-3.4.2+1.20.1-fabric$common-lang-3.10.0.jar
+
+15:43:47.166 [ATL-Logging-Thread] INFO  -  - /.connector/temp/replaymod-1.20.1-2.6.15$fabric-networking-api-v1-1.3.8+b3afc78b77.jar
+
+15:43:47.167 [ATL-Logging-Thread] INFO  -  - /.connector/temp/mousewheelie-1.13.0+mc1.20.1$fabric-resource-loader-v0-0.11.9+132c48c177.jar
+
+15:43:47.167 [ATL-Logging-Thread] INFO  -  - /.connector/temp/mousewheelie-1.13.0+mc1.20.1$fabric-api-base-0.4.30+7abfd51577.jar
+
+15:43:47.168 [ATL-Logging-Thread] INFO  -  - /.connector/temp/mousewheelie-1.13.0+mc1.20.1$fabric-events-interaction-v0-0.6.1+e91849a877.jar
+
+15:43:47.170 [ATL-Logging-Thread] INFO  -  - /.connector/temp/Sounds-1.1.1+1.20.1$yet-another-config-lib-3.4.2+1.20.1-fabric$json-0.2.1.jar
+
+15:43:47.171 [ATL-Logging-Thread] INFO  -  - /.connector/temp/mru-0.4.4+1.20.1$yet-another-config-lib-3.4.2+1.20.1-fabric$imageio-webp-3.10.0.jar
+
+15:43:47.172 [ATL-Logging-Thread] INFO  -  - /.connector/temp/Sounds-1.1.1+1.20.1$yet-another-config-lib-3.4.2+1.20.1-fabric$common-image-3.10.0.jar
+
+15:43:47.173 [ATL-Logging-Thread] INFO  -  - /.connector/temp/mru-0.4.4+1.20.1$yet-another-config-lib-3.4.2+1.20.1-fabric.jar
+
+15:43:47.175 [ATL-Logging-Thread] INFO  -  - /.connector/temp/mousewheelie-1.13.0+mc1.20.1$tweed4-base-1.20-1.7.1+mc1.20-pre1.jar
+
+15:43:47.176 [ATL-Logging-Thread] INFO  -  - /.connector/temp/replaymod-1.20.1-2.6.15$fabric-api-base-0.4.29+b04edc7a77.jar
+
+15:43:47.176 [ATL-Logging-Thread] INFO  -  - /.connector/temp/enhancedblockentities-0.9+1.20$spruceui-5.0.0+1.20.jar
+
+15:43:47.178 [ATL-Logging-Thread] INFO  -  - /.connector/temp/mousewheelie-1.13.0+mc1.20.1$fabric-key-binding-api-v1-1.0.36+fb8d95da77.jar
+
+15:43:47.179 [ATL-Logging-Thread] INFO  -  - /.connector/mru-0.4.4+1.20.1_mapped_srg_1.20.1.jar
+
+15:43:47.179 [ATL-Logging-Thread] INFO  -  - /.connector/blockus-2.7.15+1.20.1_mapped_srg_1.20.1.jar
+
+15:43:47.180 [ATL-Logging-Thread] INFO  -  - /.connector/mousewheelie-1.13.0+mc1.20.1$tweed4-data-hjson-1.20-1.1.1+mc1.20-pre1_mapped_srg_1.20.1.jar
+
+15:43:47.181 [ATL-Logging-Thread] INFO  -  - /.connector/mousewheelie-1.13.0+mc1.20.1$tweed4-tailor-coat-1.20-1.1.3+mc1.20-pre1_mapped_srg_1.20.1.jar
+
+15:43:47.182 [ATL-Logging-Thread] INFO  -  - /.connector/mru-0.4.4+1.20.1$yet-another-config-lib-3.4.2+1.20.1-fabric$common-lang-3.10.0_mapped_srg_1.20.1.jar
+
+15:43:47.182 [ATL-Logging-Thread] INFO  -  - /.connector/mousewheelie-1.13.0+mc1.20.1$tweed4-tailor-screen-1.20-1.1.4+mc1.20-pre1_mapped_srg_1.20.1.jar
+
+15:43:47.182 [ATL-Logging-Thread] INFO  -  - /.connector/enhancedblockentities-0.9+1.20_mapped_srg_1.20.1.jar
+
+15:43:47.183 [ATL-Logging-Thread] INFO  -  - /.connector/mousewheelie-1.13.0+mc1.20.1_mapped_srg_1.20.1.jar
+
+15:43:47.183 [ATL-Logging-Thread] INFO  -  - /.connector/mru-0.4.4+1.20.1$yet-another-config-lib-3.4.2+1.20.1-fabric$imageio-core-3.10.0_mapped_srg_1.20.1.jar
+
+15:43:47.184 [ATL-Logging-Thread] INFO  -  - /.connector/mousewheelie-1.13.0+mc1.20.1$tweed4-data-1.20-1.2.1+mc1.20-pre1_mapped_srg_1.20.1.jar
+
+15:43:47.185 [ATL-Logging-Thread] INFO  -  - /.connector/replaymod-1.20.1-2.6.15_mapped_srg_1.20.1.jar
+
+15:43:47.185 [ATL-Logging-Thread] INFO  -  - /.connector/mru-0.4.4+1.20.1$yet-another-config-lib-3.4.2+1.20.1-fabric$gson-0.2.1_mapped_srg_1.20.1.jar
+
+15:43:47.186 [ATL-Logging-Thread] INFO  -  - /.connector/mru-0.4.4+1.20.1$yet-another-config-lib-3.4.2+1.20.1-fabric$common-io-3.10.0_mapped_srg_1.20.1.jar
+
+15:43:47.187 [ATL-Logging-Thread] INFO  -  - /.connector/enhancedblockentities-0.9+1.20$spruceui-5.0.0+1.20_mapped_srg_1.20.1.jar
+
+15:43:47.188 [ATL-Logging-Thread] INFO  -  - /.connector/mousewheelie-1.13.0+mc1.20.1$tweed4-base-1.20-1.7.1+mc1.20-pre1_mapped_srg_1.20.1.jar
+
+15:43:47.188 [ATL-Logging-Thread] INFO  -  - /.connector/blockus-2.7.15+1.20.1$terraform-wood-api-v1-7.0.2_mapped_srg_1.20.1.jar
+
+15:43:47.189 [ATL-Logging-Thread] INFO  -  - /.connector/mousewheelie-1.13.0+mc1.20.1$tweed4-annotated-1.20-1.3.1+mc1.20-pre1_mapped_srg_1.20.1.jar
+
+15:43:47.189 [ATL-Logging-Thread] INFO  -  - /.connector/Sounds-1.1.1+1.20.1_mapped_srg_1.20.1.jar
+
+15:43:47.190 [ATL-Logging-Thread] INFO  -  - /.connector/mousewheelie-1.13.0+mc1.20.1$coat-1.20-1.0.0-beta.20+mc1.20-pre1_mapped_srg_1.20.1.jar
+
+15:43:47.191 [ATL-Logging-Thread] INFO  -  - /.connector/enhancedblockentities-0.9+1.20$arrp-0.6.7_mapped_srg_1.20.1.jar
+
+15:43:47.191 [ATL-Logging-Thread] INFO  -  - /entity_model_features_forge_1.20.1-2.1.3.jar (Added)
+
+15:43:47.191 [ATL-Logging-Thread] INFO  -  - /ConnectorExtras-1.11.2+1.20.1.jar (Added)
+
+15:43:47.192 [ATL-Logging-Thread] INFO  -  - /mcw-windows-2.3.0-mc1.20.1forge.jar (Added)
+
+15:43:47.192 [ATL-Logging-Thread] INFO  -  - /cc-tweaked-1.20.1-forge-1.112.0.jar (Added)
+
+15:43:47.193 [ATL-Logging-Thread] INFO  -  - /replaymod-1.20.1-2.6.15.jar (Added)
+
+15:43:47.193 [ATL-Logging-Thread] INFO  -  - /journeymap-1.20.1-5.10.1-forge.jar (Added)
+
+15:43:47.194 [ATL-Logging-Thread] INFO  -  - /cc_vs-1.20.1-forge-0.1.0.jar (Added)
+
+15:43:47.195 [ATL-Logging-Thread] INFO  -  - /mcw-fences-1.1.2-mc1.20.1forge.jar (Added)
+
+15:43:47.195 [ATL-Logging-Thread] INFO  -  - /create-new-age-forge-1.20.1-1.1.2.jar (Added)
+
+15:43:47.196 [ATL-Logging-Thread] INFO  -  - /dummmmmmy-1.20-1.8.19.jar (Added)
+
+15:43:47.196 [ATL-Logging-Thread] INFO  -  - /valkyrienskies-120-2.3.0-beta.5.jar (Added)
+
+15:43:47.197 [ATL-Logging-Thread] INFO  -  - /ConfiguredDefaults-v8.0.1-1.20.1-Forge.jar (Added)
+
+15:43:47.197 [ATL-Logging-Thread] INFO  -  - /createbigcannons-5.5.1-mc.1.20.1-forge.jar (Added)
+
+15:43:47.198 [ATL-Logging-Thread] INFO  -  - /polymorph-forge-0.49.5+1.20.1.jar (Added)
+
+15:43:47.198 [ATL-Logging-Thread] INFO  -  - /NaturesCompass-1.20.1-1.11.2-forge.jar (Added)
+
+15:43:47.199 [ATL-Logging-Thread] INFO  -  - /buildinggadgets2-1.0.7.jar (Added)
+
+15:43:47.199 [ATL-Logging-Thread] INFO  -  - /botarium-forge-1.20.1-2.3.4.jar (Added)
+
+15:43:47.200 [ATL-Logging-Thread] INFO  -  - /simpleshops-1.2.2.jar (Added)
+
+15:43:47.200 [ATL-Logging-Thread] INFO  -  - /appleskin-forge-mc1.20.1-2.5.1.jar (Added)
+
+15:43:47.201 [ATL-Logging-Thread] INFO  -  - /notenoughcrashes-4.4.7+1.20.1-forge.jar (Added)
+
+15:43:47.201 [ATL-Logging-Thread] INFO  -  - /citadel-2.5.6-1.20.1.jar (Added)
+
+15:43:47.202 [ATL-Logging-Thread] INFO  -  - /blockus-2.7.15+1.20.1.jar (Added)
+
+15:43:47.202 [ATL-Logging-Thread] INFO  -  - /FramedBlocks-9.3.0.jar (Added)
+
+15:43:47.203 [ATL-Logging-Thread] INFO  -  - /refinedpolymorph-0.1.1-1.20.1.jar (Added)
+
+15:43:47.204 [ATL-Logging-Thread] INFO  -  - /fabric-api-0.92.2+1.11.8+1.20.1.jar (Added)
+
+15:43:47.205 [ATL-Logging-Thread] INFO  -  - /clockwork-1.20.1-0.1.16-forge-b3b22e39fe.jar (Added)
+
+15:43:47.205 [ATL-Logging-Thread] INFO  -  - /Jade-1.20.1-forge-11.9.4.jar (Added)
+
+15:43:47.206 [ATL-Logging-Thread] INFO  -  - /tinyredstone-1.20-5.0.2.jar (Added)
+
+15:43:47.207 [ATL-Logging-Thread] INFO  -  - /moonlight-1.20-2.12.9-forge.jar (Added)
+
+15:43:47.208 [ATL-Logging-Thread] INFO  -  - /Zeta-1.0-24.jar (Added)
+
+15:43:47.208 [ATL-Logging-Thread] INFO  -  - /gravestone-forge-1.20.1-1.0.18.jar (Added)
+
+15:44:56.342 [ATL-Logging-Thread] ERROR - Oh no. Minecraft crashed. Please check the logs for any errors and provide these logs when asking for support.
+
+15:44:56.346 [ATL-Logging-Thread] INFO  - Checking for updated files!
+
+15:45:01.314 [ATL-Logging-Thread] INFO  - Preparing for launch!
+
+15:45:01.628 [ATL-Logging-Thread] INFO  - Launching pack Minecraft 1.20.1 (Vanilla) for Minecraft 1.20.1
+
+15:45:01.629 [ATL-Logging-Thread] INFO  - Logging into Minecraft!
+
+15:45:01.639 [ATL-Logging-Thread] INFO  - Using Java runtime java-runtime-gamma (Java 17.0.8) at path **USERSDIR**/runtimes/minecraft/java-runtime-gamma/linux/java-runtime-gamma
+
+15:45:01.691 [ATL-Logging-Thread] INFO  - Loader: NeoForge 47.1.106
+
+15:45:01.691 [ATL-Logging-Thread] INFO  - Mods:
+
+15:45:01.693 [ATL-Logging-Thread] INFO  -  - /JustEnoughGuns-0.5.3-1.20.1.jar (Added)
+
+15:45:01.694 [ATL-Logging-Thread] INFO  -  - /ImmediatelyFast-Forge-1.2.18+1.20.4.jar (Added)
+
+15:45:01.695 [ATL-Logging-Thread] INFO  -  - /mcw-lights-1.1.0-mc1.20.1forge.jar (Added)
+
+15:45:01.695 [ATL-Logging-Thread] INFO  -  - /NoChatReports-FORGE-1.20.1-v2.2.2.jar (Added)
+
+15:45:01.697 [ATL-Logging-Thread] INFO  -  - /smoothboot(reloaded)-mc1.20.1-0.0.4.jar (Added)
+
+15:45:01.697 [ATL-Logging-Thread] INFO  -  - /aquamirae-6.API15.jar (Added)
+
+15:45:01.699 [ATL-Logging-Thread] INFO  -  - /etched-3.0.2.jar (Added)
+
+15:45:01.700 [ATL-Logging-Thread] INFO  -  - /M'TEG-1.0.1-1.20.1.jar (Added)
+
+15:45:01.700 [ATL-Logging-Thread] INFO  -  - /CullLessLeaves-Reforged-1.20.1-1.0.5.jar (Added)
+
+15:45:01.701 [ATL-Logging-Thread] INFO  -  - /refinedstorage-1.12.4.jar (Added)
+
+15:45:01.702 [ATL-Logging-Thread] INFO  -  - /noisium-forge-2.0.3+mc1.20-1.20.1.jar (Added)
+
+15:45:01.703 [ATL-Logging-Thread] INFO  -  - /physics-mod-3.0.14-mc-1.20.1-forge.jar (Added)
+
+15:45:01.705 [ATL-Logging-Thread] INFO  -  - /mcw-bridges-3.0.0-mc1.20.1forge.jar (Added)
+
+15:45:01.705 [ATL-Logging-Thread] INFO  -  - /refurbished_furniture-forge-1.20.1-1.0.3.jar (Added)
+
+15:45:01.706 [ATL-Logging-Thread] INFO  -  - /trackwork-1.20.1-1.0.1-beta.jar (Added)
+
+15:45:01.708 [ATL-Logging-Thread] INFO  -  - /Controlling-forge-1.20.1-12.0.2.jar (Added)
+
+15:45:01.708 [ATL-Logging-Thread] INFO  -  - /ferritecore-6.0.1-forge.jar (Added)
+
+15:45:01.709 [ATL-Logging-Thread] INFO  -  - /BetterThirdPerson-Forge-1.20-1.9.0.jar (Added)
+
+15:45:01.710 [ATL-Logging-Thread] INFO  -  - /extendedgears-2.1.1-1.20.1-0.5.1.f-forge.jar (Added)
+
+15:45:01.711 [ATL-Logging-Thread] INFO  -  - /FarmersDelight-1.20.1-1.2.4.jar (Added)
+
+15:45:01.712 [ATL-Logging-Thread] INFO  -  - /mob_grinding_utils-1.20.1-1.1.0.jar (Added)
+
+15:45:01.712 [ATL-Logging-Thread] INFO  -  - /Searchables-forge-1.20.1-1.0.3.jar (Added)
+
+15:45:01.712 [ATL-Logging-Thread] INFO  -  - /entityculling-forge-1.6.6-mc1.20.1.jar (Added)
+
+15:45:01.712 [ATL-Logging-Thread] INFO  -  - /redstonepen-1.20.1-neoforge-1.3.33.jar (Added)
+
+15:45:01.714 [ATL-Logging-Thread] INFO  -  - /enhancedblockentities-0.9+1.20.jar (Added)
+
+15:45:01.715 [ATL-Logging-Thread] INFO  -  - /resourcefullib-forge-1.20.1-2.1.28.jar (Added)
+
+15:45:01.716 [ATL-Logging-Thread] INFO  -  - /.connector/mru-0.4.4+1.20.1$yet-another-config-lib-3.4.2+1.20.1-fabric$imageio-metadata-3.10.0_mapped_srg_1.20.1.jar
+
+15:45:01.717 [ATL-Logging-Thread] INFO  -  - /.connector/mru-0.4.4+1.20.1$yet-another-config-lib-3.4.2+1.20.1-fabric$common-image-3.10.0_mapped_srg_1.20.1.jar
+
+15:45:01.718 [ATL-Logging-Thread] INFO  -  - /.connector/mru-0.4.4+1.20.1$yet-another-config-lib-3.4.2+1.20.1-fabric$json-0.2.1_mapped_srg_1.20.1.jar
+
+15:45:01.719 [ATL-Logging-Thread] INFO  -  - /.connector/mru-0.4.4+1.20.1$yet-another-config-lib-3.4.2+1.20.1-fabric$imageio-webp-3.10.0_mapped_srg_1.20.1.jar
+
+15:45:01.720 [ATL-Logging-Thread] INFO  -  - /.connector/blockus-2.7.15+1.20.1$terraform-wood-api-v1-7.0.2$mixinextras-fabric-0.2.0_mapped_srg_1.20.1.jar
+
+15:45:01.721 [ATL-Logging-Thread] INFO  -  - /.connector/mru-0.4.4+1.20.1$yet-another-config-lib-3.4.2+1.20.1-fabric_mapped_srg_1.20.1.jar
+
+15:45:01.722 [ATL-Logging-Thread] INFO  -  - /.connector/mousewheelie-1.13.0+mc1.20.1$tweed4-tailor-lang-json-descriptions-1.20-1.1.0+mc1.20-pre1_mapped_srg_1.20.1.jar
+
+15:45:01.723 [ATL-Logging-Thread] INFO  -  - /.connector/temp/mousewheelie-1.13.0+mc1.20.1$amecsapi-1.20-1.5.1+mc1.20-pre1.jar
+
+15:45:01.724 [ATL-Logging-Thread] INFO  -  - /.connector/temp/mousewheelie-1.13.0+mc1.20.1$fabric-screen-api-v1-2.0.7+b3afc78b77.jar
+
+15:45:01.725 [ATL-Logging-Thread] INFO  -  - /.connector/temp/Sounds-1.1.1+1.20.1$yet-another-config-lib-3.4.2+1.20.1-fabric$gson-0.2.1.jar
+
+15:45:01.726 [ATL-Logging-Thread] INFO  -  - /.connector/temp/mousewheelie-1.13.0+mc1.20.1$fabric-registry-sync-v0-2.3.0+2e061fd477.jar
+
+15:45:01.727 [ATL-Logging-Thread] INFO  -  - /.connector/temp/replaymod-1.20.1-2.6.15$fabric-screen-api-v1-2.0.6+b3afc78b77.jar
+
+15:45:01.729 [ATL-Logging-Thread] INFO  -  - /.connector/temp/replaymod-1.20.1-2.6.15$fabric-resource-loader-v0-0.11.7+f7923f6d77.jar
+
+15:45:01.731 [ATL-Logging-Thread] INFO  -  - /.connector/temp/Sounds-1.1.1+1.20.1$yet-another-config-lib-3.4.2+1.20.1-fabric.jar
+
+15:45:01.732 [ATL-Logging-Thread] INFO  -  - /.connector/temp/mousewheelie-1.13.0+mc1.20.1$coat-1.20-1.0.0-beta.20+mc1.20-pre1.jar
+
+15:45:01.733 [ATL-Logging-Thread] INFO  -  - /.connector/temp/mousewheelie-1.13.0+mc1.20.1$tweed4-data-hjson-1.20-1.1.1+mc1.20-pre1.jar
+
+15:45:01.734 [ATL-Logging-Thread] INFO  -  - /.connector/temp/mousewheelie-1.13.0+mc1.20.1$tweed4-tailor-screen-1.20-1.1.4+mc1.20-pre1.jar
+
+15:45:01.735 [ATL-Logging-Thread] INFO  -  - /.connector/temp/Sounds-1.1.1+1.20.1$yet-another-config-lib-3.4.2+1.20.1-fabric$imageio-webp-3.10.0.jar
+
+15:45:01.737 [ATL-Logging-Thread] INFO  -  - /.connector/temp/mousewheelie-1.13.0+mc1.20.1$tweed4-annotated-1.20-1.3.1+mc1.20-pre1.jar
+
+15:45:01.738 [ATL-Logging-Thread] INFO  -  - /.connector/temp/mousewheelie-1.13.0+mc1.20.1$fabric-item-api-v1-2.1.27+b3afc78b77.jar
+
+15:45:01.739 [ATL-Logging-Thread] INFO  -  - /.connector/temp/mru-0.4.4+1.20.1$yet-another-config-lib-3.4.2+1.20.1-fabric$common-lang-3.10.0.jar
+
+15:45:01.740 [ATL-Logging-Thread] INFO  -  - /.connector/temp/blockus-2.7.15+1.20.1$terraform-wood-api-v1-7.0.2.jar
+
+15:45:01.741 [ATL-Logging-Thread] INFO  -  - /.connector/temp/mru-0.4.4+1.20.1$yet-another-config-lib-3.4.2+1.20.1-fabric$gson-0.2.1.jar
+
+15:45:01.742 [ATL-Logging-Thread] INFO  -  - /.connector/temp/Sounds-1.1.1+1.20.1$yet-another-config-lib-3.4.2+1.20.1-fabric$imageio-metadata-3.10.0.jar
+
+15:45:01.743 [ATL-Logging-Thread] INFO  -  - /.connector/temp/mru-0.4.4+1.20.1$yet-another-config-lib-3.4.2+1.20.1-fabric$imageio-metadata-3.10.0.jar
+
+15:45:01.744 [ATL-Logging-Thread] INFO  -  - /.connector/temp/enhancedblockentities-0.9+1.20$arrp-0.6.7.jar
+
+15:45:01.744 [ATL-Logging-Thread] INFO  -  - /.connector/temp/mousewheelie-1.13.0+mc1.20.1$fabric-networking-api-v1-1.3.9+b3afc78b77.jar
+
+15:45:01.745 [ATL-Logging-Thread] INFO  -  - /.connector/temp/replaymod-1.20.1-2.6.15$fabric-key-binding-api-v1-1.0.36+fb8d95da77.jar
+
+15:45:01.746 [ATL-Logging-Thread] INFO  -  - /.connector/temp/mousewheelie-1.13.0+mc1.20.1$fabric-lifecycle-events-v1-2.2.21+b3afc78b77.jar
+
+15:45:01.748 [ATL-Logging-Thread] INFO  -  - /.connector/temp/mousewheelie-1.13.0+mc1.20.1$tweed4-tailor-lang-json-descriptions-1.20-1.1.0+mc1.20-pre1.jar
+
+15:45:01.749 [ATL-Logging-Thread] INFO  -  - /.connector/temp/blockus-2.7.15+1.20.1$terraform-wood-api-v1-7.0.2$mixinextras-fabric-0.2.0.jar
+
+15:45:01.750 [ATL-Logging-Thread] INFO  -  - /.connector/temp/mru-0.4.4+1.20.1$yet-another-config-lib-3.4.2+1.20.1-fabric$common-image-3.10.0.jar
+
+15:45:01.751 [ATL-Logging-Thread] INFO  -  - /.connector/temp/enhancedblockentities-0.9+1.20$arrp-0.6.7$fabric-api-base-0.4.19+8d1895cf72.jar
+
+15:45:01.752 [ATL-Logging-Thread] INFO  -  - /.connector/temp/Sounds-1.1.1+1.20.1$yet-another-config-lib-3.4.2+1.20.1-fabric$common-io-3.10.0.jar
+
+15:45:01.753 [ATL-Logging-Thread] INFO  -  - /.connector/temp/mousewheelie-1.13.0+mc1.20.1$tweed4-tailor-coat-1.20-1.1.3+mc1.20-pre1.jar
+
+15:45:01.754 [ATL-Logging-Thread] INFO  -  - /.connector/temp/Sounds-1.1.1+1.20.1$yet-another-config-lib-3.4.2+1.20.1-fabric$imageio-core-3.10.0.jar
+
+15:45:01.754 [ATL-Logging-Thread] INFO  -  - /.connector/temp/mousewheelie-1.13.0+mc1.20.1$tweed4-data-1.20-1.2.1+mc1.20-pre1.jar
+
+15:45:01.755 [ATL-Logging-Thread] INFO  -  - /.connector/temp/mru-0.4.4+1.20.1$yet-another-config-lib-3.4.2+1.20.1-fabric$imageio-core-3.10.0.jar
+
+15:45:01.756 [ATL-Logging-Thread] INFO  -  - /.connector/temp/mru-0.4.4+1.20.1$yet-another-config-lib-3.4.2+1.20.1-fabric$json-0.2.1.jar
+
+15:45:01.757 [ATL-Logging-Thread] INFO  -  - /.connector/temp/mru-0.4.4+1.20.1$yet-another-config-lib-3.4.2+1.20.1-fabric$common-io-3.10.0.jar
+
+15:45:01.758 [ATL-Logging-Thread] INFO  -  - /.connector/temp/Sounds-1.1.1+1.20.1$yet-another-config-lib-3.4.2+1.20.1-fabric$common-lang-3.10.0.jar
+
+15:45:01.759 [ATL-Logging-Thread] INFO  -  - /.connector/temp/replaymod-1.20.1-2.6.15$fabric-networking-api-v1-1.3.8+b3afc78b77.jar
+
+15:45:01.760 [ATL-Logging-Thread] INFO  -  - /.connector/temp/mousewheelie-1.13.0+mc1.20.1$fabric-resource-loader-v0-0.11.9+132c48c177.jar
+
+15:45:01.762 [ATL-Logging-Thread] INFO  -  - /.connector/temp/mousewheelie-1.13.0+mc1.20.1$fabric-api-base-0.4.30+7abfd51577.jar
+
+15:45:01.763 [ATL-Logging-Thread] INFO  -  - /.connector/temp/mousewheelie-1.13.0+mc1.20.1$fabric-events-interaction-v0-0.6.1+e91849a877.jar
+
+15:45:01.763 [ATL-Logging-Thread] INFO  -  - /.connector/temp/Sounds-1.1.1+1.20.1$yet-another-config-lib-3.4.2+1.20.1-fabric$json-0.2.1.jar
+
+15:45:01.764 [ATL-Logging-Thread] INFO  -  - /.connector/temp/mru-0.4.4+1.20.1$yet-another-config-lib-3.4.2+1.20.1-fabric$imageio-webp-3.10.0.jar
+
+15:45:01.766 [ATL-Logging-Thread] INFO  -  - /.connector/temp/Sounds-1.1.1+1.20.1$yet-another-config-lib-3.4.2+1.20.1-fabric$common-image-3.10.0.jar
+
+15:45:01.767 [ATL-Logging-Thread] INFO  -  - /.connector/temp/mru-0.4.4+1.20.1$yet-another-config-lib-3.4.2+1.20.1-fabric.jar
+
+15:45:01.768 [ATL-Logging-Thread] INFO  -  - /.connector/temp/mousewheelie-1.13.0+mc1.20.1$tweed4-base-1.20-1.7.1+mc1.20-pre1.jar
+
+15:45:01.770 [ATL-Logging-Thread] INFO  -  - /.connector/temp/replaymod-1.20.1-2.6.15$fabric-api-base-0.4.29+b04edc7a77.jar
+
+15:45:01.770 [ATL-Logging-Thread] INFO  -  - /.connector/temp/enhancedblockentities-0.9+1.20$spruceui-5.0.0+1.20.jar
+
+15:45:01.772 [ATL-Logging-Thread] INFO  -  - /.connector/temp/mousewheelie-1.13.0+mc1.20.1$fabric-key-binding-api-v1-1.0.36+fb8d95da77.jar
+
+15:45:01.773 [ATL-Logging-Thread] INFO  -  - /.connector/mru-0.4.4+1.20.1_mapped_srg_1.20.1.jar
+
+15:45:01.774 [ATL-Logging-Thread] INFO  -  - /.connector/blockus-2.7.15+1.20.1_mapped_srg_1.20.1.jar
+
+15:45:01.776 [ATL-Logging-Thread] INFO  -  - /.connector/mousewheelie-1.13.0+mc1.20.1$tweed4-data-hjson-1.20-1.1.1+mc1.20-pre1_mapped_srg_1.20.1.jar
+
+15:45:01.776 [ATL-Logging-Thread] INFO  -  - /.connector/mousewheelie-1.13.0+mc1.20.1$tweed4-tailor-coat-1.20-1.1.3+mc1.20-pre1_mapped_srg_1.20.1.jar
+
+15:45:01.778 [ATL-Logging-Thread] INFO  -  - /.connector/mru-0.4.4+1.20.1$yet-another-config-lib-3.4.2+1.20.1-fabric$common-lang-3.10.0_mapped_srg_1.20.1.jar
+
+15:45:01.779 [ATL-Logging-Thread] INFO  -  - /.connector/mousewheelie-1.13.0+mc1.20.1$tweed4-tailor-screen-1.20-1.1.4+mc1.20-pre1_mapped_srg_1.20.1.jar
+
+15:45:01.781 [ATL-Logging-Thread] INFO  -  - /.connector/enhancedblockentities-0.9+1.20_mapped_srg_1.20.1.jar
+
+15:45:01.783 [ATL-Logging-Thread] INFO  -  - /.connector/mousewheelie-1.13.0+mc1.20.1_mapped_srg_1.20.1.jar
+
+15:45:01.784 [ATL-Logging-Thread] INFO  -  - /.connector/mru-0.4.4+1.20.1$yet-another-config-lib-3.4.2+1.20.1-fabric$imageio-core-3.10.0_mapped_srg_1.20.1.jar
+
+15:45:01.785 [ATL-Logging-Thread] INFO  -  - /.connector/mousewheelie-1.13.0+mc1.20.1$tweed4-data-1.20-1.2.1+mc1.20-pre1_mapped_srg_1.20.1.jar
+
+15:45:01.786 [ATL-Logging-Thread] INFO  -  - /.connector/replaymod-1.20.1-2.6.15_mapped_srg_1.20.1.jar
+
+15:45:01.787 [ATL-Logging-Thread] INFO  -  - /.connector/mru-0.4.4+1.20.1$yet-another-config-lib-3.4.2+1.20.1-fabric$gson-0.2.1_mapped_srg_1.20.1.jar
+
+15:45:01.788 [ATL-Logging-Thread] INFO  -  - /.connector/mru-0.4.4+1.20.1$yet-another-config-lib-3.4.2+1.20.1-fabric$common-io-3.10.0_mapped_srg_1.20.1.jar
+
+15:45:01.789 [ATL-Logging-Thread] INFO  -  - /.connector/enhancedblockentities-0.9+1.20$spruceui-5.0.0+1.20_mapped_srg_1.20.1.jar
+
+15:45:01.790 [ATL-Logging-Thread] INFO  -  - /.connector/mousewheelie-1.13.0+mc1.20.1$tweed4-base-1.20-1.7.1+mc1.20-pre1_mapped_srg_1.20.1.jar
+
+15:45:01.791 [ATL-Logging-Thread] INFO  -  - /.connector/blockus-2.7.15+1.20.1$terraform-wood-api-v1-7.0.2_mapped_srg_1.20.1.jar
+
+15:45:01.792 [ATL-Logging-Thread] INFO  -  - /.connector/mousewheelie-1.13.0+mc1.20.1$tweed4-annotated-1.20-1.3.1+mc1.20-pre1_mapped_srg_1.20.1.jar
+
+15:45:01.793 [ATL-Logging-Thread] INFO  -  - /.connector/Sounds-1.1.1+1.20.1_mapped_srg_1.20.1.jar
+
+15:45:01.794 [ATL-Logging-Thread] INFO  -  - /.connector/mousewheelie-1.13.0+mc1.20.1$coat-1.20-1.0.0-beta.20+mc1.20-pre1_mapped_srg_1.20.1.jar
+
+15:45:01.795 [ATL-Logging-Thread] INFO  -  - /.connector/enhancedblockentities-0.9+1.20$arrp-0.6.7_mapped_srg_1.20.1.jar
+
+15:45:01.796 [ATL-Logging-Thread] INFO  -  - /entity_model_features_forge_1.20.1-2.1.3.jar (Added)
+
+15:45:01.797 [ATL-Logging-Thread] INFO  -  - /ConnectorExtras-1.11.2+1.20.1.jar (Added)
+
+15:45:01.799 [ATL-Logging-Thread] INFO  -  - /mcw-windows-2.3.0-mc1.20.1forge.jar (Added)
+
+15:45:01.800 [ATL-Logging-Thread] INFO  -  - /cc-tweaked-1.20.1-forge-1.112.0.jar (Added)
+
+15:45:01.800 [ATL-Logging-Thread] INFO  -  - /replaymod-1.20.1-2.6.15.jar (Added)
+
+15:45:01.801 [ATL-Logging-Thread] INFO  -  - /journeymap-1.20.1-5.10.1-forge.jar (Added)
+
+15:45:01.802 [ATL-Logging-Thread] INFO  -  - /cc_vs-1.20.1-forge-0.1.0.jar (Added)
+
+15:45:01.803 [ATL-Logging-Thread] INFO  -  - /mcw-fences-1.1.2-mc1.20.1forge.jar (Added)
+
+15:45:01.804 [ATL-Logging-Thread] INFO  -  - /create-new-age-forge-1.20.1-1.1.2.jar (Added)
+
+15:45:01.805 [ATL-Logging-Thread] INFO  -  - /dummmmmmy-1.20-1.8.19.jar (Added)
+
+15:45:01.806 [ATL-Logging-Thread] INFO  -  - /valkyrienskies-120-2.3.0-beta.5.jar (Added)
+
+15:45:01.807 [ATL-Logging-Thread] INFO  -  - /ConfiguredDefaults-v8.0.1-1.20.1-Forge.jar (Added)
+
+15:45:01.808 [ATL-Logging-Thread] INFO  -  - /createbigcannons-5.5.1-mc.1.20.1-forge.jar (Added)
+
+15:45:01.809 [ATL-Logging-Thread] INFO  -  - /polymorph-forge-0.49.5+1.20.1.jar (Added)
+
+15:45:01.810 [ATL-Logging-Thread] INFO  -  - /NaturesCompass-1.20.1-1.11.2-forge.jar (Added)
+
+15:45:01.810 [ATL-Logging-Thread] INFO  -  - /buildinggadgets2-1.0.7.jar (Added)
+
+15:45:01.811 [ATL-Logging-Thread] INFO  -  - /botarium-forge-1.20.1-2.3.4.jar (Added)
+
+15:45:01.812 [ATL-Logging-Thread] INFO  -  - /simpleshops-1.2.2.jar (Added)
+
+15:45:01.813 [ATL-Logging-Thread] INFO  -  - /appleskin-forge-mc1.20.1-2.5.1.jar (Added)
+
+15:45:01.814 [ATL-Logging-Thread] INFO  -  - /notenoughcrashes-4.4.7+1.20.1-forge.jar (Added)
+
+15:45:01.816 [ATL-Logging-Thread] INFO  -  - /citadel-2.5.6-1.20.1.jar (Added)
+
+15:45:01.816 [ATL-Logging-Thread] INFO  -  - /blockus-2.7.15+1.20.1.jar (Added)
+
+15:45:01.817 [ATL-Logging-Thread] INFO  -  - /FramedBlocks-9.3.0.jar (Added)
+
+15:45:01.818 [ATL-Logging-Thread] INFO  -  - /refinedpolymorph-0.1.1-1.20.1.jar (Added)
+
+15:45:01.818 [ATL-Logging-Thread] INFO  -  - /fabric-api-0.92.2+1.11.8+1.20.1.jar (Added)
+
+15:45:01.819 [ATL-Logging-Thread] INFO  -  - /clockwork-1.20.1-0.1.16-forge-b3b22e39fe.jar (Added)
+
+15:45:01.820 [ATL-Logging-Thread] INFO  -  - /Jade-1.20.1-forge-11.9.4.jar (Added)
+
+15:45:01.821 [ATL-Logging-Thread] INFO  -  - /tinyredstone-1.20-5.0.2.jar (Added)
+
+15:46:12.970 [ATL-Logging-Thread] ERROR - Oh no. Minecraft crashed. Please check the logs for any errors and provide these logs when asking for support.
+
+15:46:12.974 [ATL-Logging-Thread] INFO  - Checking for updated files!
+
+15:48:57.101 [ATL-Logging-Thread] INFO  - Preparing for launch!
+
+15:48:57.459 [ATL-Logging-Thread] INFO  - Launching pack Minecraft 1.20.1 (Vanilla) for Minecraft 1.20.1
+
+15:48:57.460 [ATL-Logging-Thread] INFO  - Logging into Minecraft!
+
+15:48:57.470 [ATL-Logging-Thread] INFO  - Using Java runtime java-runtime-gamma (Java 17.0.8) at path **USERSDIR**/runtimes/minecraft/java-runtime-gamma/linux/java-runtime-gamma
+
+15:48:57.524 [ATL-Logging-Thread] INFO  - Loader: NeoForge 47.1.106
+
+15:48:57.527 [ATL-Logging-Thread] INFO  - Mods:
+
+15:48:57.529 [ATL-Logging-Thread] INFO  -  - /JustEnoughGuns-0.5.3-1.20.1.jar (Added)
+
+15:48:57.533 [ATL-Logging-Thread] INFO  -  - /ImmediatelyFast-Forge-1.2.18+1.20.4.jar (Added)
+
+15:48:57.534 [ATL-Logging-Thread] INFO  -  - /mcw-lights-1.1.0-mc1.20.1forge.jar (Added)
+
+15:48:57.535 [ATL-Logging-Thread] INFO  -  - /NoChatReports-FORGE-1.20.1-v2.2.2.jar (Added)
+
+15:48:57.537 [ATL-Logging-Thread] INFO  -  - /smoothboot(reloaded)-mc1.20.1-0.0.4.jar (Added)
+
+15:48:57.538 [ATL-Logging-Thread] INFO  -  - /aquamirae-6.API15.jar (Added)
+
+15:48:57.539 [ATL-Logging-Thread] INFO  -  - /etched-3.0.2.jar (Added)
+
+15:48:57.540 [ATL-Logging-Thread] INFO  -  - /M'TEG-1.0.1-1.20.1.jar (Added)
+
+15:48:57.542 [ATL-Logging-Thread] INFO  -  - /CullLessLeaves-Reforged-1.20.1-1.0.5.jar (Added)
+
+15:48:57.543 [ATL-Logging-Thread] INFO  -  - /refinedstorage-1.12.4.jar (Added)
+
+15:48:57.544 [ATL-Logging-Thread] INFO  -  - /noisium-forge-2.0.3+mc1.20-1.20.1.jar (Added)
+
+15:48:57.549 [ATL-Logging-Thread] INFO  -  - /physics-mod-3.0.14-mc-1.20.1-forge.jar (Added)
+
+15:48:57.553 [ATL-Logging-Thread] INFO  -  - /mcw-bridges-3.0.0-mc1.20.1forge.jar (Added)
+
+15:48:57.555 [ATL-Logging-Thread] INFO  -  - /refurbished_furniture-forge-1.20.1-1.0.3.jar (Added)
+
+15:48:57.556 [ATL-Logging-Thread] INFO  -  - /trackwork-1.20.1-1.0.1-beta.jar (Added)
+
+15:48:57.557 [ATL-Logging-Thread] INFO  -  - /Controlling-forge-1.20.1-12.0.2.jar (Added)
+
+15:48:57.558 [ATL-Logging-Thread] INFO  -  - /ferritecore-6.0.1-forge.jar (Added)
+
+15:48:57.559 [ATL-Logging-Thread] INFO  -  - /BetterThirdPerson-Forge-1.20-1.9.0.jar (Added)
+
+15:48:57.561 [ATL-Logging-Thread] INFO  -  - /extendedgears-2.1.1-1.20.1-0.5.1.f-forge.jar (Added)
+
+15:48:57.562 [ATL-Logging-Thread] INFO  -  - /FarmersDelight-1.20.1-1.2.4.jar (Added)
+
+15:48:57.562 [ATL-Logging-Thread] INFO  -  - /mob_grinding_utils-1.20.1-1.1.0.jar (Added)
+
+15:48:57.562 [ATL-Logging-Thread] INFO  -  - /Searchables-forge-1.20.1-1.0.3.jar (Added)
+
+15:48:57.562 [ATL-Logging-Thread] INFO  -  - /entityculling-forge-1.6.6-mc1.20.1.jar (Added)
+
+15:48:57.562 [ATL-Logging-Thread] INFO  -  - /redstonepen-1.20.1-neoforge-1.3.33.jar (Added)
+
+15:48:57.563 [ATL-Logging-Thread] INFO  -  - /enhancedblockentities-0.9+1.20.jar (Added)
+
+15:48:57.563 [ATL-Logging-Thread] INFO  -  - /resourcefullib-forge-1.20.1-2.1.28.jar (Added)
+
+15:48:57.563 [ATL-Logging-Thread] INFO  -  - /.connector/mru-0.4.4+1.20.1$yet-another-config-lib-3.4.2+1.20.1-fabric$imageio-metadata-3.10.0_mapped_srg_1.20.1.jar
+
+15:48:57.567 [ATL-Logging-Thread] INFO  -  - /.connector/mru-0.4.4+1.20.1$yet-another-config-lib-3.4.2+1.20.1-fabric$common-image-3.10.0_mapped_srg_1.20.1.jar
+
+15:48:57.569 [ATL-Logging-Thread] INFO  -  - /.connector/mru-0.4.4+1.20.1$yet-another-config-lib-3.4.2+1.20.1-fabric$json-0.2.1_mapped_srg_1.20.1.jar
+
+15:48:57.570 [ATL-Logging-Thread] INFO  -  - /.connector/mru-0.4.4+1.20.1$yet-another-config-lib-3.4.2+1.20.1-fabric$imageio-webp-3.10.0_mapped_srg_1.20.1.jar
+
+15:48:57.571 [ATL-Logging-Thread] INFO  -  - /.connector/blockus-2.7.15+1.20.1$terraform-wood-api-v1-7.0.2$mixinextras-fabric-0.2.0_mapped_srg_1.20.1.jar
+
+15:48:57.572 [ATL-Logging-Thread] INFO  -  - /.connector/mru-0.4.4+1.20.1$yet-another-config-lib-3.4.2+1.20.1-fabric_mapped_srg_1.20.1.jar
+
+15:48:57.574 [ATL-Logging-Thread] INFO  -  - /.connector/mousewheelie-1.13.0+mc1.20.1$tweed4-tailor-lang-json-descriptions-1.20-1.1.0+mc1.20-pre1_mapped_srg_1.20.1.jar
+
+15:48:57.575 [ATL-Logging-Thread] INFO  -  - /.connector/temp/mousewheelie-1.13.0+mc1.20.1$amecsapi-1.20-1.5.1+mc1.20-pre1.jar
+
+15:48:57.576 [ATL-Logging-Thread] INFO  -  - /.connector/temp/mousewheelie-1.13.0+mc1.20.1$fabric-screen-api-v1-2.0.7+b3afc78b77.jar
+
+15:48:57.577 [ATL-Logging-Thread] INFO  -  - /.connector/temp/Sounds-1.1.1+1.20.1$yet-another-config-lib-3.4.2+1.20.1-fabric$gson-0.2.1.jar
+
+15:48:57.579 [ATL-Logging-Thread] INFO  -  - /.connector/temp/mousewheelie-1.13.0+mc1.20.1$fabric-registry-sync-v0-2.3.0+2e061fd477.jar
+
+15:48:57.580 [ATL-Logging-Thread] INFO  -  - /.connector/temp/replaymod-1.20.1-2.6.15$fabric-screen-api-v1-2.0.6+b3afc78b77.jar
+
+15:48:57.583 [ATL-Logging-Thread] INFO  -  - /.connector/temp/replaymod-1.20.1-2.6.15$fabric-resource-loader-v0-0.11.7+f7923f6d77.jar
+
+15:48:57.585 [ATL-Logging-Thread] INFO  -  - /.connector/temp/Sounds-1.1.1+1.20.1$yet-another-config-lib-3.4.2+1.20.1-fabric.jar
+
+15:48:57.586 [ATL-Logging-Thread] INFO  -  - /.connector/temp/mousewheelie-1.13.0+mc1.20.1$coat-1.20-1.0.0-beta.20+mc1.20-pre1.jar
+
+15:48:57.587 [ATL-Logging-Thread] INFO  -  - /.connector/temp/mousewheelie-1.13.0+mc1.20.1$tweed4-data-hjson-1.20-1.1.1+mc1.20-pre1.jar
+
+15:48:57.588 [ATL-Logging-Thread] INFO  -  - /.connector/temp/mousewheelie-1.13.0+mc1.20.1$tweed4-tailor-screen-1.20-1.1.4+mc1.20-pre1.jar
+
+15:48:57.590 [ATL-Logging-Thread] INFO  -  - /.connector/temp/Sounds-1.1.1+1.20.1$yet-another-config-lib-3.4.2+1.20.1-fabric$imageio-webp-3.10.0.jar
+
+15:48:57.590 [ATL-Logging-Thread] INFO  -  - /.connector/temp/mousewheelie-1.13.0+mc1.20.1$tweed4-annotated-1.20-1.3.1+mc1.20-pre1.jar
+
+15:48:57.592 [ATL-Logging-Thread] INFO  -  - /.connector/temp/mousewheelie-1.13.0+mc1.20.1$fabric-item-api-v1-2.1.27+b3afc78b77.jar
+
+15:48:57.593 [ATL-Logging-Thread] INFO  -  - /.connector/temp/mru-0.4.4+1.20.1$yet-another-config-lib-3.4.2+1.20.1-fabric$common-lang-3.10.0.jar
+
+15:48:57.594 [ATL-Logging-Thread] INFO  -  - /.connector/temp/blockus-2.7.15+1.20.1$terraform-wood-api-v1-7.0.2.jar
+
+15:48:57.595 [ATL-Logging-Thread] INFO  -  - /.connector/temp/mru-0.4.4+1.20.1$yet-another-config-lib-3.4.2+1.20.1-fabric$gson-0.2.1.jar
+
+15:48:57.599 [ATL-Logging-Thread] INFO  -  - /.connector/temp/Sounds-1.1.1+1.20.1$yet-another-config-lib-3.4.2+1.20.1-fabric$imageio-metadata-3.10.0.jar
+
+15:48:57.600 [ATL-Logging-Thread] INFO  -  - /.connector/temp/mru-0.4.4+1.20.1$yet-another-config-lib-3.4.2+1.20.1-fabric$imageio-metadata-3.10.0.jar
+
+15:48:57.601 [ATL-Logging-Thread] INFO  -  - /.connector/temp/enhancedblockentities-0.9+1.20$arrp-0.6.7.jar
+
+15:48:57.602 [ATL-Logging-Thread] INFO  -  - /.connector/temp/mousewheelie-1.13.0+mc1.20.1$fabric-networking-api-v1-1.3.9+b3afc78b77.jar
+
+15:48:57.604 [ATL-Logging-Thread] INFO  -  - /.connector/temp/replaymod-1.20.1-2.6.15$fabric-key-binding-api-v1-1.0.36+fb8d95da77.jar
+
+15:48:57.605 [ATL-Logging-Thread] INFO  -  - /.connector/temp/mousewheelie-1.13.0+mc1.20.1$fabric-lifecycle-events-v1-2.2.21+b3afc78b77.jar
+
+15:48:57.606 [ATL-Logging-Thread] INFO  -  - /.connector/temp/mousewheelie-1.13.0+mc1.20.1$tweed4-tailor-lang-json-descriptions-1.20-1.1.0+mc1.20-pre1.jar
+
+15:48:57.608 [ATL-Logging-Thread] INFO  -  - /.connector/temp/blockus-2.7.15+1.20.1$terraform-wood-api-v1-7.0.2$mixinextras-fabric-0.2.0.jar
+
+15:48:57.609 [ATL-Logging-Thread] INFO  -  - /.connector/temp/mru-0.4.4+1.20.1$yet-another-config-lib-3.4.2+1.20.1-fabric$common-image-3.10.0.jar
+
+15:48:57.610 [ATL-Logging-Thread] INFO  -  - /.connector/temp/enhancedblockentities-0.9+1.20$arrp-0.6.7$fabric-api-base-0.4.19+8d1895cf72.jar
+
+15:48:57.611 [ATL-Logging-Thread] INFO  -  - /.connector/temp/Sounds-1.1.1+1.20.1$yet-another-config-lib-3.4.2+1.20.1-fabric$common-io-3.10.0.jar
+
+15:48:57.613 [ATL-Logging-Thread] INFO  -  - /.connector/temp/mousewheelie-1.13.0+mc1.20.1$tweed4-tailor-coat-1.20-1.1.3+mc1.20-pre1.jar
+
+15:48:57.616 [ATL-Logging-Thread] INFO  -  - /.connector/temp/Sounds-1.1.1+1.20.1$yet-another-config-lib-3.4.2+1.20.1-fabric$imageio-core-3.10.0.jar
+
+15:48:57.617 [ATL-Logging-Thread] INFO  -  - /.connector/temp/mousewheelie-1.13.0+mc1.20.1$tweed4-data-1.20-1.2.1+mc1.20-pre1.jar
+
+15:48:57.619 [ATL-Logging-Thread] INFO  -  - /.connector/temp/mru-0.4.4+1.20.1$yet-another-config-lib-3.4.2+1.20.1-fabric$imageio-core-3.10.0.jar
+
+15:48:57.621 [ATL-Logging-Thread] INFO  -  - /.connector/temp/mru-0.4.4+1.20.1$yet-another-config-lib-3.4.2+1.20.1-fabric$json-0.2.1.jar
+
+15:48:57.622 [ATL-Logging-Thread] INFO  -  - /.connector/temp/mru-0.4.4+1.20.1$yet-another-config-lib-3.4.2+1.20.1-fabric$common-io-3.10.0.jar
+
+15:48:57.623 [ATL-Logging-Thread] INFO  -  - /.connector/temp/Sounds-1.1.1+1.20.1$yet-another-config-lib-3.4.2+1.20.1-fabric$common-lang-3.10.0.jar
+
+15:48:57.625 [ATL-Logging-Thread] INFO  -  - /.connector/temp/replaymod-1.20.1-2.6.15$fabric-networking-api-v1-1.3.8+b3afc78b77.jar
+
+15:48:57.626 [ATL-Logging-Thread] INFO  -  - /.connector/temp/mousewheelie-1.13.0+mc1.20.1$fabric-resource-loader-v0-0.11.9+132c48c177.jar
+
+15:48:57.627 [ATL-Logging-Thread] INFO  -  - /.connector/temp/mousewheelie-1.13.0+mc1.20.1$fabric-api-base-0.4.30+7abfd51577.jar
+
+15:48:57.628 [ATL-Logging-Thread] INFO  -  - /.connector/temp/mousewheelie-1.13.0+mc1.20.1$fabric-events-interaction-v0-0.6.1+e91849a877.jar
+
+15:48:57.630 [ATL-Logging-Thread] INFO  -  - /.connector/temp/Sounds-1.1.1+1.20.1$yet-another-config-lib-3.4.2+1.20.1-fabric$json-0.2.1.jar
+
+15:48:57.632 [ATL-Logging-Thread] INFO  -  - /.connector/temp/mru-0.4.4+1.20.1$yet-another-config-lib-3.4.2+1.20.1-fabric$imageio-webp-3.10.0.jar
+
+15:48:57.633 [ATL-Logging-Thread] INFO  -  - /.connector/temp/Sounds-1.1.1+1.20.1$yet-another-config-lib-3.4.2+1.20.1-fabric$common-image-3.10.0.jar
+
+15:48:57.634 [ATL-Logging-Thread] INFO  -  - /.connector/temp/mru-0.4.4+1.20.1$yet-another-config-lib-3.4.2+1.20.1-fabric.jar
+
+15:48:57.635 [ATL-Logging-Thread] INFO  -  - /.connector/temp/mousewheelie-1.13.0+mc1.20.1$tweed4-base-1.20-1.7.1+mc1.20-pre1.jar
+
+15:48:57.637 [ATL-Logging-Thread] INFO  -  - /.connector/temp/replaymod-1.20.1-2.6.15$fabric-api-base-0.4.29+b04edc7a77.jar
+
+15:48:57.638 [ATL-Logging-Thread] INFO  -  - /.connector/temp/enhancedblockentities-0.9+1.20$spruceui-5.0.0+1.20.jar
+
+15:48:57.639 [ATL-Logging-Thread] INFO  -  - /.connector/temp/mousewheelie-1.13.0+mc1.20.1$fabric-key-binding-api-v1-1.0.36+fb8d95da77.jar
+
+15:48:57.641 [ATL-Logging-Thread] INFO  -  - /.connector/mru-0.4.4+1.20.1_mapped_srg_1.20.1.jar
+
+15:48:57.642 [ATL-Logging-Thread] INFO  -  - /.connector/blockus-2.7.15+1.20.1_mapped_srg_1.20.1.jar
+
+15:48:57.644 [ATL-Logging-Thread] INFO  -  - /.connector/mousewheelie-1.13.0+mc1.20.1$tweed4-data-hjson-1.20-1.1.1+mc1.20-pre1_mapped_srg_1.20.1.jar
+
+15:48:57.645 [ATL-Logging-Thread] INFO  -  - /.connector/mousewheelie-1.13.0+mc1.20.1$tweed4-tailor-coat-1.20-1.1.3+mc1.20-pre1_mapped_srg_1.20.1.jar
+
+15:48:57.647 [ATL-Logging-Thread] INFO  -  - /.connector/mru-0.4.4+1.20.1$yet-another-config-lib-3.4.2+1.20.1-fabric$common-lang-3.10.0_mapped_srg_1.20.1.jar
+
+15:48:57.650 [ATL-Logging-Thread] INFO  -  - /.connector/mousewheelie-1.13.0+mc1.20.1$tweed4-tailor-screen-1.20-1.1.4+mc1.20-pre1_mapped_srg_1.20.1.jar
+
+15:48:57.651 [ATL-Logging-Thread] INFO  -  - /.connector/enhancedblockentities-0.9+1.20_mapped_srg_1.20.1.jar
+
+15:48:57.653 [ATL-Logging-Thread] INFO  -  - /.connector/mousewheelie-1.13.0+mc1.20.1_mapped_srg_1.20.1.jar
+
+15:48:57.654 [ATL-Logging-Thread] INFO  -  - /.connector/mru-0.4.4+1.20.1$yet-another-config-lib-3.4.2+1.20.1-fabric$imageio-core-3.10.0_mapped_srg_1.20.1.jar
+
+15:48:57.655 [ATL-Logging-Thread] INFO  -  - /.connector/mousewheelie-1.13.0+mc1.20.1$tweed4-data-1.20-1.2.1+mc1.20-pre1_mapped_srg_1.20.1.jar
+
+15:48:57.656 [ATL-Logging-Thread] INFO  -  - /.connector/replaymod-1.20.1-2.6.15_mapped_srg_1.20.1.jar
+
+15:48:57.657 [ATL-Logging-Thread] INFO  -  - /.connector/mru-0.4.4+1.20.1$yet-another-config-lib-3.4.2+1.20.1-fabric$gson-0.2.1_mapped_srg_1.20.1.jar
+
+15:48:57.659 [ATL-Logging-Thread] INFO  -  - /.connector/mru-0.4.4+1.20.1$yet-another-config-lib-3.4.2+1.20.1-fabric$common-io-3.10.0_mapped_srg_1.20.1.jar
+
+15:48:57.660 [ATL-Logging-Thread] INFO  -  - /.connector/enhancedblockentities-0.9+1.20$spruceui-5.0.0+1.20_mapped_srg_1.20.1.jar
+
+15:48:57.661 [ATL-Logging-Thread] INFO  -  - /.connector/mousewheelie-1.13.0+mc1.20.1$tweed4-base-1.20-1.7.1+mc1.20-pre1_mapped_srg_1.20.1.jar
+
+15:48:57.663 [ATL-Logging-Thread] INFO  -  - /.connector/blockus-2.7.15+1.20.1$terraform-wood-api-v1-7.0.2_mapped_srg_1.20.1.jar
+
+15:48:57.666 [ATL-Logging-Thread] INFO  -  - /.connector/mousewheelie-1.13.0+mc1.20.1$tweed4-annotated-1.20-1.3.1+mc1.20-pre1_mapped_srg_1.20.1.jar
+
+15:48:57.668 [ATL-Logging-Thread] INFO  -  - /.connector/Sounds-1.1.1+1.20.1_mapped_srg_1.20.1.jar
+
+15:48:57.669 [ATL-Logging-Thread] INFO  -  - /.connector/mousewheelie-1.13.0+mc1.20.1$coat-1.20-1.0.0-beta.20+mc1.20-pre1_mapped_srg_1.20.1.jar
+
+15:48:57.670 [ATL-Logging-Thread] INFO  -  - /.connector/enhancedblockentities-0.9+1.20$arrp-0.6.7_mapped_srg_1.20.1.jar
+
+15:48:57.671 [ATL-Logging-Thread] INFO  -  - /entity_model_features_forge_1.20.1-2.1.3.jar (Added)
+
+15:48:57.673 [ATL-Logging-Thread] INFO  -  - /ConnectorExtras-1.11.2+1.20.1.jar (Added)
+
+15:48:57.674 [ATL-Logging-Thread] INFO  -  - /mcw-windows-2.3.0-mc1.20.1forge.jar (Added)
+
+15:48:57.676 [ATL-Logging-Thread] INFO  -  - /cc-tweaked-1.20.1-forge-1.112.0.jar (Added)
+
+15:48:57.677 [ATL-Logging-Thread] INFO  -  - /replaymod-1.20.1-2.6.15.jar (Added)
+
+15:48:57.678 [ATL-Logging-Thread] INFO  -  - /journeymap-1.20.1-5.10.1-forge.jar (Added)
+
+15:48:57.682 [ATL-Logging-Thread] INFO  -  - /cc_vs-1.20.1-forge-0.1.0.jar (Added)
+
+15:48:57.683 [ATL-Logging-Thread] INFO  -  - /mcw-fences-1.1.2-mc1.20.1forge.jar (Added)
+
+15:48:57.684 [ATL-Logging-Thread] INFO  -  - /create-new-age-forge-1.20.1-1.1.2.jar (Added)
+
+15:48:57.685 [ATL-Logging-Thread] INFO  -  - /dummmmmmy-1.20-1.8.19.jar (Added)
+
+15:48:57.686 [ATL-Logging-Thread] INFO  -  - /valkyrienskies-120-2.3.0-beta.5.jar (Added)
+
+15:48:57.688 [ATL-Logging-Thread] INFO  -  - /ConfiguredDefaults-v8.0.1-1.20.1-Forge.jar (Added)
+
+15:48:57.689 [ATL-Logging-Thread] INFO  -  - /createbigcannons-5.5.1-mc.1.20.1-forge.jar (Added)
+
+15:48:57.691 [ATL-Logging-Thread] INFO  -  - /polymorph-forge-0.49.5+1.20.1.jar (Added)
+
+15:48:57.692 [ATL-Logging-Thread] INFO  -  - /NaturesCompass-1.20.1-1.11.2-forge.jar (Added)
+
+15:48:57.694 [ATL-Logging-Thread] INFO  -  - /buildinggadgets2-1.0.7.jar (Added)
+
+15:48:57.695 [ATL-Logging-Thread] INFO  -  - /botarium-forge-1.20.1-2.3.4.jar (Added)
+
+15:48:57.696 [ATL-Logging-Thread] INFO  -  - /simpleshops-1.2.2.jar (Added)
+
+15:48:57.701 [ATL-Logging-Thread] INFO  -  - /appleskin-forge-mc1.20.1-2.5.1.jar (Added)
+
+15:48:57.702 [ATL-Logging-Thread] INFO  -  - /notenoughcrashes-4.4.7+1.20.1-forge.jar (Added)
+
+15:48:57.704 [ATL-Logging-Thread] INFO  -  - /citadel-2.5.6-1.20.1.jar (Added)
+
+15:48:57.704 [ATL-Logging-Thread] INFO  -  - /blockus-2.7.15+1.20.1.jar (Added)
+
+15:48:57.705 [ATL-Logging-Thread] INFO  -  - /FramedBlocks-9.3.0.jar (Added)
+
+15:48:57.706 [ATL-Logging-Thread] INFO  -  - /refinedpolymorph-0.1.1-1.20.1.jar (Added)
+
+15:48:57.707 [ATL-Logging-Thread] INFO  -  - /fabric-api-0.92.2+1.11.8+1.20.1.jar (Added)
+
+15:48:57.709 [ATL-Logging-Thread] INFO  -  - /clockwork-1.20.1-0.1.16-forge-b3b22e39fe.jar (Added)
+
+15:48:57.710 [ATL-Logging-Thread] INFO  -  - /Jade-1.20.1-forge-11.9.4.jar (Added)
+
+15:48:57.711 [ATL-Logging-Thread] INFO  -  - /tinyredstone-1.20-5.0.2.jar (Added)
+
+15:48:57.713 [ATL-Logging-Thread] INFO  -  - /moonlight-1.20-2.12.9-forge.jar (Added)
+
+15:48:57.717 [ATL-Logging-Thread] INFO  -  - /Zeta-1.0-24.jar (Added)
+
+15:55:25.344 [ATL-Logging-Thread] INFO  - Checking for updated files!
+
