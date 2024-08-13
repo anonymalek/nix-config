@@ -3,7 +3,7 @@
 	packages = with pkgs; [
 		clang-tools
 		clang
-		gcc
+		gcc14
 		
 		gnumake
 		cmake

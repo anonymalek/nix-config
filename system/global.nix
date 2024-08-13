@@ -47,6 +47,8 @@
 				(writeShellScriptBin "nrb" ''/conf/rebuild.sh'')
 				(writeShellScriptBin "ncrb" ''nix-collect-garbage -d && sudo nix-collect-garbage -d && /conf/rebuild.sh'')
 
+				(writeShellScriptBin "warp" ''nix-shell /etc/nixos/system/environments/$1.nix && echo "warped out"'')
+
 
 				vim
 				emacs

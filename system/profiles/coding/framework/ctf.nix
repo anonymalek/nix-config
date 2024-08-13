@@ -17,7 +17,7 @@
 		python3
 		cryptsetup
 		qemu
-		gcc
+		gcc14
 		gnumake
 		i2c-tools
 		fping
