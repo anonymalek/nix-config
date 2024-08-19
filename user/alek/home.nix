@@ -16,7 +16,10 @@ in
 	home.packages = with pkgs; [
 		(atlauncher.override { additionalLibs = [ xorg.libX11 xorg.libXcursor ]; })
 		zed-editor
-		
+
+		git-lfs
+		blender
+
 		jre
 
 		neovim
